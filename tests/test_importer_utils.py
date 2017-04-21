@@ -1,4 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8  -*-
 import unittest
-import importer_utils as utils
+import WLE_import.importer_utils as utils
+
+
+if __name__ == '__main__':
+    unittest.main()
