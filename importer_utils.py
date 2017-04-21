@@ -93,3 +93,11 @@ def date_to_dict(datestring, dateformat):
     if "%d" in dateformat:
         date_dict["day"] = date_obj.day
     return date_dict
+
+
+def tuple_is_coords(sometuple):
+    result = False
+    if isinstance(sometuple, tuple) and len(sometuple) == 2:
+        if all(isinstance(x, float) for x in sometuple):
+            result = True
+    return result

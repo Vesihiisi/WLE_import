@@ -120,9 +120,7 @@ class WikidataItem(object):
             for k in quals:
                 prop_name = self.props[k]
                 qualifiers[prop_name] = quals[k]
-        elif refs is False:
-            refs = []
-
+        refs = []
         if refs and not isinstance(refs, list):
             refs = [refs]
         statement = {"value": value, "quals": qualifiers, "refs": refs}
