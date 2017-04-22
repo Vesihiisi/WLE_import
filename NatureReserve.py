@@ -6,11 +6,91 @@ class NatureReserve(WikidataItem):
 
     def set_labels(self):
         swedish_name = self.raw_data["NAMN"]
-        self.add_label("sv", swedish_name)
+        if "reservat" in swedish_name:
+            languages = ["sv"]
+        else:
+            languages = [
+                "sv", "en", "da", "fi", "fr", "pt",
+                "pl", "nb", "nn", "nl", "de", "es"
+            ]
+        for language in languages:
+            self.add_label(language, swedish_name)
 
     def set_descriptions(self):
-        swedish_description = "naturreservat"
-        self.add_label("sv", swedish_description)
+        county_without_lan = self.raw_data["LAN"].split(" ")[:-1]
+        county_name = " ".join(county_without_lan)
+        if utils.get_last_char(county_name) == "s":
+            county_name = county_name[:-1]
+
+        nr_dictionary = {"en": "nature reserve in {}, Sweden",
+                         "fi": "luonnonpuisto {} Ruotsissa",
+                         "da": "naturreservat i {}, Sverige",
+                         "pl": "rezerwat przyrody w regionie {}, Szwecja",
+                         "nb": "naturreservat i {}, Sverige",
+                         "nn": "naturreservat i {}, Sverige",
+                         "nl": "natuurreservaat in {}, Zweden",
+                         "de": "Naturschutzgebiet in {}, Schweden",
+                         "fr": "réserve naturelle en {}, Suède",
+                         "ru": "заповедник в лене {} в Швеции",
+                         "pt": "reserva natural na {}, Suécia",
+                         "es": "reserva natural en {}, Suecia",
+                         "sv": "naturreservat i {}"}
+        fi_locations = {
+            "Blekinge": "Blekingen läänissä",
+            "Dalarna": "Taalainmaan läänissä",
+            "Gotland": "Gotlannin läänissä",
+            "Gävleborg": "Gävleborgin läänissä",
+            "Halland": "Hallandin läänissä",
+            "Jämtland": "Jämtlandin läänissä",
+            "Jönköping": "Jönköpingin läänissä",
+            "Kalmar": "Kalmarin läänissä",
+            "Kronoberg": "Kronobergin läänissä",
+            "Norrbotten": "Norrbottenin läänissä",
+            "Skåne": "Skånen läänissä",
+            "Stockholm": "Tukholman läänissä",
+            "Södermanland": "Södermanlandin läänissä",
+            "Uppsala": "Uppsalan läänissä",
+            "Västra Götaland": "Länsi-Götanmaan läänissä",
+            "Värmland": "Värmlannin läänissä",
+            "Västerbotten": "Västerbottenin läänissä",
+            "Västernorrland": "Västernorrlandin läänissä",
+            "Västmanland": "Västmanlandin läänissä",
+            "Örebro": "Örebron läänissä",
+            "Östergötland": "Itä-Götanmaan läänissä"
+        }
+        ru_locations = {
+            "Blekinge": "Блекинге",
+            "Dalarna": "Даларна",
+            "Gotland": "Готланд",
+            "Gävleborg": "Евлеборг",
+            "Halland": "Халланд",
+            "Jämtland": "Емтланд",
+            "Jönköping": "Йёнчёпинг",
+            "Kalmar": "Кальмар",
+            "Kronoberg": "Крунуберг",
+            "Norrbotten": "Норрботтен",
+            "Skåne": "Сконе",
+            "Stockholm": "Стокгольм",
+            "Södermanland": "Сёдерманланд",
+            "Uppsala": "Уппсала",
+            "Värmland": "Вермланд",
+            "Västerbotten": "Вестерботтен",
+            "Västernorrland": "Вестерноррланд",
+            "Västmanland": "Вестманланд",
+            "Västra Götaland": "Вестра-Гёталанд",
+            "Örebro": "Эребру",
+            "Östergötland": "Эстергётланд",
+        }
+        for language in nr_dictionary:
+            if language == "fi":
+                description = nr_dictionary[language].format(
+                    fi_locations[county_name])
+            elif language == "ru":
+                description = nr_dictionary[language].format(
+                    ru_locations[county_name])
+            else:
+                description = nr_dictionary[language].format(county_name)
+            self.add_description(language, description)
 
     def set_country(self):
         sweden = self.items["sweden"]
@@ -22,6 +102,12 @@ class NatureReserve(WikidataItem):
         self.add_statement("is", nature_reserve)
 
     def set_municipalities(self):
+        """
+        Set the municipalities where the area is located.
+
+        Can be more than one claim if the area stretches across
+        several municipalities.
+        """
         municipalities_raw = self.raw_data["KOMMUN"].split(",")
         for municipality in municipalities_raw:
             municipality = municipality.strip()
@@ -41,6 +127,9 @@ class NatureReserve(WikidataItem):
         self.add_statement("nature_id", nid)
 
     def set_iucn_status(self):
+        """
+        Set the IUCN category of the area.
+        """
         raw_status = self.raw_data["IUCNKAT"]
         raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
         status_item = [x["item"] for
@@ -51,6 +140,9 @@ class NatureReserve(WikidataItem):
         self.add_statement("iucn", status_item, qualifier)
 
     def set_forvaltare(self):
+        """
+        Set the operator (förvaltare) of the reserve.
+        """
         forvaltare_raw = self.raw_data["FORVALTARE"]
         try:
             f = [x["item"] for

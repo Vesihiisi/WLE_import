@@ -4,7 +4,7 @@ import csv
 import importer_utils as utils
 import wikidataStuff.wdqsLookup as lookup
 from NatureReserve import NatureReserve
-from Uploader import *
+from Uploader import Uploader
 
 reserves_file = "data/NR_polygon.csv"
 

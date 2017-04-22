@@ -155,7 +155,7 @@ class WikidataItem(object):
             self.remove_statement(prop_name)
             self.add_statement(prop_name, value, quals, refs)
 
-    def set_wd_item(self, wd_item):
+    def associate_wd_item(self, wd_item):
         """Associate the data object with a Wikidata item."""
         if wd_item is not None:
             self.wd_item["wd-item"] = wd_item
