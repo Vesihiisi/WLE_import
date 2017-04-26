@@ -5,6 +5,15 @@ import importer_utils as utils
 class NatureReserve(WikidataItem):
 
     def set_labels(self):
+        """
+        Add labels, optionally in multiple languages.
+
+        A number of items have the word natur/domän etc. reservat
+        included in the name. In this case, the name is
+        added only in Swedish. Otherwise, if it's a pure
+        geographical name, it is added in a number of Latin script
+        languages.
+        """
         swedish_name = self.raw_data["NAMN"]
         if "reservat" in swedish_name:
             languages = ["sv"]
@@ -17,6 +26,7 @@ class NatureReserve(WikidataItem):
             self.add_label(language, swedish_name)
 
     def set_descriptions(self):
+        """Add descriptions in various languages."""
         county_without_lan = self.raw_data["LAN"].split(" ")[:-1]
         county_name = " ".join(county_without_lan)
         if utils.get_last_char(county_name) == "s":
@@ -93,11 +103,12 @@ class NatureReserve(WikidataItem):
             self.add_description(language, description)
 
     def set_country(self):
+        """Set the country to Sweden."""
         sweden = self.items["sweden"]
-        self.add_statement(
-            "country", sweden)
+        self.add_statement("country", sweden)
 
     def set_is(self):
+        """Set the P31 property - nature reserve."""
         nature_reserve = self.items["nature_reserve"]
         self.add_statement("is", nature_reserve)
 
@@ -123,13 +134,13 @@ class NatureReserve(WikidataItem):
             self.add_statement("located_adm", m_item[0])
 
     def set_nid(self):
+        """Set the Naturvårdsverket ID number."""
         nid = self.raw_data["NVRID"]
         self.add_statement("nature_id", nid)
 
     def set_iucn_status(self):
-        """
-        Set the IUCN category of the area.
-        """
+        """Set the IUCN category of the area."""
+        #  To do: add no_value
         raw_status = self.raw_data["IUCNKAT"]
         raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
         status_item = [x["item"] for
@@ -140,9 +151,7 @@ class NatureReserve(WikidataItem):
         self.add_statement("iucn", status_item, qualifier)
 
     def set_forvaltare(self):
-        """
-        Set the operator (förvaltare) of the reserve.
-        """
+        """Set the operator (förvaltare) of the reserve."""
         forvaltare_raw = self.raw_data["FORVALTARE"]
         try:
             f = [x["item"] for
