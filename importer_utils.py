@@ -5,6 +5,7 @@ import json
 import re
 import pywikibot
 import os
+from wikidataStuff.WikidataStuff import WikidataStuff as wds
 
 site_cache = {}
 
@@ -143,3 +144,27 @@ def extract_municipality_name(category_name):
             if municipality == "Gothenburg":
                 municipality = "Göteborg"
             return municipality
+
+
+def q_from_wikipedia(language, page_title):
+    """
+    Get the ID of the WD item linked to a wp page.
+    If the page has no item and is in the article
+    namespace, create an item for it.
+    """
+    wp_site = pywikibot.Site(language, "wikipedia")
+    page = pywikibot.Page(wp_site, page_title)
+    summary = "Creating item for {} on {}wp."
+    summary = summary.format(page_title, language)
+    wd_repo = create_site_instance("wikidata", "wikidata")
+    wdstuff = wds(wd_repo, edit_summary=summary)
+    if page.exists():
+        if page.isRedirectPage():
+            page = page.getRedirectTarget()
+        try:
+            item = pywikibot.ItemPage.fromPage(page)
+        except pywikibot.NoPage:
+            if page.namespace() != 0:  # main namespace
+                return
+            item = wdstuff.make_new_item_from_page(page, summary)
+        return item.getID()

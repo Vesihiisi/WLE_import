@@ -93,7 +93,9 @@ def process_wp_reserves():
                 if len(guesses) == 1:
                     entry = {}
                     entry["wp_article"] = article_title
+                    entry["source_name"] = guesses[0]["name"]
                     entry["nature_id"] = guesses[0]["nature_id"]
+                    entry["item"] = utils.q_from_wikipedia("sv", article_title)
                     results.append(entry)
                     utils.json_to_file(results_file_exact, results)
                 elif len(guesses) > 1:
@@ -113,4 +115,4 @@ def process_wp_reserves():
 
 
 if __name__ == "__main__":
-    wp_reserves_processed = process_wp_reserves()
+    process_wp_reserves()
