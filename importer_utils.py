@@ -4,8 +4,11 @@ import datetime
 import json
 import re
 import pywikibot
+import os
 
 site_cache = {}
+
+DATA_DIRECTORY = "data"
 
 
 def load_json(filename):
@@ -17,6 +20,14 @@ def load_json(filename):
                 print("Failed to decode file {}.".format(filename))
     except OSError:
         print("File {} does not exist.".format(filename))
+
+
+def json_to_file(filename, json_content):
+    with open(filename, 'w') as f:
+        json.dump(json_content, f, sort_keys=True,
+                  indent=4,
+                  ensure_ascii=False,
+                  default=datetime_convert)
 
 
 def string_is_q_item(text):
@@ -101,3 +112,34 @@ def tuple_is_coords(sometuple):
         if all(isinstance(x, float) for x in sometuple):
             result = True
     return result
+
+
+def hectares_to_km(hectares):
+    """Convert a value in hectares to km."""
+    one_hectare_in_km = 0.01
+    return one_hectare_in_km * float(hectares)
+
+
+def extract_municipality_name(category_name):
+    """
+    Extract base municipality name from category name.
+
+    Known caveats:
+    * Reserves in Gotland are categorized in "Gotlands län"
+
+    :param category_name: Category of Swedish nature reserves,
+                          like "Naturreservat i Foo kommun"
+    """
+    legit_municipalities = load_json(
+        os.path.join(DATA_DIRECTORY, "municipalities.json"))
+    m = re.search('(\w?)[N|n]aturreservat i (.+?) [kommun|län]', category_name)
+    if m:
+        municipality = m.group(2)
+        municipality_clean = [x["en"].split(" ")[0] for
+                              x in legit_municipalities if
+                              x["sv"] == municipality + " kommun"]
+        if municipality_clean:
+            municipality = municipality_clean[0]
+            if municipality == "Gothenburg":
+                municipality = "Göteborg"
+            return municipality

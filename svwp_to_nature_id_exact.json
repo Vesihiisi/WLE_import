@@ -1,0 +1,5874 @@
+[
+    {
+        "nature_id": "2000283",
+        "wp_article": "Kungsberget"
+    },
+    {
+        "nature_id": "2002631",
+        "wp_article": "Arnöhuvud"
+    },
+    {
+        "nature_id": "2002543",
+        "wp_article": "Aspbo naturreservat"
+    },
+    {
+        "nature_id": "2002618",
+        "wp_article": "Aspbladsmossens naturreservat"
+    },
+    {
+        "nature_id": "2002596",
+        "wp_article": "Andersby ängsbackar"
+    },
+    {
+        "nature_id": "2024689",
+        "wp_article": "Lovön"
+    },
+    {
+        "nature_id": "2000654",
+        "wp_article": "Indalsälven"
+    },
+    {
+        "nature_id": "2002171",
+        "wp_article": "Härjarö"
+    },
+    {
+        "nature_id": "2001736",
+        "wp_article": "Sturefors"
+    },
+    {
+        "nature_id": "2001631",
+        "wp_article": "Bjuröklubb"
+    },
+    {
+        "nature_id": "2001192",
+        "wp_article": "Bjurälven"
+    },
+    {
+        "nature_id": "2001480",
+        "wp_article": "Råån"
+    },
+    {
+        "nature_id": "2000148",
+        "wp_article": "Björksättrahalvöns naturreservat"
+    },
+    {
+        "nature_id": "2000018",
+        "wp_article": "Gömsta ängs naturreservat"
+    },
+    {
+        "nature_id": "2001392",
+        "wp_article": "Gömmarens naturreservat"
+    },
+    {
+        "nature_id": "2000149",
+        "wp_article": "Gladöskogen"
+    },
+    {
+        "nature_id": "2001393",
+        "wp_article": "Orlångens naturreservat"
+    },
+    {
+        "nature_id": "2000838",
+        "wp_article": "Lännaskogens naturreservat"
+    },
+    {
+        "nature_id": "2000837",
+        "wp_article": "Paradisets naturreservat"
+    },
+    {
+        "nature_id": "2001141",
+        "wp_article": "Norrpada"
+    },
+    {
+        "nature_id": "2000935",
+        "wp_article": "Ammerån"
+    },
+    {
+        "nature_id": "2001178",
+        "wp_article": "Andån"
+    },
+    {
+        "nature_id": "2002049",
+        "wp_article": "Sandviksåsen"
+    },
+    {
+        "nature_id": "2001670",
+        "wp_article": "Holmöarna"
+    },
+    {
+        "nature_id": "2000157",
+        "wp_article": "Björkö, Ekerö kommun"
+    },
+    {
+        "nature_id": "2001644",
+        "wp_article": "Gålö"
+    },
+    {
+        "nature_id": "2000635",
+        "wp_article": "Mjältön"
+    },
+    {
+        "nature_id": "2000902",
+        "wp_article": "Döda fallet"
+    },
+    {
+        "nature_id": "2004578",
+        "wp_article": "Granliden"
+    },
+    {
+        "nature_id": "2002868",
+        "wp_article": "Ålleberg"
+    },
+    {
+        "nature_id": "2001808",
+        "wp_article": "Skanörs ljungs naturreservat"
+    },
+    {
+        "nature_id": "2000798",
+        "wp_article": "Delsjöområdets naturreservat"
+    },
+    {
+        "nature_id": "2000506",
+        "wp_article": "Skuleberget"
+    },
+    {
+        "nature_id": "2000955",
+        "wp_article": "Nämdö"
+    },
+    {
+        "nature_id": "2000554",
+        "wp_article": "Brobacka naturreservat"
+    },
+    {
+        "nature_id": "2000513",
+        "wp_article": "Loholmen"
+    },
+    {
+        "nature_id": "2000365",
+        "wp_article": "Rammdalens naturreservat"
+    },
+    {
+        "nature_id": "2001036",
+        "wp_article": "Dundret"
+    },
+    {
+        "nature_id": "2001544",
+        "wp_article": "Dalby Norreskogs naturreservat"
+    },
+    {
+        "nature_id": "2001541",
+        "wp_article": "Billebjers naturreservat"
+    },
+    {
+        "nature_id": "2001817",
+        "wp_article": "Vombs ängar"
+    },
+    {
+        "nature_id": "2001815",
+        "wp_article": "Måkläppens naturreservat"
+    },
+    {
+        "nature_id": "2002550",
+        "wp_article": "Toftaholm"
+    },
+    {
+        "nature_id": "2000373",
+        "wp_article": "Hornborgasjön"
+    },
+    {
+        "nature_id": "2002448",
+        "wp_article": "Långfjället"
+    },
+    {
+        "nature_id": "2002537",
+        "wp_article": "Florarna"
+    },
+    {
+        "nature_id": "2002342",
+        "wp_article": "Slättö sands naturreservat"
+    },
+    {
+        "nature_id": "2000217",
+        "wp_article": "Älvhytteängen"
+    },
+    {
+        "nature_id": "2002119",
+        "wp_article": "Brånberget"
+    },
+    {
+        "nature_id": "2000435",
+        "wp_article": "Stora Karlsö"
+    },
+    {
+        "nature_id": "2000436",
+        "wp_article": "Lilla Karlsö"
+    },
+    {
+        "nature_id": "2000799",
+        "wp_article": "Rya skog"
+    },
+    {
+        "nature_id": "2001171",
+        "wp_article": "Gysinge"
+    },
+    {
+        "nature_id": "2002309",
+        "wp_article": "Skurugata naturreservat"
+    },
+    {
+        "nature_id": "2000072",
+        "wp_article": "Utklippan"
+    },
+    {
+        "nature_id": "2002996",
+        "wp_article": "Klinten"
+    },
+    {
+        "nature_id": "2002272",
+        "wp_article": "Trollskogen"
+    },
+    {
+        "nature_id": "2002166",
+        "wp_article": "Örskär"
+    },
+    {
+        "nature_id": "2030510",
+        "wp_article": "Göingeåsen"
+    },
+    {
+        "nature_id": "2000804",
+        "wp_article": "Vinga"
+    },
+    {
+        "nature_id": "2001508",
+        "wp_article": "Gråen"
+    },
+    {
+        "nature_id": "2000228",
+        "wp_article": "Grönbo, Lindesbergs kommun"
+    },
+    {
+        "nature_id": "2000914",
+        "wp_article": "Hamrafjället"
+    },
+    {
+        "nature_id": "2000385",
+        "wp_article": "Bassholmen"
+    },
+    {
+        "nature_id": "2002321",
+        "wp_article": "Isaberg"
+    },
+    {
+        "nature_id": "2000134",
+        "wp_article": "Lummelundagrottan"
+    },
+    {
+        "nature_id": "2000563",
+        "wp_article": "Kroppefjäll"
+    },
+    {
+        "nature_id": "2026469",
+        "wp_article": "Tornberget"
+    },
+    {
+        "nature_id": "2002255",
+        "wp_article": "Gränsö"
+    },
+    {
+        "nature_id": "2022437",
+        "wp_article": "Stora Bornö"
+    },
+    {
+        "nature_id": "2001463",
+        "wp_article": "Tåkern"
+    },
+    {
+        "nature_id": "2001260",
+        "wp_article": "Jupukka"
+    },
+    {
+        "nature_id": "2002199",
+        "wp_article": "Svenska Högarna"
+    },
+    {
+        "nature_id": "2001809",
+        "wp_article": "Mälarhusen"
+    },
+    {
+        "nature_id": "2002724",
+        "wp_article": "Gullringskärrets naturreservat"
+    },
+    {
+        "nature_id": "2014991",
+        "wp_article": "Väderöarna"
+    },
+    {
+        "nature_id": "2005553",
+        "wp_article": "Arådalen"
+    },
+    {
+        "nature_id": "2000962",
+        "wp_article": "Hallands Väderö"
+    },
+    {
+        "nature_id": "2002974",
+        "wp_article": "Brändöskär"
+    },
+    {
+        "nature_id": "2001425",
+        "wp_article": "Huskvarnabergens naturreservat"
+    },
+    {
+        "nature_id": "2001384",
+        "wp_article": "Vista kulle"
+    },
+    {
+        "nature_id": "2014210",
+        "wp_article": "Nåttarö"
+    },
+    {
+        "nature_id": "2001987",
+        "wp_article": "Sumpafallens naturreservat"
+    },
+    {
+        "nature_id": "2002410",
+        "wp_article": "Kapplasse"
+    },
+    {
+        "nature_id": "2002408",
+        "wp_article": "Billudden"
+    },
+    {
+        "nature_id": "2000007",
+        "wp_article": "Sandemars naturreservat"
+    },
+    {
+        "nature_id": "2000101",
+        "wp_article": "Torsburgen"
+    },
+    {
+        "nature_id": "2001961",
+        "wp_article": "Fjärås Bräcka"
+    },
+    {
+        "nature_id": "2000574",
+        "wp_article": "Hindens rev"
+    },
+    {
+        "nature_id": "2000420",
+        "wp_article": "Gamla hamn"
+    },
+    {
+        "nature_id": "2001539",
+        "wp_article": "Skrylle naturreservat"
+    },
+    {
+        "nature_id": "2000466",
+        "wp_article": "Bodagrottorna"
+    },
+    {
+        "nature_id": "2001476",
+        "wp_article": "Knähakens naturreservat"
+    },
+    {
+        "nature_id": "2014068",
+        "wp_article": "Tinnerö eklandskap"
+    },
+    {
+        "nature_id": "2001199",
+        "wp_article": "Hällingsåfallet"
+    },
+    {
+        "nature_id": "2010886",
+        "wp_article": "Forsakar"
+    },
+    {
+        "nature_id": "2001538",
+        "wp_article": "Måryds naturreservat"
+    },
+    {
+        "nature_id": "2002533",
+        "wp_article": "Kallriga"
+    },
+    {
+        "nature_id": "2001970",
+        "wp_article": "Nidingen"
+    },
+    {
+        "nature_id": "2005573",
+        "wp_article": "Flemingsbergsskogens naturreservat"
+    },
+    {
+        "nature_id": "2005627",
+        "wp_article": "Trångsundsskogens naturreservat"
+    },
+    {
+        "nature_id": "2000770",
+        "wp_article": "Härmanö"
+    },
+    {
+        "nature_id": "2000120",
+        "wp_article": "Folhammar"
+    },
+    {
+        "nature_id": "2001713",
+        "wp_article": "Kvädö"
+    },
+    {
+        "nature_id": "2000785",
+        "wp_article": "Brattöns naturreservat"
+    },
+    {
+        "nature_id": "2000783",
+        "wp_article": "Älgöns naturreservat"
+    },
+    {
+        "nature_id": "2000789",
+        "wp_article": "Klåverön"
+    },
+    {
+        "nature_id": "2000779",
+        "wp_article": "Ramsön"
+    },
+    {
+        "nature_id": "2000521",
+        "wp_article": "Hyltenäs kulle"
+    },
+    {
+        "nature_id": "2001804",
+        "wp_article": "Flommens naturreservat"
+    },
+    {
+        "nature_id": "2025351",
+        "wp_article": "Örby ängar"
+    },
+    {
+        "nature_id": "2001536",
+        "wp_article": "Rinnebäcksravinens naturreservat"
+    },
+    {
+        "nature_id": "2002010",
+        "wp_article": "Morups Tånge"
+    },
+    {
+        "nature_id": "2001647",
+        "wp_article": "Hertsånger"
+    },
+    {
+        "nature_id": "2041589",
+        "wp_article": "Kynnefjäll"
+    },
+    {
+        "nature_id": "2002903",
+        "wp_article": "Säterdalens naturreservat"
+    },
+    {
+        "nature_id": "2000700",
+        "wp_article": "Gröntjärns naturreservat"
+    },
+    {
+        "nature_id": "2000406",
+        "wp_article": "Vättlefjälls naturreservat"
+    },
+    {
+        "nature_id": "2002172",
+        "wp_article": "Grönsö, Enköpings kommun"
+    },
+    {
+        "nature_id": "2001898",
+        "wp_article": "Björnön, Västerås"
+    },
+    {
+        "nature_id": "2001449",
+        "wp_article": "Sjöbo-Knäppan"
+    },
+    {
+        "nature_id": "2001447",
+        "wp_article": "Lustigkulle"
+    },
+    {
+        "nature_id": "2002203",
+        "wp_article": "Bullerön"
+    },
+    {
+        "nature_id": "2023972",
+        "wp_article": "Boglundsängen"
+    },
+    {
+        "nature_id": "2000045",
+        "wp_article": "Tallet"
+    },
+    {
+        "nature_id": "2002022",
+        "wp_article": "Suseån"
+    },
+    {
+        "nature_id": "2000751",
+        "wp_article": "Bäveån"
+    },
+    {
+        "nature_id": "2001193",
+        "wp_article": "Korallgrottan"
+    },
+    {
+        "nature_id": "2023989",
+        "wp_article": "Markaskogen"
+    },
+    {
+        "nature_id": "2001030",
+        "wp_article": "Lappön"
+    },
+    {
+        "nature_id": "2000871",
+        "wp_article": "Kluntarna"
+    },
+    {
+        "nature_id": "2002783",
+        "wp_article": "Germandön"
+    },
+    {
+        "nature_id": "2001072",
+        "wp_article": "Likskär"
+    },
+    {
+        "nature_id": "2000475",
+        "wp_article": "Gladbäcken"
+    },
+    {
+        "nature_id": "2001515",
+        "wp_article": "Järavallen"
+    },
+    {
+        "nature_id": "2002915",
+        "wp_article": "Onsö"
+    },
+    {
+        "nature_id": "2002125",
+        "wp_article": "Hovfjället"
+    },
+    {
+        "nature_id": "2002994",
+        "wp_article": "Bryggholmen"
+    },
+    {
+        "nature_id": "2014536",
+        "wp_article": "Notteryds naturreservat"
+    },
+    {
+        "nature_id": "2001842",
+        "wp_article": "Vindelfjällen"
+    },
+    {
+        "nature_id": "2002156",
+        "wp_article": "Högemon"
+    },
+    {
+        "nature_id": "2002159",
+        "wp_article": "Kaplansholmen"
+    },
+    {
+        "nature_id": "2000526",
+        "wp_article": "Baldersnäs"
+    },
+    {
+        "nature_id": "2001212",
+        "wp_article": "Tännforsen"
+    },
+    {
+        "nature_id": "2000204",
+        "wp_article": "Sveafallen"
+    },
+    {
+        "nature_id": "2001051",
+        "wp_article": "Kronogård"
+    },
+    {
+        "nature_id": "2010890",
+        "wp_article": "Ånnaboda"
+    },
+    {
+        "nature_id": "2004486",
+        "wp_article": "Blacksås"
+    },
+    {
+        "nature_id": "2001048",
+        "wp_article": "Akkelis"
+    },
+    {
+        "nature_id": "2001031",
+        "wp_article": "Galtispuoda"
+    },
+    {
+        "nature_id": "2002476",
+        "wp_article": "Koppången"
+    },
+    {
+        "nature_id": "2002004",
+        "wp_article": "Bengtesgårds äng"
+    },
+    {
+        "nature_id": "2001996",
+        "wp_article": "Bergs naturskog"
+    },
+    {
+        "nature_id": "2001985",
+        "wp_article": "Björkekullens naturreservat"
+    },
+    {
+        "nature_id": "2013951",
+        "wp_article": "Ryssberget"
+    },
+    {
+        "nature_id": "2001038",
+        "wp_article": "Snöberget"
+    },
+    {
+        "nature_id": "2002007",
+        "wp_article": "Digesgårds naturreservat"
+    },
+    {
+        "nature_id": "2002019",
+        "wp_article": "Frodeparkens naturreservat"
+    },
+    {
+        "nature_id": "2002020",
+        "wp_article": "Grimsholmens naturreservat"
+    },
+    {
+        "nature_id": "2002003",
+        "wp_article": "Hällarps naturreservat"
+    },
+    {
+        "nature_id": "2002011",
+        "wp_article": "Kättebo naturreservat"
+    },
+    {
+        "nature_id": "2002016",
+        "wp_article": "Myskebackarnas naturreservat"
+    },
+    {
+        "nature_id": "2014458",
+        "wp_article": "Stadsskogen, Uppsala"
+    },
+    {
+        "nature_id": "2002327",
+        "wp_article": "Illharjen"
+    },
+    {
+        "nature_id": "2001397",
+        "wp_article": "Näktergalslundens naturreservat"
+    },
+    {
+        "nature_id": "2002001",
+        "wp_article": "Skallabjärets naturreservat"
+    },
+    {
+        "nature_id": "2002006",
+        "wp_article": "Skattagårds naturreservat"
+    },
+    {
+        "nature_id": "2002018",
+        "wp_article": "Smörkullens naturreservat"
+    },
+    {
+        "nature_id": "2002297",
+        "wp_article": "Huvudskär"
+    },
+    {
+        "nature_id": "2002025",
+        "wp_article": "Ullarps naturreservat"
+    },
+    {
+        "nature_id": "2002023",
+        "wp_article": "Vesslunda naturreservat"
+    },
+    {
+        "nature_id": "2001992",
+        "wp_article": "Yttra Bergs naturreservat"
+    },
+    {
+        "nature_id": "2010904",
+        "wp_article": "Älmebjärs naturreservat"
+    },
+    {
+        "nature_id": "2001972",
+        "wp_article": "Biskopshagens naturreservat"
+    },
+    {
+        "nature_id": "2002600",
+        "wp_article": "Viksta stentorg"
+    },
+    {
+        "nature_id": "2002620",
+        "wp_article": "Fiby urskog"
+    },
+    {
+        "nature_id": "2014270",
+        "wp_article": "Spenshult"
+    },
+    {
+        "nature_id": "2000717",
+        "wp_article": "Trossö-Kalvö-Lindö"
+    },
+    {
+        "nature_id": "2002641",
+        "wp_article": "Vållö"
+    },
+    {
+        "nature_id": "2000726",
+        "wp_article": "Otterön"
+    },
+    {
+        "nature_id": "2000567",
+        "wp_article": "Högsåsen"
+    },
+    {
+        "nature_id": "2002176",
+        "wp_article": "Håleberget"
+    },
+    {
+        "nature_id": "2004528",
+        "wp_article": "Äramossen"
+    },
+    {
+        "nature_id": "2042061",
+        "wp_article": "Galterö"
+    },
+    {
+        "nature_id": "2013461",
+        "wp_article": "Kvilleken"
+    },
+    {
+        "nature_id": "2001975",
+        "wp_article": "Årnäsuddens naturreservat"
+    },
+    {
+        "nature_id": "2000906",
+        "wp_article": "Hoverberget"
+    },
+    {
+        "nature_id": "2001973",
+        "wp_article": "Åkrabergs naturreservat"
+    },
+    {
+        "nature_id": "2002899",
+        "wp_article": "Bratteforsån"
+    },
+    {
+        "nature_id": "2001959",
+        "wp_article": "Vallda Sandö"
+    },
+    {
+        "nature_id": "2001786",
+        "wp_article": "Stigfjorden"
+    },
+    {
+        "nature_id": "2000341",
+        "wp_article": "Nohlmarken"
+    },
+    {
+        "nature_id": "2000895",
+        "wp_article": "Andersön"
+    },
+    {
+        "nature_id": "2000703",
+        "wp_article": "Hagåsen"
+    },
+    {
+        "nature_id": "2002124",
+        "wp_article": "Rännberget"
+    },
+    {
+        "nature_id": "2000350",
+        "wp_article": "Surö bokskog"
+    },
+    {
+        "nature_id": "2002361",
+        "wp_article": "Bjurkärr"
+    },
+    {
+        "nature_id": "2000803",
+        "wp_article": "Safjällets naturreservat"
+    },
+    {
+        "nature_id": "2002963",
+        "wp_article": "Flatens naturreservat"
+    },
+    {
+        "nature_id": "2000966",
+        "wp_article": "Grevie åsars naturreservat"
+    },
+    {
+        "nature_id": "2002196",
+        "wp_article": "Domarudden"
+    },
+    {
+        "nature_id": "2000353",
+        "wp_article": "Baljåsen"
+    },
+    {
+        "nature_id": "2000737",
+        "wp_article": "Vågsäters naturreservat"
+    },
+    {
+        "nature_id": "2001625",
+        "wp_article": "Vitbergens naturreservat"
+    },
+    {
+        "nature_id": "2000414",
+        "wp_article": "Svarvaretorpet"
+    },
+    {
+        "nature_id": "2001234",
+        "wp_article": "Öjemossen"
+    },
+    {
+        "nature_id": "2013957",
+        "wp_article": "Navarån"
+    },
+    {
+        "nature_id": "2000384",
+        "wp_article": "Bokullen"
+    },
+    {
+        "nature_id": "2000543",
+        "wp_article": "Tingvallamossen"
+    },
+    {
+        "nature_id": "2001429",
+        "wp_article": "Bondbergets naturreservat"
+    },
+    {
+        "nature_id": "2000644",
+        "wp_article": "Västanåfallet"
+    },
+    {
+        "nature_id": "2000887",
+        "wp_article": "Gällnö"
+    },
+    {
+        "nature_id": "2000191",
+        "wp_article": "Oset (naturreservat)"
+    },
+    {
+        "nature_id": "2002403",
+        "wp_article": "Stendörrens naturreservat"
+    },
+    {
+        "nature_id": "2001103",
+        "wp_article": "Görvälns naturreservat"
+    },
+    {
+        "nature_id": "2000801",
+        "wp_article": "Änggårdsbergen"
+    },
+    {
+        "nature_id": "2000840",
+        "wp_article": "Vigelsjö"
+    },
+    {
+        "nature_id": "2005612",
+        "wp_article": "Hässningberget"
+    },
+    {
+        "nature_id": "2000062",
+        "wp_article": "Listerby skärgård"
+    },
+    {
+        "nature_id": "2000382",
+        "wp_article": "Östen (Västergötland)"
+    },
+    {
+        "nature_id": "2000697",
+        "wp_article": "Sidsjö"
+    },
+    {
+        "nature_id": "2005533",
+        "wp_article": "Havstensfjorden"
+    },
+    {
+        "nature_id": "2001034",
+        "wp_article": "Jan-Svensamössan"
+    },
+    {
+        "nature_id": "2001846",
+        "wp_article": "Marsfjället"
+    },
+    {
+        "nature_id": "2001067",
+        "wp_article": "Masugnsbyns naturreservat"
+    },
+    {
+        "nature_id": "2001254",
+        "wp_article": "Stordalens naturreservat"
+    },
+    {
+        "nature_id": "2001056",
+        "wp_article": "Torneträsk-Soppero fjällurskog"
+    },
+    {
+        "nature_id": "2001239",
+        "wp_article": "Aptasvare fjällurskog"
+    },
+    {
+        "nature_id": "2001054",
+        "wp_article": "Rautas fjällurskog"
+    },
+    {
+        "nature_id": "2002097",
+        "wp_article": "Skattlösberg"
+    },
+    {
+        "nature_id": "2001055",
+        "wp_article": "Pessinki fjällurskog"
+    },
+    {
+        "nature_id": "2001388",
+        "wp_article": "Kappsta"
+    },
+    {
+        "nature_id": "2000658",
+        "wp_article": "Stornäset"
+    },
+    {
+        "nature_id": "2002725",
+        "wp_article": "Alby naturreservat"
+    },
+    {
+        "nature_id": "2002919",
+        "wp_article": "Brämön"
+    },
+    {
+        "nature_id": "2000070",
+        "wp_article": "Torhamns udde"
+    },
+    {
+        "nature_id": "2021989",
+        "wp_article": "Duvestubbe naturreservat"
+    },
+    {
+        "nature_id": "2010897",
+        "wp_article": "Smårydsskogen"
+    },
+    {
+        "nature_id": "2000019",
+        "wp_article": "Judarskogens naturreservat"
+    },
+    {
+        "nature_id": "2002911",
+        "wp_article": "Nordre älvs estuarium"
+    },
+    {
+        "nature_id": "2000876",
+        "wp_article": "Långviksskär"
+    },
+    {
+        "nature_id": "2000386",
+        "wp_article": "Herrestadsfjällets naturreservat"
+    },
+    {
+        "nature_id": "2001077",
+        "wp_article": "Mästocka ljunghed"
+    },
+    {
+        "nature_id": "2002068",
+        "wp_article": "Frostbrunnsdalen"
+    },
+    {
+        "nature_id": "2002497",
+        "wp_article": "Styggforsen"
+    },
+    {
+        "nature_id": "2002486",
+        "wp_article": "Hykjeberg"
+    },
+    {
+        "nature_id": "2001290",
+        "wp_article": "Hårsbäcksdalen"
+    },
+    {
+        "nature_id": "2002251",
+        "wp_article": "Ljusterö, Västerviks kommun"
+    },
+    {
+        "nature_id": "2026369",
+        "wp_article": "Kolartorp, Haninge kommun"
+    },
+    {
+        "nature_id": "2002691",
+        "wp_article": "Beijershamn"
+    },
+    {
+        "nature_id": "2004566",
+        "wp_article": "Billaberget"
+    },
+    {
+        "nature_id": "2001844",
+        "wp_article": "Nalovardo"
+    },
+    {
+        "nature_id": "2000058",
+        "wp_article": "Tromtö naturreservat"
+    },
+    {
+        "nature_id": "2001396",
+        "wp_article": "Långängen-Elfviks naturreservat"
+    },
+    {
+        "nature_id": "2001390",
+        "wp_article": "Bornsjöns naturreservat"
+    },
+    {
+        "nature_id": "2001926",
+        "wp_article": "Lacka naturreservat"
+    },
+    {
+        "nature_id": "2001426",
+        "wp_article": "Rosenlunds bankar"
+    },
+    {
+        "nature_id": "2002480",
+        "wp_article": "Näcksjövarden"
+    },
+    {
+        "nature_id": "2040972",
+        "wp_article": "Tysjöarnas naturreservat"
+    },
+    {
+        "nature_id": "2014529",
+        "wp_article": "Gyllebo sjö"
+    },
+    {
+        "nature_id": "2002545",
+        "wp_article": "Iggelbo"
+    },
+    {
+        "nature_id": "2001948",
+        "wp_article": "Givorna"
+    },
+    {
+        "nature_id": "2002470",
+        "wp_article": "Korpimäki"
+    },
+    {
+        "nature_id": "2002458",
+        "wp_article": "Rödberg"
+    },
+    {
+        "nature_id": "2002459",
+        "wp_article": "Södra Trollegrav"
+    },
+    {
+        "nature_id": "2001481",
+        "wp_article": "Gällabjer"
+    },
+    {
+        "nature_id": "2001428",
+        "wp_article": "Dumme mosses naturreservat"
+    },
+    {
+        "nature_id": "2000117",
+        "wp_article": "Asunden"
+    },
+    {
+        "nature_id": "2001129",
+        "wp_article": "Dalbobergens naturreservat"
+    },
+    {
+        "nature_id": "2000519",
+        "wp_article": "Steneby naturreservat"
+    },
+    {
+        "nature_id": "2002797",
+        "wp_article": "Kölviken"
+    },
+    {
+        "nature_id": "2000355",
+        "wp_article": "Skarsdalen"
+    },
+    {
+        "nature_id": "2000555",
+        "wp_article": "Höljerudsforsarna"
+    },
+    {
+        "nature_id": "2002299",
+        "wp_article": "Fjärdlång"
+    },
+    {
+        "nature_id": "2001232",
+        "wp_article": "Skärbo"
+    },
+    {
+        "nature_id": "2002467",
+        "wp_article": "Långsjöblik"
+    },
+    {
+        "nature_id": "2001421",
+        "wp_article": "Danska fall"
+    },
+    {
+        "nature_id": "2001443",
+        "wp_article": "Fågelmossen"
+    },
+    {
+        "nature_id": "2000060",
+        "wp_article": "Hallarumsvikens naturreservat"
+    },
+    {
+        "nature_id": "2002666",
+        "wp_article": "Halltorps hage"
+    },
+    {
+        "nature_id": "2002831",
+        "wp_article": "Bårsjöns naturreservat"
+    },
+    {
+        "nature_id": "2000156",
+        "wp_article": "Eriksö naturreservat"
+    },
+    {
+        "nature_id": "2000158",
+        "wp_article": "Farstanäs naturreservat"
+    },
+    {
+        "nature_id": "2002734",
+        "wp_article": "Fifångs naturreservat"
+    },
+    {
+        "nature_id": "2005620",
+        "wp_article": "Kalkbergets naturreservat"
+    },
+    {
+        "nature_id": "2000017",
+        "wp_article": "Korpbergets naturreservat, Södertälje kommun"
+    },
+    {
+        "nature_id": "2000160",
+        "wp_article": "Kålsö naturreservat"
+    },
+    {
+        "nature_id": "2000622",
+        "wp_article": "Lina naturreservat"
+    },
+    {
+        "nature_id": "2000011",
+        "wp_article": "Grottbergets naturreservat"
+    },
+    {
+        "nature_id": "2001389",
+        "wp_article": "Parkudden-Lövsta naturreservat"
+    },
+    {
+        "nature_id": "2000418",
+        "wp_article": "Slessbergets naturreservat"
+    },
+    {
+        "nature_id": "2013371",
+        "wp_article": "Stora Alsjöns naturreservat"
+    },
+    {
+        "nature_id": "2002914",
+        "wp_article": "Talbyskogens naturreservat"
+    },
+    {
+        "nature_id": "2000008",
+        "wp_article": "Yttereneby naturreservat"
+    },
+    {
+        "nature_id": "2000634",
+        "wp_article": "Öbacken-Bränninge naturreservat"
+    },
+    {
+        "nature_id": "2000424",
+        "wp_article": "Ytterholmen"
+    },
+    {
+        "nature_id": "2000425",
+        "wp_article": "S:t Olofsholm"
+    },
+    {
+        "nature_id": "2002646",
+        "wp_article": "Aboda klint"
+    },
+    {
+        "nature_id": "2000898",
+        "wp_article": "Fillstabäckens naturreservat"
+    },
+    {
+        "nature_id": "2000922",
+        "wp_article": "Nyvallens naturreservat"
+    },
+    {
+        "nature_id": "2002190",
+        "wp_article": "Grössjöns naturreservat"
+    },
+    {
+        "nature_id": "2000899",
+        "wp_article": "Bastudalens naturreservat"
+    },
+    {
+        "nature_id": "2000806",
+        "wp_article": "Vargö (ö)"
+    },
+    {
+        "nature_id": "2000619",
+        "wp_article": "Kyrksjölötens naturreservat"
+    },
+    {
+        "nature_id": "2000080",
+        "wp_article": "Sölvesborgsviken"
+    },
+    {
+        "nature_id": "2000342",
+        "wp_article": "Nygårdsängens naturreservat"
+    },
+    {
+        "nature_id": "2000561",
+        "wp_article": "Tunhems ekhagar"
+    },
+    {
+        "nature_id": "2000562",
+        "wp_article": "Grinnsjö domänreservat"
+    },
+    {
+        "nature_id": "2001489",
+        "wp_article": "Rinkaby och Horna ängar"
+    },
+    {
+        "nature_id": "2001793",
+        "wp_article": "Högestads mosse"
+    },
+    {
+        "nature_id": "2001483",
+        "wp_article": "Tosteberga ängar"
+    },
+    {
+        "nature_id": "2000119",
+        "wp_article": "Sandvikens naturreservat, Gotland"
+    },
+    {
+        "nature_id": "2000447",
+        "wp_article": "Ollajvs"
+    },
+    {
+        "nature_id": "2001460",
+        "wp_article": "Vallaskogen"
+    },
+    {
+        "nature_id": "2001639",
+        "wp_article": "Kammens naturreservat"
+    },
+    {
+        "nature_id": "2000285",
+        "wp_article": "Kyrkön"
+    },
+    {
+        "nature_id": "2001144",
+        "wp_article": "Järflotta"
+    },
+    {
+        "nature_id": "2000745",
+        "wp_article": "Näverkärrs naturreservat"
+    },
+    {
+        "nature_id": "2002542",
+        "wp_article": "Slätön-Medholma naturreservat"
+    },
+    {
+        "nature_id": "2010895",
+        "wp_article": "Havsviks naturreservat"
+    },
+    {
+        "nature_id": "2001140",
+        "wp_article": "Långgrundets naturreservat"
+    },
+    {
+        "nature_id": "2001140",
+        "wp_article": "Långgrundet"
+    },
+    {
+        "nature_id": "2001980",
+        "wp_article": "Västra Getteröns naturreservat"
+    },
+    {
+        "nature_id": "2001976",
+        "wp_article": "Gamla Varbergs naturreservat"
+    },
+    {
+        "nature_id": "2002538",
+        "wp_article": "Hovön-Alnöns natturreservat"
+    },
+    {
+        "nature_id": "2002536",
+        "wp_article": "Gräsö gårds natturresevat"
+    },
+    {
+        "nature_id": "2002291",
+        "wp_article": "Byrums raukar"
+    },
+    {
+        "nature_id": "2029075",
+        "wp_article": "Valaklitts naturreservat"
+    },
+    {
+        "nature_id": "2001971",
+        "wp_article": "Vendelsöarnas naturreservat"
+    },
+    {
+        "nature_id": "2001979",
+        "wp_article": "Gässlösa naturreservat"
+    },
+    {
+        "nature_id": "2001109",
+        "wp_article": "Vindalsö"
+    },
+    {
+        "nature_id": "2002630",
+        "wp_article": "Vånsjöåsen"
+    },
+    {
+        "nature_id": "2005529",
+        "wp_article": "Signalberget, Enköpings kommun"
+    },
+    {
+        "nature_id": "2002084",
+        "wp_article": "Hästbergs klack"
+    },
+    {
+        "nature_id": "2013000",
+        "wp_article": "Skärbäcks naturreservat"
+    },
+    {
+        "nature_id": "2000894",
+        "wp_article": "Ändsjöns naturreservat"
+    },
+    {
+        "nature_id": "2001832",
+        "wp_article": "Skattmansöådalens naturreservat"
+    },
+    {
+        "nature_id": "2002089",
+        "wp_article": "Jätturns naturreservat"
+    },
+    {
+        "nature_id": "2001751",
+        "wp_article": "Kastad kulle"
+    },
+    {
+        "nature_id": "2001687",
+        "wp_article": "Örbackens kalkkärr"
+    },
+    {
+        "nature_id": "2000891",
+        "wp_article": "Öjsjömyrarnas naturreservat"
+    },
+    {
+        "nature_id": "2001542",
+        "wp_article": "Gryteskogs naturreservat"
+    },
+    {
+        "nature_id": "2001704",
+        "wp_article": "Hallstad ängar"
+    },
+    {
+        "nature_id": "2001802",
+        "wp_article": "Skanör-Höll"
+    },
+    {
+        "nature_id": "2000498",
+        "wp_article": "Hörnsjön (Själevads socken, Ångermanland)"
+    },
+    {
+        "nature_id": "2003053",
+        "wp_article": "Spåmanslokens naturreservat"
+    },
+    {
+        "nature_id": "2000904",
+        "wp_article": "Berge urskogs naturreservat"
+    },
+    {
+        "nature_id": "2000678",
+        "wp_article": "Balesudden"
+    },
+    {
+        "nature_id": "2000501",
+        "wp_article": "Ögeltjärns naturreservat"
+    },
+    {
+        "nature_id": "2000233",
+        "wp_article": "Rynningeviken"
+    },
+    {
+        "nature_id": "2001456",
+        "wp_article": "Svartåmynningen"
+    },
+    {
+        "nature_id": "2001855",
+        "wp_article": "Kronören"
+    },
+    {
+        "nature_id": "2001662",
+        "wp_article": "Rataskär"
+    },
+    {
+        "nature_id": "2026470",
+        "wp_article": "Rudans gård"
+    },
+    {
+        "nature_id": "2022233",
+        "wp_article": "Gärdesuddens naturreservat"
+    },
+    {
+        "nature_id": "2000660",
+        "wp_article": "Klampenborg (ö)"
+    },
+    {
+        "nature_id": "2001697",
+        "wp_article": "Sättra ängar"
+    },
+    {
+        "nature_id": "2001113",
+        "wp_article": "Stora Lund"
+    },
+    {
+        "nature_id": "2001730",
+        "wp_article": "Kråkeryd"
+    },
+    {
+        "nature_id": "2001693",
+        "wp_article": "Isberga"
+    },
+    {
+        "nature_id": "2044877",
+        "wp_article": "Älvsjöskogen"
+    },
+    {
+        "nature_id": "2001912",
+        "wp_article": "Kalvnäset"
+    },
+    {
+        "nature_id": "2002036",
+        "wp_article": "Sjömossen-Svinasjön"
+    },
+    {
+        "nature_id": "2002647",
+        "wp_article": "Knisa mosse"
+    },
+    {
+        "nature_id": "2001043",
+        "wp_article": "Tjeggelvas"
+    },
+    {
+        "nature_id": "2000015",
+        "wp_article": "Brinkbäcken"
+    },
+    {
+        "nature_id": "2002359",
+        "wp_article": "Västra Åsnens övärld"
+    },
+    {
+        "nature_id": "2014214",
+        "wp_article": "Floastad"
+    },
+    {
+        "nature_id": "2000760",
+        "wp_article": "Stångehuvuds naturreservat"
+    },
+    {
+        "nature_id": "2001559",
+        "wp_article": "Risens naturreservat"
+    },
+    {
+        "nature_id": "2000192",
+        "wp_article": "Kåviängen"
+    },
+    {
+        "nature_id": "2000528",
+        "wp_article": "Anfastebo naturreservat"
+    },
+    {
+        "nature_id": "2005516",
+        "wp_article": "Risheds naturreservat"
+    },
+    {
+        "nature_id": "2002286",
+        "wp_article": "Furö"
+    },
+    {
+        "nature_id": "2010859",
+        "wp_article": "Skärte naturreservat"
+    },
+    {
+        "nature_id": "2023973",
+        "wp_article": "Kränglan"
+    },
+    {
+        "nature_id": "2014919",
+        "wp_article": "Varbergaskogen"
+    },
+    {
+        "nature_id": "2010860",
+        "wp_article": "Hallagårdens naturreservat"
+    },
+    {
+        "nature_id": "2001200",
+        "wp_article": "Svenskådalens naturreservat"
+    },
+    {
+        "nature_id": "2001203",
+        "wp_article": "Oldflån-Ansättens naturreservat"
+    },
+    {
+        "nature_id": "2001139",
+        "wp_article": "Vidinge"
+    },
+    {
+        "nature_id": "2001111",
+        "wp_article": "Mörtö-Bunsön"
+    },
+    {
+        "nature_id": "2002832",
+        "wp_article": "Södergarn, Erken"
+    },
+    {
+        "nature_id": "2001108",
+        "wp_article": "Hjälmö-Lådna naturreservat"
+    },
+    {
+        "nature_id": "2002304",
+        "wp_article": "Boskapsön"
+    },
+    {
+        "nature_id": "2002202",
+        "wp_article": "Jungfruskär, Stockholms skärgård"
+    },
+    {
+        "nature_id": "2000884",
+        "wp_article": "Stora och Lilla Sandböte"
+    },
+    {
+        "nature_id": "2000167",
+        "wp_article": "Stora Vindåsens naturreservat"
+    },
+    {
+        "nature_id": "2002727",
+        "wp_article": "Lilla Husarns naturreservat"
+    },
+    {
+        "nature_id": "2001104",
+        "wp_article": "Kudoxa"
+    },
+    {
+        "nature_id": "2002669",
+        "wp_article": "Björnö naturreservat, Kalmar kommun"
+    },
+    {
+        "nature_id": "2002028",
+        "wp_article": "Svenska Björns naturreservat"
+    },
+    {
+        "nature_id": "2001142",
+        "wp_article": "Vidingsöra"
+    },
+    {
+        "nature_id": "2002946",
+        "wp_article": "Rådasjöns naturreservat"
+    },
+    {
+        "nature_id": "2000253",
+        "wp_article": "Grängshytteforsarna"
+    },
+    {
+        "nature_id": "2002079",
+        "wp_article": "Tansvägga naturreservat"
+    },
+    {
+        "nature_id": "2005537",
+        "wp_article": "Sätraskogens naturreservat"
+    },
+    {
+        "nature_id": "2014940",
+        "wp_article": "Verleskogens naturreservat"
+    },
+    {
+        "nature_id": "2002087",
+        "wp_article": "Nybrännberget naturresrevat"
+    },
+    {
+        "nature_id": "2001308",
+        "wp_article": "Svanviken-Lindbacke naturreservat"
+    },
+    {
+        "nature_id": "2013401",
+        "wp_article": "Grogarnsberget"
+    },
+    {
+        "nature_id": "2002397",
+        "wp_article": "Hissö"
+    },
+    {
+        "nature_id": "2001201",
+        "wp_article": "Grubbdalens naturreservat"
+    },
+    {
+        "nature_id": "2004596",
+        "wp_article": "Lill-Stensjöns naturreservat"
+    },
+    {
+        "nature_id": "2001198",
+        "wp_article": "Hotagens naturreservat"
+    },
+    {
+        "nature_id": "2001206",
+        "wp_article": "Margitbrännans naturreservat"
+    },
+    {
+        "nature_id": "2000948",
+        "wp_article": "Gröntoppens naturreservat"
+    },
+    {
+        "nature_id": "2000949",
+        "wp_article": "Storholmsjö naturreservat"
+    },
+    {
+        "nature_id": "2001207",
+        "wp_article": "Vägskälets naturreservat"
+    },
+    {
+        "nature_id": "2013445",
+        "wp_article": "Väster-Ottsjön"
+    },
+    {
+        "nature_id": "2000892",
+        "wp_article": "Önets naturreservat"
+    },
+    {
+        "nature_id": "2001532",
+        "wp_article": "Kungsmarkens naturreservat"
+    },
+    {
+        "nature_id": "2005606",
+        "wp_article": "Kamajokk"
+    },
+    {
+        "nature_id": "2002733",
+        "wp_article": "Revskär"
+    },
+    {
+        "nature_id": "2002733",
+        "wp_article": "Revskärs naturreservat"
+    },
+    {
+        "nature_id": "2000225",
+        "wp_article": "Latorpsängarna"
+    },
+    {
+        "nature_id": "2000141",
+        "wp_article": "Hälsingholmarna"
+    },
+    {
+        "nature_id": "2005595",
+        "wp_article": "Femöre naturreservat"
+    },
+    {
+        "nature_id": "2023974",
+        "wp_article": "Gladarberget"
+    },
+    {
+        "nature_id": "2023990",
+        "wp_article": "Reträtten"
+    },
+    {
+        "nature_id": "2023977",
+        "wp_article": "Vinteråsen"
+    },
+    {
+        "nature_id": "2000269",
+        "wp_article": "Erikaberget"
+    },
+    {
+        "nature_id": "2000235",
+        "wp_article": "Limberget"
+    },
+    {
+        "nature_id": "2000268",
+        "wp_article": "Håkansbodaberget"
+    },
+    {
+        "nature_id": "2002970",
+        "wp_article": "Stensjön, Järnboås"
+    },
+    {
+        "nature_id": "2023976",
+        "wp_article": "Nasta marmorbrott"
+    },
+    {
+        "nature_id": "2023971",
+        "wp_article": "Öknaskogen"
+    },
+    {
+        "nature_id": "2023969",
+        "wp_article": "Ekeby dreve"
+    },
+    {
+        "nature_id": "2023970",
+        "wp_article": "Blänkabacken"
+    },
+    {
+        "nature_id": "2003036",
+        "wp_article": "Ersta, Tolfta socken"
+    },
+    {
+        "nature_id": "2001872",
+        "wp_article": "Marvikarna"
+    },
+    {
+        "nature_id": "2003035",
+        "wp_article": "Simonbergets naturreservat"
+    },
+    {
+        "nature_id": "2000207",
+        "wp_article": "Järleåns naturreservat"
+    },
+    {
+        "nature_id": "2014676",
+        "wp_article": "Skärmarbodabergen"
+    },
+    {
+        "nature_id": "2024654",
+        "wp_article": "Janstorpsskogens naturreservat"
+    },
+    {
+        "nature_id": "2000916",
+        "wp_article": "Rogens naturreservat"
+    },
+    {
+        "nature_id": "2001513",
+        "wp_article": "Askebacken"
+    },
+    {
+        "nature_id": "2000831",
+        "wp_article": "Linkuddens naturreservat"
+    },
+    {
+        "nature_id": "2001498",
+        "wp_article": "Boarps hed"
+    },
+    {
+        "nature_id": "2001502",
+        "wp_article": "Bjära naturreservat"
+    },
+    {
+        "nature_id": "2002413",
+        "wp_article": "Tylön"
+    },
+    {
+        "nature_id": "2012995",
+        "wp_article": "Märkedalens naturreservat"
+    },
+    {
+        "nature_id": "2014850",
+        "wp_article": "Borstbäckens naturreservat"
+    },
+    {
+        "nature_id": "2001516",
+        "wp_article": "Abullahagens naturreservat"
+    },
+    {
+        "nature_id": "2001491",
+        "wp_article": "Billingemölla naturreservat"
+    },
+    {
+        "nature_id": "2023869",
+        "wp_article": "Eslövs allmänning"
+    },
+    {
+        "nature_id": "2025231",
+        "wp_article": "Timan (naturreservat)"
+    },
+    {
+        "nature_id": "2002151",
+        "wp_article": "Pannkakans naturreservat"
+    },
+    {
+        "nature_id": "2001506",
+        "wp_article": "Fulltofta-Häggenäs"
+    },
+    {
+        "nature_id": "2001487",
+        "wp_article": "Södra Hultarp naturreservat"
+    },
+    {
+        "nature_id": "2001486",
+        "wp_article": "Allarps bjär"
+    },
+    {
+        "nature_id": "2002446",
+        "wp_article": "Amtjärnsbrottet"
+    },
+    {
+        "nature_id": "2001495",
+        "wp_article": "Munkarps fälad"
+    },
+    {
+        "nature_id": "2001497",
+        "wp_article": "Munkarps jär"
+    },
+    {
+        "nature_id": "2002820",
+        "wp_article": "Allgunnens naturreservat"
+    },
+    {
+        "nature_id": "2002639",
+        "wp_article": "Storö naturreservat"
+    },
+    {
+        "nature_id": "2002288",
+        "wp_article": "Fårhagsberget"
+    },
+    {
+        "nature_id": "2001591",
+        "wp_article": "Luspen"
+    },
+    {
+        "nature_id": "2000143",
+        "wp_article": "Häringe-Hammersta"
+    },
+    {
+        "nature_id": "2014799",
+        "wp_article": "Vinterskogens naturreservat"
+    },
+    {
+        "nature_id": "2002276",
+        "wp_article": "Skrikebo naturreservat"
+    },
+    {
+        "nature_id": "2000977",
+        "wp_article": "Möllehässle naturreservat"
+    },
+    {
+        "nature_id": "2013015",
+        "wp_article": "Abborrträsks naturreservat"
+    },
+    {
+        "nature_id": "2002726",
+        "wp_article": "Ekobergets naturreservat"
+    },
+    {
+        "nature_id": "2000836",
+        "wp_article": "Skogsö naturreservat"
+    },
+    {
+        "nature_id": "2002496",
+        "wp_article": "Lönnmarken"
+    },
+    {
+        "nature_id": "2001159",
+        "wp_article": "Stora Korpimäki"
+    },
+    {
+        "nature_id": "2000299",
+        "wp_article": "Flarksjöberget"
+    },
+    {
+        "nature_id": "2000534",
+        "wp_article": "Ryrs naturreservat"
+    },
+    {
+        "nature_id": "2000523",
+        "wp_article": "Yttre Bodane"
+    },
+    {
+        "nature_id": "2000105",
+        "wp_article": "Ullahau"
+    },
+    {
+        "nature_id": "2000646",
+        "wp_article": "Gudmundstjärn"
+    },
+    {
+        "nature_id": "2001433",
+        "wp_article": "Berga kulle naturreservat"
+    },
+    {
+        "nature_id": "2000976",
+        "wp_article": "Nabbens naturreservat, Höganäs kommun"
+    },
+    {
+        "nature_id": "2001914",
+        "wp_article": "Dagnäsöns naturreservat"
+    },
+    {
+        "nature_id": "2001309",
+        "wp_article": "Strandstuvikens naturreservat"
+    },
+    {
+        "nature_id": "2026489",
+        "wp_article": "Skeppnans naturreservat"
+    },
+    {
+        "nature_id": "2026490",
+        "wp_article": "Svartsjöns naturreservat"
+    },
+    {
+        "nature_id": "2000655",
+        "wp_article": "Rankleven"
+    },
+    {
+        "nature_id": "2000645",
+        "wp_article": "Jämtgaveln"
+    },
+    {
+        "nature_id": "2002298",
+        "wp_article": "Sundby naturreservat"
+    },
+    {
+        "nature_id": "2000665",
+        "wp_article": "Haverö strömmar"
+    },
+    {
+        "nature_id": "2000675",
+        "wp_article": "Ensillre kalkbarrskog"
+    },
+    {
+        "nature_id": "2013523",
+        "wp_article": "Stensjön, Ånge kommun"
+    },
+    {
+        "nature_id": "2000652",
+        "wp_article": "Gammelbodarna"
+    },
+    {
+        "nature_id": "2000650",
+        "wp_article": "Granbodåsen"
+    },
+    {
+        "nature_id": "2014572",
+        "wp_article": "Karlsborgsberget"
+    },
+    {
+        "nature_id": "2014571",
+        "wp_article": "Storklacken"
+    },
+    {
+        "nature_id": "2005601",
+        "wp_article": "Kullbäcken-Markbäcken"
+    },
+    {
+        "nature_id": "2021606",
+        "wp_article": "Maljan"
+    },
+    {
+        "nature_id": "2000651",
+        "wp_article": "Myckelåsen"
+    },
+    {
+        "nature_id": "2013517",
+        "wp_article": "Stormyran-Lommyran"
+    },
+    {
+        "nature_id": "2000481",
+        "wp_article": "Svarttjärnsåsen"
+    },
+    {
+        "nature_id": "2014016",
+        "wp_article": "Västra Göransåsen"
+    },
+    {
+        "nature_id": "2014017",
+        "wp_article": "Östra Göransåsen"
+    },
+    {
+        "nature_id": "2001303",
+        "wp_article": "Jaktstuguskogens naturreservat"
+    },
+    {
+        "nature_id": "2001202",
+        "wp_article": "Skäckerfjällens naturreservat"
+    },
+    {
+        "nature_id": "2005554",
+        "wp_article": "Järvdalens naturreservat"
+    },
+    {
+        "nature_id": "2014868",
+        "wp_article": "Klintaskogen"
+    },
+    {
+        "nature_id": "2001958",
+        "wp_article": "Hördalens naturreservat"
+    },
+    {
+        "nature_id": "2027529",
+        "wp_article": "Hjällen"
+    },
+    {
+        "nature_id": "2030649",
+        "wp_article": "Maglö ekar"
+    },
+    {
+        "nature_id": "2001482",
+        "wp_article": "Tegeldammarna/Lergravarna"
+    },
+    {
+        "nature_id": "2000575",
+        "wp_article": "Österplana hed och vall"
+    },
+    {
+        "nature_id": "2001492",
+        "wp_article": "Ekastiga"
+    },
+    {
+        "nature_id": "2022790",
+        "wp_article": "Västra Bosjöklosterhalvön"
+    },
+    {
+        "nature_id": "2001470",
+        "wp_article": "Åraslövs mosse"
+    },
+    {
+        "nature_id": "2001527",
+        "wp_article": "Kumlan"
+    },
+    {
+        "nature_id": "2000216",
+        "wp_article": "Lövbrickan"
+    },
+    {
+        "nature_id": "2001496",
+        "wp_article": "Hilleshögs dalar"
+    },
+    {
+        "nature_id": "2002318",
+        "wp_article": "Drags udde"
+    },
+    {
+        "nature_id": "2001797",
+        "wp_article": "Lybecks naturreservat"
+    },
+    {
+        "nature_id": "2001568",
+        "wp_article": "Navröd"
+    },
+    {
+        "nature_id": "2001464",
+        "wp_article": "Domsten-Viken naturreservat"
+    },
+    {
+        "nature_id": "2002147",
+        "wp_article": "Glaskogen"
+    },
+    {
+        "nature_id": "2000698",
+        "wp_article": "Gran (ö)"
+    },
+    {
+        "nature_id": "2001354",
+        "wp_article": "Slottsholmen, Kungsör"
+    },
+    {
+        "nature_id": "2001322",
+        "wp_article": "Utnäsets naturreservat"
+    },
+    {
+        "nature_id": "2000419",
+        "wp_article": "Langhammars"
+    },
+    {
+        "nature_id": "2001937",
+        "wp_article": "Långmossens naturreservat"
+    },
+    {
+        "nature_id": "2001933",
+        "wp_article": "Linuddens naturreservat"
+    },
+    {
+        "nature_id": "2002090",
+        "wp_article": "Hässlen och Realsbo hage"
+    },
+    {
+        "nature_id": "2010858",
+        "wp_article": "Hållet-Marieberg-Stenbro naturreservat"
+    },
+    {
+        "nature_id": "2001118",
+        "wp_article": "Labro ängar naturreservat"
+    },
+    {
+        "nature_id": "2002449",
+        "wp_article": "Städjan-Nipfjället"
+    },
+    {
+        "nature_id": "2000016",
+        "wp_article": "Pålamalms naturreservat"
+    },
+    {
+        "nature_id": "2000829",
+        "wp_article": "Ekholmens naturreservat, Botkyrka kommun"
+    },
+    {
+        "nature_id": "2000582",
+        "wp_article": "Strömsvattnet"
+    },
+    {
+        "nature_id": "2001519",
+        "wp_article": "Stora Harrie mosse"
+    },
+    {
+        "nature_id": "2000014",
+        "wp_article": "Hörningsnäs naturreservat"
+    },
+    {
+        "nature_id": "2001523",
+        "wp_article": "Stångby mosses naturreservat"
+    },
+    {
+        "nature_id": "2001552",
+        "wp_article": "Froenahejdan"
+    },
+    {
+        "nature_id": "2001530",
+        "wp_article": "Domedejla mosse"
+    },
+    {
+        "nature_id": "2000104",
+        "wp_article": "Uppstaigs naturreservat"
+    },
+    {
+        "nature_id": "2000132",
+        "wp_article": "Högklint"
+    },
+    {
+        "nature_id": "2002948",
+        "wp_article": "Östergarnsberget"
+    },
+    {
+        "nature_id": "2001475",
+        "wp_article": "Fjälkinge backe"
+    },
+    {
+        "nature_id": "2001543",
+        "wp_article": "Prästaskogens naturreservat"
+    },
+    {
+        "nature_id": "2002622",
+        "wp_article": "Hågadalen-Nåsten"
+    },
+    {
+        "nature_id": "2002616",
+        "wp_article": "Fäbodmossen"
+    },
+    {
+        "nature_id": "2001186",
+        "wp_article": "Skatön"
+    },
+    {
+        "nature_id": "2002746",
+        "wp_article": "Ölbäcks naturreservat"
+    },
+    {
+        "nature_id": "2000122",
+        "wp_article": "Kallgatburg"
+    },
+    {
+        "nature_id": "2000488",
+        "wp_article": "Vändåtberget"
+    },
+    {
+        "nature_id": "2001521",
+        "wp_article": "Friseboda"
+    },
+    {
+        "nature_id": "2001517",
+        "wp_article": "Dagstorps mosse"
+    },
+    {
+        "nature_id": "2000154",
+        "wp_article": "Eldgarnsö naturreservat"
+    },
+    {
+        "nature_id": "2001524",
+        "wp_article": "Salvikens strandängar"
+    },
+    {
+        "nature_id": "2010887",
+        "wp_article": "Nackarps naturreservat"
+    },
+    {
+        "nature_id": "2013527",
+        "wp_article": "Bunkeflo strandängar"
+    },
+    {
+        "nature_id": "2000965",
+        "wp_article": "Täppesås naturreservat"
+    },
+    {
+        "nature_id": "2042687",
+        "wp_article": "Jonstorp-Vegeåns mynning"
+    },
+    {
+        "nature_id": "2001504",
+        "wp_article": "Lillö (naturreservat)"
+    },
+    {
+        "nature_id": "2001500",
+        "wp_article": "Vens backafall"
+    },
+    {
+        "nature_id": "2042969",
+        "wp_article": "Strömbäck Kont"
+    },
+    {
+        "nature_id": "2005565",
+        "wp_article": "Hunshults naturreservat"
+    },
+    {
+        "nature_id": "2002968",
+        "wp_article": "Klackberg"
+    },
+    {
+        "nature_id": "2000861",
+        "wp_article": "Serri naturreservat"
+    },
+    {
+        "nature_id": "2000533",
+        "wp_article": "Yxnås naturreservat"
+    },
+    {
+        "nature_id": "2000026",
+        "wp_article": "Lindhammarsmyr"
+    },
+    {
+        "nature_id": "2001531",
+        "wp_article": "Linnebjers naturreservat"
+    },
+    {
+        "nature_id": "2000493",
+        "wp_article": "Kålhuvudet"
+    },
+    {
+        "nature_id": "2000492",
+        "wp_article": "Bågaliden"
+    },
+    {
+        "nature_id": "2013334",
+        "wp_article": "Runnö"
+    },
+    {
+        "nature_id": "2001399",
+        "wp_article": "Virsehatts naturreservat"
+    },
+    {
+        "nature_id": "2000113",
+        "wp_article": "Alvena lindaräng"
+    },
+    {
+        "nature_id": "2000102",
+        "wp_article": "Allkvie änge"
+    },
+    {
+        "nature_id": "2000674",
+        "wp_article": "Gammtratten"
+    },
+    {
+        "nature_id": "2000490",
+        "wp_article": "Herrbergsliden"
+    },
+    {
+        "nature_id": "2002194",
+        "wp_article": "Gårdshults naturreservat"
+    },
+    {
+        "nature_id": "2002417",
+        "wp_article": "Hagöns naturreservat"
+    },
+    {
+        "nature_id": "2028791",
+        "wp_article": "Hällebergets naturreservat"
+    },
+    {
+        "nature_id": "2001412",
+        "wp_article": "Sundsholms naturreservat"
+    },
+    {
+        "nature_id": "2013544",
+        "wp_article": "Holmhällar"
+    },
+    {
+        "nature_id": "2001411",
+        "wp_article": "Råmebo naturreservat"
+    },
+    {
+        "nature_id": "2001408",
+        "wp_article": "Porsbjärs naturreservat"
+    },
+    {
+        "nature_id": "2002412",
+        "wp_article": "Eketånga naturreservat"
+    },
+    {
+        "nature_id": "2002867",
+        "wp_article": "Möllegårds naturreservat"
+    },
+    {
+        "nature_id": "2001302",
+        "wp_article": "Rågö naturreservat, Nyköpings kommun"
+    },
+    {
+        "nature_id": "2002017",
+        "wp_article": "Suseån-Hult"
+    },
+    {
+        "nature_id": "2001406",
+        "wp_article": "Svarta klippans naturreservat"
+    },
+    {
+        "nature_id": "2000487",
+        "wp_article": "Hemlingsån"
+    },
+    {
+        "nature_id": "2003005",
+        "wp_article": "Sutarebo naturreservat"
+    },
+    {
+        "nature_id": "2001410",
+        "wp_article": "Enets naturreservat"
+    },
+    {
+        "nature_id": "2001398",
+        "wp_article": "Skipås naturreservat"
+    },
+    {
+        "nature_id": "2001401",
+        "wp_article": "Steningekusten"
+    },
+    {
+        "nature_id": "2014835",
+        "wp_article": "Tjuvberget"
+    },
+    {
+        "nature_id": "2001423",
+        "wp_article": "Årnarps naturreservat"
+    },
+    {
+        "nature_id": "2002411",
+        "wp_article": "Brogårds naturreservat"
+    },
+    {
+        "nature_id": "2001190",
+        "wp_article": "Agön-Kråkön"
+    },
+    {
+        "nature_id": "2002008",
+        "wp_article": "Tira öar"
+    },
+    {
+        "nature_id": "2002005",
+        "wp_article": "Lintalunds naturreservat"
+    },
+    {
+        "nature_id": "2014385",
+        "wp_article": "Mårås naturreservat"
+    },
+    {
+        "nature_id": "2003006",
+        "wp_article": "Gassbo"
+    },
+    {
+        "nature_id": "2001084",
+        "wp_article": "Hökafältets naturreservat"
+    },
+    {
+        "nature_id": "2002009",
+        "wp_article": "Ödegärdets naturreservat"
+    },
+    {
+        "nature_id": "2002592",
+        "wp_article": "Hastaböke naturreservat"
+    },
+    {
+        "nature_id": "2002015",
+        "wp_article": "Kloö naturreservat"
+    },
+    {
+        "nature_id": "2002012",
+        "wp_article": "Skubbhults naturreservat"
+    },
+    {
+        "nature_id": "2002026",
+        "wp_article": "Mogölsmyrens naturreservat"
+    },
+    {
+        "nature_id": "2002341",
+        "wp_article": "Åminne naturreservat"
+    },
+    {
+        "nature_id": "2001413",
+        "wp_article": "Långhultamyrens naturreservat"
+    },
+    {
+        "nature_id": "2002322",
+        "wp_article": "Ettö naturreservat"
+    },
+    {
+        "nature_id": "2002323",
+        "wp_article": "Värö naturreservat"
+    },
+    {
+        "nature_id": "2014933",
+        "wp_article": "Anderstorps Stormosse"
+    },
+    {
+        "nature_id": "2005536",
+        "wp_article": "Råön"
+    },
+    {
+        "nature_id": "2024069",
+        "wp_article": "Kvarnhusberget"
+    },
+    {
+        "nature_id": "2000480",
+        "wp_article": "Uvsjöns naturreservat"
+    },
+    {
+        "nature_id": "2005480",
+        "wp_article": "Getingstaliden"
+    },
+    {
+        "nature_id": "2000694",
+        "wp_article": "Hummelviks naturreservat"
+    },
+    {
+        "nature_id": "2004583",
+        "wp_article": "Idbyfjärden"
+    },
+    {
+        "nature_id": "2013558",
+        "wp_article": "Källfors"
+    },
+    {
+        "nature_id": "2000489",
+        "wp_article": "Lillsjöslåttern"
+    },
+    {
+        "nature_id": "2000667",
+        "wp_article": "Mossaträsk-Stormyran"
+    },
+    {
+        "nature_id": "2002385",
+        "wp_article": "Målaskogsberg"
+    },
+    {
+        "nature_id": "2010939",
+        "wp_article": "Råbäcken"
+    },
+    {
+        "nature_id": "2002379",
+        "wp_article": "Bräkentorpsåsen"
+    },
+    {
+        "nature_id": "2000451",
+        "wp_article": "Digerhuvud"
+    },
+    {
+        "nature_id": "2000497",
+        "wp_article": "Stenbittjärns naturreservat"
+    },
+    {
+        "nature_id": "2029589",
+        "wp_article": "Skallbergets naturreservat"
+    },
+    {
+        "nature_id": "2000423",
+        "wp_article": "Grodde"
+    },
+    {
+        "nature_id": "2000123",
+        "wp_article": "Vitärtskällan"
+    },
+    {
+        "nature_id": "2002013",
+        "wp_article": "Övraböke naturreservat"
+    },
+    {
+        "nature_id": "2000500",
+        "wp_article": "Alneskogen"
+    },
+    {
+        "nature_id": "2000482",
+        "wp_article": "Stormyran"
+    },
+    {
+        "nature_id": "2000486",
+        "wp_article": "Trolltjärns naturreservat"
+    },
+    {
+        "nature_id": "2000684",
+        "wp_article": "Södra Ulvöns naturreservat"
+    },
+    {
+        "nature_id": "2000494",
+        "wp_article": "Tågsjöbrännan"
+    },
+    {
+        "nature_id": "2013557",
+        "wp_article": "Veckefjärdens naturreservat"
+    },
+    {
+        "nature_id": "2001405",
+        "wp_article": "Stavsbjärs naturreservat"
+    },
+    {
+        "nature_id": "2000502",
+        "wp_article": "Västanåhöjden"
+    },
+    {
+        "nature_id": "2013014",
+        "wp_article": "Åttjärnsbodarna"
+    },
+    {
+        "nature_id": "2002951",
+        "wp_article": "Marpes"
+    },
+    {
+        "nature_id": "2000485",
+        "wp_article": "Rismyrberget"
+    },
+    {
+        "nature_id": "2002414",
+        "wp_article": "Hyltans naturreservat, Halmstads kommun"
+    },
+    {
+        "nature_id": "2001294",
+        "wp_article": "Lapplands naturreservat"
+    },
+    {
+        "nature_id": "2001414",
+        "wp_article": "Lillared-Klövaberget"
+    },
+    {
+        "nature_id": "2000109",
+        "wp_article": "Muskmyr"
+    },
+    {
+        "nature_id": "2000112",
+        "wp_article": "Storsund, Gotland"
+    },
+    {
+        "nature_id": "2000137",
+        "wp_article": "Träskmyr"
+    },
+    {
+        "nature_id": "2000162",
+        "wp_article": "Stäketskogens naturreservat"
+    },
+    {
+        "nature_id": "2002189",
+        "wp_article": "Skrockebergs naturreservat"
+    },
+    {
+        "nature_id": "2002021",
+        "wp_article": "Rågetaåsens naturreservat"
+    },
+    {
+        "nature_id": "2014406",
+        "wp_article": "Kvarnabergets naturreservat"
+    },
+    {
+        "nature_id": "2014655",
+        "wp_article": "Ryssnäs"
+    },
+    {
+        "nature_id": "2001419",
+        "wp_article": "Bröda naturreservat"
+    },
+    {
+        "nature_id": "2026672",
+        "wp_article": "Biskopstorps naturreservat"
+    },
+    {
+        "nature_id": "2001409",
+        "wp_article": "Kungsladugården Biskopstorp"
+    },
+    {
+        "nature_id": "2000050",
+        "wp_article": "Björstorps hage"
+    },
+    {
+        "nature_id": "2000073",
+        "wp_article": "Långasjönäs naturreservat"
+    },
+    {
+        "nature_id": "2000065",
+        "wp_article": "Steneryds lövängar"
+    },
+    {
+        "nature_id": "2000090",
+        "wp_article": "Stiby backe"
+    },
+    {
+        "nature_id": "2014938",
+        "wp_article": "Bergsjöns naturreservat"
+    },
+    {
+        "nature_id": "2000389",
+        "wp_article": "Slereboåns dalgång"
+    },
+    {
+        "nature_id": "2000401",
+        "wp_article": "Rapenskårs lövskogar"
+    },
+    {
+        "nature_id": "2000405",
+        "wp_article": "Kvarnsjöarnas naturreservat"
+    },
+    {
+        "nature_id": "2000370",
+        "wp_article": "Kragenäs naturreservat"
+    },
+    {
+        "nature_id": "2000408",
+        "wp_article": "Eklidens naturreservat"
+    },
+    {
+        "nature_id": "2010862",
+        "wp_article": "Almebergets naturreservat"
+    },
+    {
+        "nature_id": "2000585",
+        "wp_article": "Saltö naturreservat"
+    },
+    {
+        "nature_id": "2000296",
+        "wp_article": "Börningsberget"
+    },
+    {
+        "nature_id": "2002014",
+        "wp_article": "Getabäckens naturreservat"
+    },
+    {
+        "nature_id": "2028009",
+        "wp_article": "Bohults naturreservat"
+    },
+    {
+        "nature_id": "2000792",
+        "wp_article": "Fontins naturreservat"
+    },
+    {
+        "nature_id": "2014537",
+        "wp_article": "Guddehjälms naturreservat"
+    },
+    {
+        "nature_id": "2000413",
+        "wp_article": "Gullbringa naturreservat"
+    },
+    {
+        "nature_id": "2000794",
+        "wp_article": "Hållsungamyrens naturreservat"
+    },
+    {
+        "nature_id": "2004529",
+        "wp_article": "Kärna bokskog"
+    },
+    {
+        "nature_id": "2013500",
+        "wp_article": "Jonsereds strömmar"
+    },
+    {
+        "nature_id": "2000781",
+        "wp_article": "Tjurholmens naturreservat"
+    },
+    {
+        "nature_id": "2000787",
+        "wp_article": "Rosenlunds naturreservat"
+    },
+    {
+        "nature_id": "2001440",
+        "wp_article": "Bärsjöskogens naturreservat"
+    },
+    {
+        "nature_id": "2000371",
+        "wp_article": "Bokedalens naturreservat"
+    },
+    {
+        "nature_id": "2003039",
+        "wp_article": "Kungsbackafjordens naturreservat"
+    },
+    {
+        "nature_id": "2023511",
+        "wp_article": "Musikedalens naturreservat"
+    },
+    {
+        "nature_id": "2001086",
+        "wp_article": "Svarvareskogens naturreservat"
+    },
+    {
+        "nature_id": "2000788",
+        "wp_article": "Hålta naturreservat"
+    },
+    {
+        "nature_id": "2023229",
+        "wp_article": "Knutstorps naturreservat"
+    },
+    {
+        "nature_id": "2000790",
+        "wp_article": "Mariebergs naturreservat"
+    },
+    {
+        "nature_id": "2001782",
+        "wp_article": "Ersdalens naturreservat"
+    },
+    {
+        "nature_id": "2000795",
+        "wp_article": "Rörö naturreservat"
+    },
+    {
+        "nature_id": "2002279",
+        "wp_article": "Slagdala naturreservat"
+    },
+    {
+        "nature_id": "2002282",
+        "wp_article": "Länsmansgårdsängen"
+    },
+    {
+        "nature_id": "2002529",
+        "wp_article": "Sätra naturreservat"
+    },
+    {
+        "nature_id": "2010855",
+        "wp_article": "Bungenäs"
+    },
+    {
+        "nature_id": "2004562",
+        "wp_article": "Alsjöåsen"
+    },
+    {
+        "nature_id": "2000309",
+        "wp_article": "Lövsalen"
+    },
+    {
+        "nature_id": "2000310",
+        "wp_article": "Norra Hornslandet"
+    },
+    {
+        "nature_id": "2000290",
+        "wp_article": "Långbro naturreservat"
+    },
+    {
+        "nature_id": "2000736",
+        "wp_article": "Alvöns naturreservat"
+    },
+    {
+        "nature_id": "2002884",
+        "wp_article": "Anneröd-Hogsäm"
+    },
+    {
+        "nature_id": "2000705",
+        "wp_article": "Hålsjöholmen"
+    },
+    {
+        "nature_id": "2000746",
+        "wp_article": "Hållöarkipelagens naturreservat"
+    },
+    {
+        "nature_id": "2000740",
+        "wp_article": "Ramsvikslandet och Tryggö"
+    },
+    {
+        "nature_id": "2000470",
+        "wp_article": "Bromsvallsberget"
+    },
+    {
+        "nature_id": "2005464",
+        "wp_article": "Storön, Hälsingland"
+    },
+    {
+        "nature_id": "2013485",
+        "wp_article": "Lysegårdsmossens naturreservat"
+    },
+    {
+        "nature_id": "2000293",
+        "wp_article": "Bleckbergens urskog"
+    },
+    {
+        "nature_id": "2013484",
+        "wp_article": "Påvadalens naturreservat"
+    },
+    {
+        "nature_id": "2000368",
+        "wp_article": "Häröns naturreservat"
+    },
+    {
+        "nature_id": "2014488",
+        "wp_article": "Skogens naturreservat"
+    },
+    {
+        "nature_id": "2021654",
+        "wp_article": "Malevattnets naturreservat"
+    },
+    {
+        "nature_id": "2000395",
+        "wp_article": "Molla bokskog"
+    },
+    {
+        "nature_id": "2001078",
+        "wp_article": "Gullbranna naturreservat"
+    },
+    {
+        "nature_id": "2002374",
+        "wp_article": "Osaby naturreservat"
+    },
+    {
+        "nature_id": "2002582",
+        "wp_article": "Teleborgs naturreservat"
+    },
+    {
+        "nature_id": "2000054",
+        "wp_article": "Tjärö naturreservat"
+    },
+    {
+        "nature_id": "2001095",
+        "wp_article": "Björsåkra-Bölinge"
+    },
+    {
+        "nature_id": "2001089",
+        "wp_article": "Ingvarsbyggets naturreservat"
+    },
+    {
+        "nature_id": "2002418",
+        "wp_article": "Övragårds naturreservat"
+    },
+    {
+        "nature_id": "2002834",
+        "wp_article": "Kroksjö öga"
+    },
+    {
+        "nature_id": "2000547",
+        "wp_article": "Ragnerudsjöns branter"
+    },
+    {
+        "nature_id": "2000615",
+        "wp_article": "Alebäckakärret"
+    },
+    {
+        "nature_id": "2000614",
+        "wp_article": "Alebäckasjön"
+    },
+    {
+        "nature_id": "2004507",
+        "wp_article": "Buterud"
+    },
+    {
+        "nature_id": "2013319",
+        "wp_article": "Ramslökedalen"
+    },
+    {
+        "nature_id": "2001177",
+        "wp_article": "Taskberget"
+    },
+    {
+        "nature_id": "2014575",
+        "wp_article": "Getebuberget"
+    },
+    {
+        "nature_id": "2000140",
+        "wp_article": "Hansta naturreservat"
+    },
+    {
+        "nature_id": "2027949",
+        "wp_article": "Torstjärnskogen"
+    },
+    {
+        "nature_id": "2025949",
+        "wp_article": "Ånäsebäcken"
+    },
+    {
+        "nature_id": "2026749",
+        "wp_article": "Ösans naturreservat"
+    },
+    {
+        "nature_id": "2030169",
+        "wp_article": "Mannarps naturreservat"
+    },
+    {
+        "nature_id": "2002569",
+        "wp_article": "Särdals naturreservat"
+    },
+    {
+        "nature_id": "2001422",
+        "wp_article": "Vilshärads naturreservat"
+    },
+    {
+        "nature_id": "2020225",
+        "wp_article": "Ullasjöbäckens naturreservat"
+    },
+    {
+        "nature_id": "2028010",
+        "wp_article": "Sjöreds naturreservat"
+    },
+    {
+        "nature_id": "2012994",
+        "wp_article": "Vinbergs naturreservat"
+    },
+    {
+        "nature_id": "2000927",
+        "wp_article": "Rannåsens naturreservat"
+    },
+    {
+        "nature_id": "2000878",
+        "wp_article": "Rönninge by-Skavlötens naturreservat"
+    },
+    {
+        "nature_id": "2001091",
+        "wp_article": "Pennebo naturreservat"
+    },
+    {
+        "nature_id": "2014549",
+        "wp_article": "Rännkullarna"
+    },
+    {
+        "nature_id": "2000474",
+        "wp_article": "Flotthöljan"
+    },
+    {
+        "nature_id": "2002348",
+        "wp_article": "Hannabadsåsen"
+    },
+    {
+        "nature_id": "2002386",
+        "wp_article": "Lidhultsåsen"
+    },
+    {
+        "nature_id": "2014867",
+        "wp_article": "Flymossen"
+    },
+    {
+        "nature_id": "2014269",
+        "wp_article": "Osbecks bokskogar"
+    },
+    {
+        "nature_id": "2002363",
+        "wp_article": "Nöttja bokskog"
+    },
+    {
+        "nature_id": "2002382",
+        "wp_article": "Norrnäs udde"
+    },
+    {
+        "nature_id": "2001076",
+        "wp_article": "Hollandsbjärs naturreservat"
+    },
+    {
+        "nature_id": "2014271",
+        "wp_article": "Västralts naturreservat"
+    },
+    {
+        "nature_id": "2001081",
+        "wp_article": "Bölarps naturreservat"
+    },
+    {
+        "nature_id": "2002384",
+        "wp_article": "Lövsjö ängar"
+    },
+    {
+        "nature_id": "2001090",
+        "wp_article": "Åstarpe mosses naturreservat"
+    },
+    {
+        "nature_id": "2020585",
+        "wp_article": "Vinkkakoski"
+    },
+    {
+        "nature_id": "2032229",
+        "wp_article": "Allejaure (naturreservat)"
+    },
+    {
+        "nature_id": "2010861",
+        "wp_article": "Vännets naturreservat"
+    },
+    {
+        "nature_id": "2000939",
+        "wp_article": "Svartviksberget"
+    },
+    {
+        "nature_id": "2002083",
+        "wp_article": "Risshytte hage"
+    },
+    {
+        "nature_id": "2001577",
+        "wp_article": "Avaås"
+    },
+    {
+        "nature_id": "2001588",
+        "wp_article": "Malå-Storforsen"
+    },
+    {
+        "nature_id": "2001836",
+        "wp_article": "Björnbergets naturreservat"
+    },
+    {
+        "nature_id": "2001882",
+        "wp_article": "Arksjöberget"
+    },
+    {
+        "nature_id": "2001669",
+        "wp_article": "Brånsjöns naturreservat"
+    },
+    {
+        "nature_id": "2021065",
+        "wp_article": "Alpasberget"
+    },
+    {
+        "nature_id": "2014693",
+        "wp_article": "Nabbens naturreservat, Varbergs kommun"
+    },
+    {
+        "nature_id": "2013492",
+        "wp_article": "Toppbjärs naturreservat"
+    },
+    {
+        "nature_id": "2014512",
+        "wp_article": "Karlsviks naturreservat"
+    },
+    {
+        "nature_id": "2002175",
+        "wp_article": "Veckholms prästholme"
+    },
+    {
+        "nature_id": "2004590",
+        "wp_article": "Stora Drängabjärs naturreservat"
+    },
+    {
+        "nature_id": "2005539",
+        "wp_article": "Skogsbo naturreservat"
+    },
+    {
+        "nature_id": "2000860",
+        "wp_article": "Arvesjåkkå"
+    },
+    {
+        "nature_id": "2001093",
+        "wp_article": "Ekereds naturreservat"
+    },
+    {
+        "nature_id": "2002317",
+        "wp_article": "Svinhultsåsens naturreservat"
+    },
+    {
+        "nature_id": "2001383",
+        "wp_article": "Domneåns naturreservat"
+    },
+    {
+        "nature_id": "2028111",
+        "wp_article": "Vindrarps naturreservat"
+    },
+    {
+        "nature_id": "2003045",
+        "wp_article": "Mjällbjärs naturreservat"
+    },
+    {
+        "nature_id": "2002364",
+        "wp_article": "Byvärma"
+    },
+    {
+        "nature_id": "2002547",
+        "wp_article": "Flattinge åsar"
+    },
+    {
+        "nature_id": "2001962",
+        "wp_article": "Gäddeviks naturreservat, Kungsbacka kommun"
+    },
+    {
+        "nature_id": "2002193",
+        "wp_article": "Såghuslunds naturreservat"
+    },
+    {
+        "nature_id": "2021969",
+        "wp_article": "Ballekvare"
+    },
+    {
+        "nature_id": "2002593",
+        "wp_article": "Tjuvhultskärrets naturreservat"
+    },
+    {
+        "nature_id": "2020905",
+        "wp_article": "Matkroksmossens naturreservat"
+    },
+    {
+        "nature_id": "2002054",
+        "wp_article": "Trolldalen, Dalarna"
+    },
+    {
+        "nature_id": "2002501",
+        "wp_article": "Våckelberget"
+    },
+    {
+        "nature_id": "2000524",
+        "wp_article": "Bräcke ängar"
+    },
+    {
+        "nature_id": "2000129",
+        "wp_article": "Ekstakusten"
+    },
+    {
+        "nature_id": "2000126",
+        "wp_article": "Husrygg"
+    },
+    {
+        "nature_id": "2000127",
+        "wp_article": "Mulde naturreservat"
+    },
+    {
+        "nature_id": "2010870",
+        "wp_article": "Bladmyran och Granskogen"
+    },
+    {
+        "nature_id": "2000704",
+        "wp_article": "Hådells gammelskog"
+    },
+    {
+        "nature_id": "2001997",
+        "wp_article": "Långanskogens naturreservat"
+    },
+    {
+        "nature_id": "2002866",
+        "wp_article": "Näsnabbens naturreservat"
+    },
+    {
+        "nature_id": "2005508",
+        "wp_article": "Olkosröjningen"
+    },
+    {
+        "nature_id": "2000968",
+        "wp_article": "Ubbalt"
+    },
+    {
+        "nature_id": "2000298",
+        "wp_article": "Ensjölokarna"
+    },
+    {
+        "nature_id": "2000967",
+        "wp_article": "Bjärekustens naturreservat"
+    },
+    {
+        "nature_id": "2000963",
+        "wp_article": "Englandsdals naturreservat"
+    },
+    {
+        "nature_id": "2002912",
+        "wp_article": "Lyadalens naturreservat"
+    },
+    {
+        "nature_id": "2000971",
+        "wp_article": "Stora Hults fälad"
+    },
+    {
+        "nature_id": "2014611",
+        "wp_article": "Stora Hults strand"
+    },
+    {
+        "nature_id": "2000964",
+        "wp_article": "Hallandsås nordsluttning"
+    },
+    {
+        "nature_id": "2000477",
+        "wp_article": "Gnarpskaten"
+    },
+    {
+        "nature_id": "2000896",
+        "wp_article": "Torvalla urskog"
+    },
+    {
+        "nature_id": "2000978",
+        "wp_article": "Prästängen"
+    },
+    {
+        "nature_id": "2022095",
+        "wp_article": "Ängelholms strandskog"
+    },
+    {
+        "nature_id": "2001974",
+        "wp_article": "Hjörne naturreservat"
+    },
+    {
+        "nature_id": "2000100",
+        "wp_article": "Listershuvud"
+    },
+    {
+        "nature_id": "2013495",
+        "wp_article": "Hjärthalla"
+    },
+    {
+        "nature_id": "2000079",
+        "wp_article": "Spraglehall"
+    },
+    {
+        "nature_id": "2002389",
+        "wp_article": "Bokhultets naturreservat"
+    },
+    {
+        "nature_id": "2002395",
+        "wp_article": "Evedalsåsens naturreservat"
+    },
+    {
+        "nature_id": "2012996",
+        "wp_article": "Färgensjöarnas naturreservat"
+    },
+    {
+        "nature_id": "2000897",
+        "wp_article": "Odensalakärrets naturreservat"
+    },
+    {
+        "nature_id": "2000603",
+        "wp_article": "Sydbillingens platå"
+    },
+    {
+        "nature_id": "2000392",
+        "wp_article": "Kvarnsjöns naturreservat"
+    },
+    {
+        "nature_id": "2031410",
+        "wp_article": "Bjännmyrens naturreservat"
+    },
+    {
+        "nature_id": "2000793",
+        "wp_article": "Göta och Nordre älvs dalgångar"
+    },
+    {
+        "nature_id": "2000546",
+        "wp_article": "Klevs naturreservat"
+    },
+    {
+        "nature_id": "2029078",
+        "wp_article": "Övre Lia naturreservat"
+    },
+    {
+        "nature_id": "2024570",
+        "wp_article": "Utteros naturreservat"
+    },
+    {
+        "nature_id": "2001999",
+        "wp_article": "Slättagärde naturreservat"
+    },
+    {
+        "nature_id": "2004534",
+        "wp_article": "Stackenäs naturreservat"
+    },
+    {
+        "nature_id": "2001718",
+        "wp_article": "Vassviksberget"
+    },
+    {
+        "nature_id": "2003048",
+        "wp_article": "Gäle naturskogs naturreservat"
+    },
+    {
+        "nature_id": "2001956",
+        "wp_article": "Kedholmens naturreservat"
+    },
+    {
+        "nature_id": "2001969",
+        "wp_article": "Malöns naturreservat"
+    },
+    {
+        "nature_id": "2001968",
+        "wp_article": "Näsbokroks naturreservat"
+    },
+    {
+        "nature_id": "2001960",
+        "wp_article": "Oxhagens naturreservat, Kungsbacka kommun"
+    },
+    {
+        "nature_id": "2001965",
+        "wp_article": "Svängehallar-Fjärehals"
+    },
+    {
+        "nature_id": "2014213",
+        "wp_article": "Skoga naturreservat"
+    },
+    {
+        "nature_id": "2002376",
+        "wp_article": "Gölsjömyren"
+    },
+    {
+        "nature_id": "2013309",
+        "wp_article": "Horsnäsamossen"
+    },
+    {
+        "nature_id": "2002393",
+        "wp_article": "Ushult"
+    },
+    {
+        "nature_id": "2000087",
+        "wp_article": "Tärnö naturreservat"
+    },
+    {
+        "nature_id": "2002567",
+        "wp_article": "Prosteköp naturreservat"
+    },
+    {
+        "nature_id": "2002381",
+        "wp_article": "Rocknenområdet"
+    },
+    {
+        "nature_id": "2002343",
+        "wp_article": "Åråns naturreservat"
+    },
+    {
+        "nature_id": "2002554",
+        "wp_article": "Färjansö-Långö"
+    },
+    {
+        "nature_id": "2004598",
+        "wp_article": "Färjansö naturreservat"
+    },
+    {
+        "nature_id": "2013012",
+        "wp_article": "Luberydsmossen"
+    },
+    {
+        "nature_id": "2000271",
+        "wp_article": "Ekåsen"
+    },
+    {
+        "nature_id": "2002378",
+        "wp_article": "Årshultsmyren"
+    },
+    {
+        "nature_id": "2002391",
+        "wp_article": "Jättaberget"
+    },
+    {
+        "nature_id": "2002971",
+        "wp_article": "Yxkullsund"
+    },
+    {
+        "nature_id": "2000407",
+        "wp_article": "Dättern I Frugårdssund"
+    },
+    {
+        "nature_id": "2002972",
+        "wp_article": "Vedåsa"
+    },
+    {
+        "nature_id": "2002387",
+        "wp_article": "Prästeboda"
+    },
+    {
+        "nature_id": "2004479",
+        "wp_article": "Långsjöns naturreservat"
+    },
+    {
+        "nature_id": "2002371",
+        "wp_article": "Marsholm"
+    },
+    {
+        "nature_id": "2002375",
+        "wp_article": "Svartebro"
+    },
+    {
+        "nature_id": "2014554",
+        "wp_article": "Sundranäs"
+    },
+    {
+        "nature_id": "2002388",
+        "wp_article": "Ronamossen/Klockesjömyren"
+    },
+    {
+        "nature_id": "2001047",
+        "wp_article": "Vasikkavuoma"
+    },
+    {
+        "nature_id": "2041692",
+        "wp_article": "Lunnamossens naturreservat"
+    },
+    {
+        "nature_id": "2000576",
+        "wp_article": "Östra och Västra Fågelön"
+    },
+    {
+        "nature_id": "2033189",
+        "wp_article": "Varans naturreservat"
+    },
+    {
+        "nature_id": "2001137",
+        "wp_article": "Västerplana storäng"
+    },
+    {
+        "nature_id": "2010929",
+        "wp_article": "Törnsäter"
+    },
+    {
+        "nature_id": "2005619",
+        "wp_article": "Blombergs naturreservat"
+    },
+    {
+        "nature_id": "2000828",
+        "wp_article": "Munkängarna"
+    },
+    {
+        "nature_id": "2014444",
+        "wp_article": "Varaskogen"
+    },
+    {
+        "nature_id": "2005622",
+        "wp_article": "Hellekis naturreservat"
+    },
+    {
+        "nature_id": "2013018",
+        "wp_article": "Bestorps naturreservat, Götene kommun"
+    },
+    {
+        "nature_id": "2010932",
+        "wp_article": "Skagens naturreservat"
+    },
+    {
+        "nature_id": "2002864",
+        "wp_article": "Gröne skog"
+    },
+    {
+        "nature_id": "2010881",
+        "wp_article": "Råbäcks naturreservat"
+    },
+    {
+        "nature_id": "2005621",
+        "wp_article": "Gamleriket"
+    },
+    {
+        "nature_id": "2013017",
+        "wp_article": "Halla naturreservat"
+    },
+    {
+        "nature_id": "2040087",
+        "wp_article": "Stora Boda naturreservat"
+    },
+    {
+        "nature_id": "2014971",
+        "wp_article": "Bromossens naturreservat"
+    },
+    {
+        "nature_id": "2010934",
+        "wp_article": "Djurgårdens naturreservat, Västergötland"
+    },
+    {
+        "nature_id": "2010881",
+        "wp_article": "Råbäcks Sjöskog"
+    },
+    {
+        "nature_id": "2010931",
+        "wp_article": "Stora Salens naturreservat"
+    },
+    {
+        "nature_id": "2010933",
+        "wp_article": "Såten"
+    },
+    {
+        "nature_id": "2001131",
+        "wp_article": "Klyftamon"
+    },
+    {
+        "nature_id": "2022249",
+        "wp_article": "Billingekleven"
+    },
+    {
+        "nature_id": "2029649",
+        "wp_article": "Attebo"
+    },
+    {
+        "nature_id": "2000327",
+        "wp_article": "Bäckagården"
+    },
+    {
+        "nature_id": "2000570",
+        "wp_article": "Skansen Läckö"
+    },
+    {
+        "nature_id": "2002399",
+        "wp_article": "Helgö naturreservat"
+    },
+    {
+        "nature_id": "2002584",
+        "wp_article": "Dragsåsens naturreservat"
+    },
+    {
+        "nature_id": "2002358",
+        "wp_article": "Grytö naturreservat"
+    },
+    {
+        "nature_id": "2002362",
+        "wp_article": "Utnäsuddens övärld"
+    },
+    {
+        "nature_id": "2000520",
+        "wp_article": "Säveåns dalgångs naturreservat"
+    },
+    {
+        "nature_id": "2001125",
+        "wp_article": "Hulans naturreservat"
+    },
+    {
+        "nature_id": "2001124",
+        "wp_article": "Nääs ekhagar"
+    },
+    {
+        "nature_id": "2000560",
+        "wp_article": "Risöns naturreservat"
+    },
+    {
+        "nature_id": "2002875",
+        "wp_article": "Tingvalls naturreservat"
+    },
+    {
+        "nature_id": "2000415",
+        "wp_article": "Örsbråtens naturreservat"
+    },
+    {
+        "nature_id": "2000545",
+        "wp_article": "Sundholmens naturreservat"
+    },
+    {
+        "nature_id": "2014301",
+        "wp_article": "Lindåsabäcken"
+    },
+    {
+        "nature_id": "2021653",
+        "wp_article": "Nolhaga bergs naturreservat"
+    },
+    {
+        "nature_id": "2000553",
+        "wp_article": "Nolhagavikens naturreservat"
+    },
+    {
+        "nature_id": "2000536",
+        "wp_article": "Lärkemossens naturreservat"
+    },
+    {
+        "nature_id": "2000439",
+        "wp_article": "Västlands"
+    },
+    {
+        "nature_id": "2001135",
+        "wp_article": "Tånga heds naturreservat"
+    },
+    {
+        "nature_id": "2014832",
+        "wp_article": "Tränningens naturreservat"
+    },
+    {
+        "nature_id": "2000552",
+        "wp_article": "Ljungås naturreservat"
+    },
+    {
+        "nature_id": "2000796",
+        "wp_article": "Sillviks naturreservat"
+    },
+    {
+        "nature_id": "2021245",
+        "wp_article": "Göddered-Hakered"
+    },
+    {
+        "nature_id": "2000807",
+        "wp_article": "Vrångöskärgårdens naturreservat"
+    },
+    {
+        "nature_id": "2002145",
+        "wp_article": "Deletjärnsåsen"
+    },
+    {
+        "nature_id": "2002216",
+        "wp_article": "Fjornshöjden"
+    },
+    {
+        "nature_id": "2000786",
+        "wp_article": "Dösebackaplatåns naturreservat"
+    },
+    {
+        "nature_id": "2005618",
+        "wp_article": "Gårdsviksfjället"
+    },
+    {
+        "nature_id": "2002136",
+        "wp_article": "Perserud"
+    },
+    {
+        "nature_id": "2001050",
+        "wp_article": "Kvikkjokk-Kabla fjällurskog"
+    },
+    {
+        "nature_id": "2000343",
+        "wp_article": "Backa naturreservat"
+    },
+    {
+        "nature_id": "2000397",
+        "wp_article": "Flenstorp"
+    },
+    {
+        "nature_id": "2000514",
+        "wp_article": "Kröklings hage"
+    },
+    {
+        "nature_id": "2000548",
+        "wp_article": "Mölarp"
+    },
+    {
+        "nature_id": "2000359",
+        "wp_article": "Rölle"
+    },
+    {
+        "nature_id": "2000540",
+        "wp_article": "Tranhults naturreservat"
+    },
+    {
+        "nature_id": "2004485",
+        "wp_article": "Gullspångsälvens naturreservat"
+    },
+    {
+        "nature_id": "2000823",
+        "wp_article": "Folkeberg"
+    },
+    {
+        "nature_id": "2000566",
+        "wp_article": "Vallholmen"
+    },
+    {
+        "nature_id": "2014329",
+        "wp_article": "Karsmossen"
+    },
+    {
+        "nature_id": "2000550",
+        "wp_article": "Mollungens naturreservat"
+    },
+    {
+        "nature_id": "2013429",
+        "wp_article": "Bengtsviken"
+    },
+    {
+        "nature_id": "2000338",
+        "wp_article": "Uvviken-Kyrkogårdsön"
+    },
+    {
+        "nature_id": "2000411",
+        "wp_article": "Hjoåns dalgång"
+    },
+    {
+        "nature_id": "2005564",
+        "wp_article": "Älmås"
+    },
+    {
+        "nature_id": "2022969",
+        "wp_article": "Vänga mosse"
+    },
+    {
+        "nature_id": "2003066",
+        "wp_article": "Grå kulle"
+    },
+    {
+        "nature_id": "2005549",
+        "wp_article": "Klovstens naturreservat"
+    },
+    {
+        "nature_id": "2000544",
+        "wp_article": "Furustad"
+    },
+    {
+        "nature_id": "2002883",
+        "wp_article": "Borgelemossarna"
+    },
+    {
+        "nature_id": "2027553",
+        "wp_article": "Dimbo naturreservat"
+    },
+    {
+        "nature_id": "2027569",
+        "wp_article": "Bolum Heljesgården"
+    },
+    {
+        "nature_id": "2005546",
+        "wp_article": "Ruskela källa"
+    },
+    {
+        "nature_id": "2000820",
+        "wp_article": "Väggårdsskogen"
+    },
+    {
+        "nature_id": "2026029",
+        "wp_article": "Vråhålan"
+    },
+    {
+        "nature_id": "2000335",
+        "wp_article": "Jättenekärret"
+    },
+    {
+        "nature_id": "2000610",
+        "wp_article": "Varholmen"
+    },
+    {
+        "nature_id": "2000387",
+        "wp_article": "Tovabergets naturreservat"
+    },
+    {
+        "nature_id": "2000404",
+        "wp_article": "Fårdala naturreservat"
+    },
+    {
+        "nature_id": "2000813",
+        "wp_article": "Bestorps naturreservat, Falköpings kommun"
+    },
+    {
+        "nature_id": "2022390",
+        "wp_article": "Ollestads naturreservat"
+    },
+    {
+        "nature_id": "2000809",
+        "wp_article": "Kleva klintar"
+    },
+    {
+        "nature_id": "2000394",
+        "wp_article": "Healedet"
+    },
+    {
+        "nature_id": "2000354",
+        "wp_article": "Assbergs raviner"
+    },
+    {
+        "nature_id": "2000565",
+        "wp_article": "Ramhultafallet"
+    },
+    {
+        "nature_id": "2000564",
+        "wp_article": "Björkesbacka"
+    },
+    {
+        "nature_id": "2000121",
+        "wp_article": "Jungfrun, Gotland"
+    },
+    {
+        "nature_id": "2014208",
+        "wp_article": "Stora Träskets naturreservat"
+    },
+    {
+        "nature_id": "2014125",
+        "wp_article": "Gäddeviks naturreservat, Marks kommun"
+    },
+    {
+        "nature_id": "2001133",
+        "wp_article": "Lekvad"
+    },
+    {
+        "nature_id": "2001235",
+        "wp_article": "Liagärde"
+    },
+    {
+        "nature_id": "2001112",
+        "wp_article": "Ensta ö naturreservat"
+    },
+    {
+        "nature_id": "2000153",
+        "wp_article": "Åvinge naturreservat"
+    },
+    {
+        "nature_id": "2000530",
+        "wp_article": "Ängs naturreservat"
+    },
+    {
+        "nature_id": "2000292",
+        "wp_article": "Notholmens naturreservat"
+    },
+    {
+        "nature_id": "2001174",
+        "wp_article": "Rosslavallen"
+    },
+    {
+        "nature_id": "2001858",
+        "wp_article": "Strömsholms naturreservat"
+    },
+    {
+        "nature_id": "2021789",
+        "wp_article": "Garnuddens naturreservat"
+    },
+    {
+        "nature_id": "2041574",
+        "wp_article": "Svartkällsskogens naturreservat"
+    },
+    {
+        "nature_id": "2013331",
+        "wp_article": "Sunnersiken"
+    },
+    {
+        "nature_id": "2000108",
+        "wp_article": "Vaktbackar"
+    },
+    {
+        "nature_id": "2027549",
+        "wp_article": "Stipakullen Vartofta-Åsaka"
+    },
+    {
+        "nature_id": "2000352",
+        "wp_article": "Smula ås"
+    },
+    {
+        "nature_id": "2013378",
+        "wp_article": "Skogastorps naturreservat"
+    },
+    {
+        "nature_id": "2014942",
+        "wp_article": "Sjöskogens naturreservat"
+    },
+    {
+        "nature_id": "2010894",
+        "wp_article": "Rösjö mosse"
+    },
+    {
+        "nature_id": "2000609",
+        "wp_article": "Löjtnantsholm"
+    },
+    {
+        "nature_id": "2000606",
+        "wp_article": "Levene äng"
+    },
+    {
+        "nature_id": "2000883",
+        "wp_article": "Östra Bröta naturreservat"
+    },
+    {
+        "nature_id": "2000328",
+        "wp_article": "Skallstadens domänreservat"
+    },
+    {
+        "nature_id": "2000429",
+        "wp_article": "Krakvät"
+    },
+    {
+        "nature_id": "2002981",
+        "wp_article": "Sjöbottens naturreservat"
+    },
+    {
+        "nature_id": "2002882",
+        "wp_article": "Vänersnäs skärgårds naturreservat"
+    },
+    {
+        "nature_id": "2000821",
+        "wp_article": "Ugglebergets naturreservat"
+    },
+    {
+        "nature_id": "2005581",
+        "wp_article": "Myrhulta mosse"
+    },
+    {
+        "nature_id": "2000573",
+        "wp_article": "Bölets ängar"
+    },
+    {
+        "nature_id": "2026589",
+        "wp_article": "Hovets naturreservat"
+    },
+    {
+        "nature_id": "2000336",
+        "wp_article": "Röå alsumpskog"
+    },
+    {
+        "nature_id": "2000332",
+        "wp_article": "Valekleven-Ombo öar"
+    },
+    {
+        "nature_id": "2000421",
+        "wp_article": "Lergravsviken"
+    },
+    {
+        "nature_id": "2000422",
+        "wp_article": "Husken"
+    },
+    {
+        "nature_id": "2000571",
+        "wp_article": "Granviks naturreservat"
+    },
+    {
+        "nature_id": "2000600",
+        "wp_article": "Stora Röå"
+    },
+    {
+        "nature_id": "2014934",
+        "wp_article": "Håketjärnarna"
+    },
+    {
+        "nature_id": "2001677",
+        "wp_article": "Långrumpskogen"
+    },
+    {
+        "nature_id": "2001678",
+        "wp_article": "Storrisbergsgrottorna"
+    },
+    {
+        "nature_id": "2001675",
+        "wp_article": "Hummelholms naturreservat"
+    },
+    {
+        "nature_id": "2024929",
+        "wp_article": "Jon-Persbäcken"
+    },
+    {
+        "nature_id": "2004532",
+        "wp_article": "Torsmyran"
+    },
+    {
+        "nature_id": "2001680",
+        "wp_article": "Lidbergsgrottorna"
+    },
+    {
+        "nature_id": "2031251",
+        "wp_article": "Lilloxpallsbäcken"
+    },
+    {
+        "nature_id": "2014422",
+        "wp_article": "Starrmyran"
+    },
+    {
+        "nature_id": "2040451",
+        "wp_article": "Trehörningens naturreservat, Nordmalings kommun"
+    },
+    {
+        "nature_id": "2010952",
+        "wp_article": "Ålidbergets naturreservat"
+    },
+    {
+        "nature_id": "2001668",
+        "wp_article": "Balbergets naturreservat"
+    },
+    {
+        "nature_id": "2013463",
+        "wp_article": "Dyngstomberget"
+    },
+    {
+        "nature_id": "2010856",
+        "wp_article": "Flinktorpet"
+    },
+    {
+        "nature_id": "2014018",
+        "wp_article": "Pelleberget"
+    },
+    {
+        "nature_id": "2001837",
+        "wp_article": "Sörforsskogen"
+    },
+    {
+        "nature_id": "2001885",
+        "wp_article": "Tribladtjärns naturreservat"
+    },
+    {
+        "nature_id": "2005597",
+        "wp_article": "Ytter-Gravaberget"
+    },
+    {
+        "nature_id": "2027789",
+        "wp_article": "Nedre Lagnö naturreservat"
+    },
+    {
+        "nature_id": "2000403",
+        "wp_article": "Björnareåsens naturreservat"
+    },
+    {
+        "nature_id": "2000800",
+        "wp_article": "Gallhålans naturreservat"
+    },
+    {
+        "nature_id": "2000802",
+        "wp_article": "Klippans naturreservat"
+    },
+    {
+        "nature_id": "2000797",
+        "wp_article": "Knipeflågsbergens naturreservat"
+    },
+    {
+        "nature_id": "2001134",
+        "wp_article": "Risbohults naturreservat"
+    },
+    {
+        "nature_id": "2031229",
+        "wp_article": "Stora Fjället"
+    },
+    {
+        "nature_id": "2000784",
+        "wp_article": "Ödsmåls kiles naturreservat"
+    },
+    {
+        "nature_id": "2021169",
+        "wp_article": "Östra Sannorna"
+    },
+    {
+        "nature_id": "2000402",
+        "wp_article": "Torsängen"
+    },
+    {
+        "nature_id": "2000588",
+        "wp_article": "Lunnelid"
+    },
+    {
+        "nature_id": "2000589",
+        "wp_article": "Kalvsund, Storeberg"
+    },
+    {
+        "nature_id": "2000791",
+        "wp_article": "Tofta naturreservat"
+    },
+    {
+        "nature_id": "2001231",
+        "wp_article": "Lysegårdens naturreservat"
+    },
+    {
+        "nature_id": "2000744",
+        "wp_article": "Ryxö naturreservat"
+    },
+    {
+        "nature_id": "2000757",
+        "wp_article": "Trälebergskiles naturreservat"
+    },
+    {
+        "nature_id": "2000765",
+        "wp_article": "Vägeröds naturreservat"
+    },
+    {
+        "nature_id": "2000772",
+        "wp_article": "Råssö naturreservat"
+    },
+    {
+        "nature_id": "2027489",
+        "wp_article": "Gåseviks naturreservat"
+    },
+    {
+        "nature_id": "2000753",
+        "wp_article": "Gullmarsskogens naturreservat"
+    },
+    {
+        "nature_id": "2000773",
+        "wp_article": "Svanviks naturreservat"
+    },
+    {
+        "nature_id": "2000749",
+        "wp_article": "Kuröds skalbankar"
+    },
+    {
+        "nature_id": "2000755",
+        "wp_article": "Emaus naturreservat"
+    },
+    {
+        "nature_id": "2000767",
+        "wp_article": "Ekholmens naturreservat, Uddevalla kommun"
+    },
+    {
+        "nature_id": "2000762",
+        "wp_article": "Kalvöns naturreservat"
+    },
+    {
+        "nature_id": "2000693",
+        "wp_article": "Trysunda naturreservat"
+    },
+    {
+        "nature_id": "2000741",
+        "wp_article": "Bredmossen 2"
+    },
+    {
+        "nature_id": "2000729",
+        "wp_article": "Bredmossens naturreservat"
+    },
+    {
+        "nature_id": "2000730",
+        "wp_article": "Gunnarsbo naturreservat"
+    },
+    {
+        "nature_id": "2000738",
+        "wp_article": "Kviströms naturreservat"
+    },
+    {
+        "nature_id": "2013423",
+        "wp_article": "Strömmarnas naturreservat"
+    },
+    {
+        "nature_id": "2000734",
+        "wp_article": "Södra Harska naturreservat"
+    },
+    {
+        "nature_id": "2000766",
+        "wp_article": "Koljöns naturreservat"
+    },
+    {
+        "nature_id": "2001136",
+        "wp_article": "Morlanda Berga Klev"
+    },
+    {
+        "nature_id": "2001136",
+        "wp_article": "Morlanda naturreservat"
+    },
+    {
+        "nature_id": "2000774",
+        "wp_article": "Valöns naturreservat, Orusts kommun"
+    },
+    {
+        "nature_id": "2000369",
+        "wp_article": "Valöns naturreservat, Tanums kommun"
+    },
+    {
+        "nature_id": "2000769",
+        "wp_article": "Näs naturreservat"
+    },
+    {
+        "nature_id": "2000390",
+        "wp_article": "Gullmarsbergs naturreservat"
+    },
+    {
+        "nature_id": "2000758",
+        "wp_article": "Korpbergets naturreservat, Uddevalla kommun"
+    },
+    {
+        "nature_id": "2000764",
+        "wp_article": "Kärlingesunds naturreservat"
+    },
+    {
+        "nature_id": "2000761",
+        "wp_article": "Lilla Hasselöns naturreservat"
+    },
+    {
+        "nature_id": "2000752",
+        "wp_article": "Ramseröds naturreservat"
+    },
+    {
+        "nature_id": "2000759",
+        "wp_article": "Svartedalens naturreservat, Uddevalla kommun"
+    },
+    {
+        "nature_id": "2000680",
+        "wp_article": "Högbondens naturreservat"
+    },
+    {
+        "nature_id": "2000754",
+        "wp_article": "Ture dalar"
+    },
+    {
+        "nature_id": "2002748",
+        "wp_article": "Hässle backe"
+    },
+    {
+        "nature_id": "2005548",
+        "wp_article": "Forentorpa ängar"
+    },
+    {
+        "nature_id": "2025230",
+        "wp_article": "Gulastorp"
+    },
+    {
+        "nature_id": "2003003",
+        "wp_article": "Klevens naturreservat"
+    },
+    {
+        "nature_id": "2000613",
+        "wp_article": "Mellomsjömyren"
+    },
+    {
+        "nature_id": "2000612",
+        "wp_article": "Nordsjömyren"
+    },
+    {
+        "nature_id": "2000827",
+        "wp_article": "Gamla Ekudden"
+    },
+    {
+        "nature_id": "2013379",
+        "wp_article": "Sandvikens naturreservat, Västergötland"
+    },
+    {
+        "nature_id": "2000569",
+        "wp_article": "Hästhagens naturreservat"
+    },
+    {
+        "nature_id": "2000325",
+        "wp_article": "Lindbergs domänreservat"
+    },
+    {
+        "nature_id": "2001292",
+        "wp_article": "Fermansbo urskog"
+    },
+    {
+        "nature_id": "2000572",
+        "wp_article": "Klosterängens naturreservat"
+    },
+    {
+        "nature_id": "2000568",
+        "wp_article": "Brommö skärgård"
+    },
+    {
+        "nature_id": "2001321",
+        "wp_article": "Kronskogen-Stenby äng"
+    },
+    {
+        "nature_id": "2001197",
+        "wp_article": "Jougdadalens naturreservat"
+    },
+    {
+        "nature_id": "2000463",
+        "wp_article": "Axmar naturreservat"
+    },
+    {
+        "nature_id": "2000383",
+        "wp_article": "Kalvö skärgård"
+    },
+    {
+        "nature_id": "2002869",
+        "wp_article": "Nissaströms naturreservat"
+    },
+    {
+        "nature_id": "2000556",
+        "wp_article": "Baståsen"
+    },
+    {
+        "nature_id": "2002296",
+        "wp_article": "Utö naturreservat"
+    },
+    {
+        "nature_id": "2001909",
+        "wp_article": "Ingbokällorna"
+    },
+    {
+        "nature_id": "2002923",
+        "wp_article": "Marstalla naturreservat"
+    },
+    {
+        "nature_id": "2010905",
+        "wp_article": "Östa naturreservat"
+    },
+    {
+        "nature_id": "2002922",
+        "wp_article": "Vida naturreservat"
+    },
+    {
+        "nature_id": "2001947",
+        "wp_article": "Lindsta naturreservat"
+    },
+    {
+        "nature_id": "2002885",
+        "wp_article": "Brurmossen"
+    },
+    {
+        "nature_id": "2014118",
+        "wp_article": "Olsmossen"
+    },
+    {
+        "nature_id": "2010954",
+        "wp_article": "Grimsheden"
+    },
+    {
+        "nature_id": "2005561",
+        "wp_article": "Hafsåsen"
+    },
+    {
+        "nature_id": "2000710",
+        "wp_article": "Hölicks naturreservat"
+    },
+    {
+        "nature_id": "2013008",
+        "wp_article": "Orsberget"
+    },
+    {
+        "nature_id": "2000330",
+        "wp_article": "Tösse skärgård"
+    },
+    {
+        "nature_id": "2000532",
+        "wp_article": "Önnarps naturreservat"
+    },
+    {
+        "nature_id": "2005551",
+        "wp_article": "Korpebobergs lövskogar"
+    },
+    {
+        "nature_id": "2000960",
+        "wp_article": "Kråkebo naturreservat"
+    },
+    {
+        "nature_id": "2000040",
+        "wp_article": "Björkeryds naturreservat"
+    },
+    {
+        "nature_id": "2000034",
+        "wp_article": "Alnaryds naturreservat"
+    },
+    {
+        "nature_id": "2000454",
+        "wp_article": "Knösö naturreservat"
+    },
+    {
+        "nature_id": "2000155",
+        "wp_article": "Väsby hage naturreservat"
+    },
+    {
+        "nature_id": "2001211",
+        "wp_article": "Offerdalsberg"
+    },
+    {
+        "nature_id": "2001533",
+        "wp_article": "Fågelsångsdalens naturreservat"
+    },
+    {
+        "nature_id": "2000399",
+        "wp_article": "Årenäs-Tostekulla lövskogar"
+    },
+    {
+        "nature_id": "2020226",
+        "wp_article": "Oxhults naturreservat"
+    },
+    {
+        "nature_id": "2002906",
+        "wp_article": "Kärnås sumpskog"
+    },
+    {
+        "nature_id": "2033270",
+        "wp_article": "Öjersbyns gammelskog"
+    },
+    {
+        "nature_id": "2027491",
+        "wp_article": "Kycklingkullen"
+    },
+    {
+        "nature_id": "2000531",
+        "wp_article": "Knätte naturreservat"
+    },
+    {
+        "nature_id": "2000527",
+        "wp_article": "Baktrågens naturreservat"
+    },
+    {
+        "nature_id": "2000541",
+        "wp_article": "Frälsegårdens naturreservat"
+    },
+    {
+        "nature_id": "2000409",
+        "wp_article": "Häggsjöryrs naturreservat"
+    },
+    {
+        "nature_id": "2014782",
+        "wp_article": "Älvrummets naturreservat"
+    },
+    {
+        "nature_id": "2014781",
+        "wp_article": "Ryrbäckens naturreservat"
+    },
+    {
+        "nature_id": "2021325",
+        "wp_article": "Ekedals naturreservat"
+    },
+    {
+        "nature_id": "2000510",
+        "wp_article": "Moghults naturreservat"
+    },
+    {
+        "nature_id": "2000518",
+        "wp_article": "Skårtebo naturreservat"
+    },
+    {
+        "nature_id": "2000416",
+        "wp_article": "Torpanäsets naturreservat"
+    },
+    {
+        "nature_id": "2000777",
+        "wp_article": "Breviks kiles naturreservat"
+    },
+    {
+        "nature_id": "2001725",
+        "wp_article": "Djuröns naturreservat"
+    },
+    {
+        "nature_id": "2005593",
+        "wp_article": "Tuveslätts naturreservat"
+    },
+    {
+        "nature_id": "2000776",
+        "wp_article": "Kälkeröns naturreservat"
+    },
+    {
+        "nature_id": "2023369",
+        "wp_article": "Aplagårdsskogen"
+    },
+    {
+        "nature_id": "2024189",
+        "wp_article": "Hadängs lövskog"
+    },
+    {
+        "nature_id": "2013317",
+        "wp_article": "Sunnanå naturreservat"
+    },
+    {
+        "nature_id": "2013318",
+        "wp_article": "Mörttjärns naturreservat"
+    },
+    {
+        "nature_id": "2024071",
+        "wp_article": "Ekbackens naturreservat"
+    },
+    {
+        "nature_id": "2000537",
+        "wp_article": "Norra Båsane"
+    },
+    {
+        "nature_id": "2014233",
+        "wp_article": "Skålltorps naturreservat"
+    },
+    {
+        "nature_id": "2000331",
+        "wp_article": "Björnöns domänreservat"
+    },
+    {
+        "nature_id": "2000334",
+        "wp_article": "Syltängarnas domänreservat"
+    },
+    {
+        "nature_id": "2005531",
+        "wp_article": "Ökull-Borregården"
+    },
+    {
+        "nature_id": "2000601",
+        "wp_article": "Brunsbo äng"
+    },
+    {
+        "nature_id": "2000599",
+        "wp_article": "Torps naturreservat"
+    },
+    {
+        "nature_id": "2000593",
+        "wp_article": "Eahagen-Öglunda ängar"
+    },
+    {
+        "nature_id": "2000594",
+        "wp_article": "Bockaskedeåsen-Toran"
+    },
+    {
+        "nature_id": "2000598",
+        "wp_article": "Höjentorp-Drottningkullen"
+    },
+    {
+        "nature_id": "2000818",
+        "wp_article": "Brokvarns naturreservat"
+    },
+    {
+        "nature_id": "2004595",
+        "wp_article": "Ettaks strömmar"
+    },
+    {
+        "nature_id": "2013482",
+        "wp_article": "Grimmestorps naturreservat"
+    },
+    {
+        "nature_id": "2002662",
+        "wp_article": "Petgärdeträsk"
+    },
+    {
+        "nature_id": "2000735",
+        "wp_article": "Svenneby Mellangårds naturreservat"
+    },
+    {
+        "nature_id": "2000727",
+        "wp_article": "Trättestads naturreservat"
+    },
+    {
+        "nature_id": "2000808",
+        "wp_article": "Mårtensröds naturreservat"
+    },
+    {
+        "nature_id": "2001126",
+        "wp_article": "Falkeröds lindskog"
+    },
+    {
+        "nature_id": "2027552",
+        "wp_article": "Klockbergets naturreservat"
+    },
+    {
+        "nature_id": "2001128",
+        "wp_article": "Klättas betesmarker"
+    },
+    {
+        "nature_id": "2000725",
+        "wp_article": "Kärra naturreservat"
+    },
+    {
+        "nature_id": "2002357",
+        "wp_article": "Korrö naturreservat"
+    },
+    {
+        "nature_id": "2002617",
+        "wp_article": "Fullerö backar"
+    },
+    {
+        "nature_id": "2023349",
+        "wp_article": "Vita mossens naturreservat"
+    },
+    {
+        "nature_id": "2002519",
+        "wp_article": "Lugnets naturreservat"
+    },
+    {
+        "nature_id": "2000815",
+        "wp_article": "Lammevadskärrets naturreservat"
+    },
+    {
+        "nature_id": "2003031",
+        "wp_article": "Gunniltorps naturreservat"
+    },
+    {
+        "nature_id": "2000817",
+        "wp_article": "Gorsans naturreservat"
+    },
+    {
+        "nature_id": "2001752",
+        "wp_article": "Sunds naturreservat"
+    },
+    {
+        "nature_id": "2000412",
+        "wp_article": "Hyltans naturreservat, Tidaholms kommun"
+    },
+    {
+        "nature_id": "2000388",
+        "wp_article": "Ruderskogens naturreservat"
+    },
+    {
+        "nature_id": "2001127",
+        "wp_article": "Sannäsfjordens alskogar och betesmarker"
+    },
+    {
+        "nature_id": "2000733",
+        "wp_article": "Ulön-Dannemark"
+    },
+    {
+        "nature_id": "2000728",
+        "wp_article": "Veddöarkipelagens naturreservat"
+    },
+    {
+        "nature_id": "2000732",
+        "wp_article": "Jorefjordens naturreservat"
+    },
+    {
+        "nature_id": "2014758",
+        "wp_article": "Stenbrohults naturreservat"
+    },
+    {
+        "nature_id": "2000719",
+        "wp_article": "Raftöns naturreservat"
+    },
+    {
+        "nature_id": "2014941",
+        "wp_article": "Stoms ås"
+    },
+    {
+        "nature_id": "2027130",
+        "wp_article": "Södra Stenungsöns naturreservat"
+    },
+    {
+        "nature_id": "2002491",
+        "wp_article": "Mångsbodarnas naturreservat"
+    },
+    {
+        "nature_id": "2021166",
+        "wp_article": "Bjällermossens naturreservat"
+    },
+    {
+        "nature_id": "2000517",
+        "wp_article": "Holmabergs naturreservat"
+    },
+    {
+        "nature_id": "2023989",
+        "wp_article": "Markaskogens naturreservat"
+    },
+    {
+        "nature_id": "2000396",
+        "wp_article": "Borgehalls naturreservat"
+    },
+    {
+        "nature_id": "2000590",
+        "wp_article": "Garparör"
+    },
+    {
+        "nature_id": "2000557",
+        "wp_article": "Rannebergets naturreservat"
+    },
+    {
+        "nature_id": "2005517",
+        "wp_article": "Svankila naturreservat"
+    },
+    {
+        "nature_id": "2014383",
+        "wp_article": "Nötholmens naturreservat"
+    },
+    {
+        "nature_id": "2000581",
+        "wp_article": "Capri naturreservat"
+    },
+    {
+        "nature_id": "2000584",
+        "wp_article": "Blötebågens naturreservat"
+    },
+    {
+        "nature_id": "2002901",
+        "wp_article": "Halle-Vagnaren"
+    },
+    {
+        "nature_id": "2000580",
+        "wp_article": "Norra Långöns naturreservat"
+    },
+    {
+        "nature_id": "2000586",
+        "wp_article": "Nöddökilens naturreservat"
+    },
+    {
+        "nature_id": "2000587",
+        "wp_article": "Orrevikskilens naturreservat"
+    },
+    {
+        "nature_id": "2000720",
+        "wp_article": "Tanumskilens naturreservat"
+    },
+    {
+        "nature_id": "2031969",
+        "wp_article": "Vristulvens naturreservat"
+    },
+    {
+        "nature_id": "2000400",
+        "wp_article": "Sparresäters naturreservat"
+    },
+    {
+        "nature_id": "2000333",
+        "wp_article": "Lerdala hassellunds domänreservat"
+    },
+    {
+        "nature_id": "2014939",
+        "wp_article": "Stora Bjursjöns naturreservat"
+    },
+    {
+        "nature_id": "2000822",
+        "wp_article": "Ulveksbackarna"
+    },
+    {
+        "nature_id": "2005708",
+        "wp_article": "Högebjärs naturreservat"
+    },
+    {
+        "nature_id": "2001558",
+        "wp_article": "Vitabäckshällorna"
+    },
+    {
+        "nature_id": "2000417",
+        "wp_article": "Gårans naturreservat"
+    },
+    {
+        "nature_id": "2000579",
+        "wp_article": "Melldala naturreservat"
+    },
+    {
+        "nature_id": "2000597",
+        "wp_article": "Skåningstorpskärret"
+    },
+    {
+        "nature_id": "2000825",
+        "wp_article": "Silverfallet-Karlsfors"
+    },
+    {
+        "nature_id": "2000367",
+        "wp_article": "Gullakrokssjöarna"
+    },
+    {
+        "nature_id": "2000605",
+        "wp_article": "Getaryggens naturreservat"
+    },
+    {
+        "nature_id": "2000591",
+        "wp_article": "Lycke-Lilla Höjen"
+    },
+    {
+        "nature_id": "2000604",
+        "wp_article": "Klasborgs och Våmbs ängar"
+    },
+    {
+        "nature_id": "2002904",
+        "wp_article": "Hene-Skultorp"
+    },
+    {
+        "nature_id": "2000578",
+        "wp_article": "Högsböla ängar"
+    },
+    {
+        "nature_id": "2000374",
+        "wp_article": "Kallsågsmossen"
+    },
+    {
+        "nature_id": "2000780",
+        "wp_article": "Ranebo lund"
+    },
+    {
+        "nature_id": "2000393",
+        "wp_article": "Ranebo naturskog"
+    },
+    {
+        "nature_id": "2000778",
+        "wp_article": "Rördalens naturreservat"
+    },
+    {
+        "nature_id": "2002380",
+        "wp_article": "Tiafly naturreservat"
+    },
+    {
+        "nature_id": "2002368",
+        "wp_article": "Agnäs naturreservat"
+    },
+    {
+        "nature_id": "2002392",
+        "wp_article": "Araby naturreservat"
+    },
+    {
+        "nature_id": "2014759",
+        "wp_article": "Stockanäs naturreservat"
+    },
+    {
+        "nature_id": "2010898",
+        "wp_article": "Möckelsnäs naturreservat"
+    },
+    {
+        "nature_id": "2002356",
+        "wp_article": "Kronan naturreservat"
+    },
+    {
+        "nature_id": "2002349",
+        "wp_article": "Siggaboda naturreservat"
+    },
+    {
+        "nature_id": "2000084",
+        "wp_article": "Åmma naturreservat"
+    },
+    {
+        "nature_id": "2000453",
+        "wp_article": "Holje naturreservat"
+    },
+    {
+        "nature_id": "2001512",
+        "wp_article": "Kvärlöv naturreservat"
+    },
+    {
+        "nature_id": "2000024",
+        "wp_article": "Kullans naturreservat"
+    },
+    {
+        "nature_id": "2000076",
+        "wp_article": "Käringahejans naturreservat"
+    },
+    {
+        "nature_id": "2013493",
+        "wp_article": "Lilla Nyteboda naturreservat"
+    },
+    {
+        "nature_id": "2000047",
+        "wp_article": "Ljungryda naturreservat"
+    },
+    {
+        "nature_id": "2000986",
+        "wp_article": "Östafors bruk naturreservat"
+    },
+    {
+        "nature_id": "2010884",
+        "wp_article": "Djupadals naturreservat"
+    },
+    {
+        "nature_id": "2000092",
+        "wp_article": "Skinsagylets naturreservat"
+    },
+    {
+        "nature_id": "2000078",
+        "wp_article": "Valje naturreservat"
+    },
+    {
+        "nature_id": "2000057",
+        "wp_article": "Almö naturreservat"
+    },
+    {
+        "nature_id": "2028849",
+        "wp_article": "Jordö naturreservat"
+    },
+    {
+        "nature_id": "2002857",
+        "wp_article": "Mulatorps naturreservat"
+    },
+    {
+        "nature_id": "2014094",
+        "wp_article": "Mörrumsåns dalgång"
+    },
+    {
+        "nature_id": "2013486",
+        "wp_article": "Blåningsmåla naturreservat"
+    },
+    {
+        "nature_id": "2000049",
+        "wp_article": "Ekebackens naturreservat"
+    },
+    {
+        "nature_id": "2028829",
+        "wp_article": "Finnamadens naturreservat"
+    },
+    {
+        "nature_id": "2000074",
+        "wp_article": "Gröngölsmåla naturreservat"
+    },
+    {
+        "nature_id": "2001469",
+        "wp_article": "Åvarps naturreservat"
+    },
+    {
+        "nature_id": "2000075",
+        "wp_article": "Vantakalleberget"
+    },
+    {
+        "nature_id": "2002863",
+        "wp_article": "Östra Kvallåkra naturreservat"
+    },
+    {
+        "nature_id": "2000082",
+        "wp_article": "Kvallåkra naturreservat"
+    },
+    {
+        "nature_id": "2000077",
+        "wp_article": "Persgärde naturreservat"
+    },
+    {
+        "nature_id": "2002823",
+        "wp_article": "Tattamåla naturreservat"
+    },
+    {
+        "nature_id": "2000061",
+        "wp_article": "Stilleryds naturreservat"
+    },
+    {
+        "nature_id": "2000097",
+        "wp_article": "Lobergets naturreservat"
+    },
+    {
+        "nature_id": "2000063",
+        "wp_article": "Fölsö naturreservat"
+    },
+    {
+        "nature_id": "2001493",
+        "wp_article": "Svenstorp-Bolshus fälad"
+    },
+    {
+        "nature_id": "2000081",
+        "wp_article": "Grimsmåla naturreservat"
+    },
+    {
+        "nature_id": "2010912",
+        "wp_article": "Hjärtsjömåla naturreservat"
+    },
+    {
+        "nature_id": "2022449",
+        "wp_article": "Hönebyggets naturreservat"
+    },
+    {
+        "nature_id": "2000033",
+        "wp_article": "Ire naturreservat"
+    },
+    {
+        "nature_id": "2000094",
+        "wp_article": "Bökemåla naturreservat"
+    },
+    {
+        "nature_id": "2002861",
+        "wp_article": "Elleholms naturreservat"
+    },
+    {
+        "nature_id": "2000064",
+        "wp_article": "Bockön-Mjöön"
+    },
+    {
+        "nature_id": "2000091",
+        "wp_article": "Hoka naturreservat"
+    },
+    {
+        "nature_id": "2032929",
+        "wp_article": "Långehalls naturreservat"
+    },
+    {
+        "nature_id": "2001387",
+        "wp_article": "Örens naturreservat"
+    },
+    {
+        "nature_id": "2000203",
+        "wp_article": "Rockebro"
+    },
+    {
+        "nature_id": "2042809",
+        "wp_article": "Stärnö-Boön"
+    },
+    {
+        "nature_id": "2000618",
+        "wp_article": "Reveluddens naturreservat"
+    },
+    {
+        "nature_id": "2000041",
+        "wp_article": "Arvidstorps naturreservat"
+    },
+    {
+        "nature_id": "2002830",
+        "wp_article": "Rosenlundsskogens naturreservat"
+    },
+    {
+        "nature_id": "2000044",
+        "wp_article": "Gise Höna naturreservat"
+    },
+    {
+        "nature_id": "2000093",
+        "wp_article": "Gummagölsmåla naturreservat"
+    },
+    {
+        "nature_id": "2000083",
+        "wp_article": "Wallanders Åbacka"
+    },
+    {
+        "nature_id": "2000086",
+        "wp_article": "Vambåsa hagmarker"
+    },
+    {
+        "nature_id": "2013489",
+        "wp_article": "Prästamarkens naturreservat"
+    },
+    {
+        "nature_id": "2000099",
+        "wp_article": "Älmteryds naturreservat"
+    },
+    {
+        "nature_id": "2000068",
+        "wp_article": "Järkö naturreservat"
+    },
+    {
+        "nature_id": "2022092",
+        "wp_article": "Rollsö naturreservat"
+    },
+    {
+        "nature_id": "2000067",
+        "wp_article": "Svenö naturreservat"
+    },
+    {
+        "nature_id": "2000098",
+        "wp_article": "Skärva naturreservat"
+    },
+    {
+        "nature_id": "2000096",
+        "wp_article": "Stora Roms naturreservat"
+    },
+    {
+        "nature_id": "2000070",
+        "wp_article": "Torhamns uddes naturreservat"
+    },
+    {
+        "nature_id": "2000089",
+        "wp_article": "Västra Skällöns naturreservat"
+    },
+    {
+        "nature_id": "2000071",
+        "wp_article": "Uttorps naturreservat"
+    },
+    {
+        "nature_id": "2002973",
+        "wp_article": "Södra Flymens naturreservat"
+    },
+    {
+        "nature_id": "2003060",
+        "wp_article": "Högasands naturreservat"
+    },
+    {
+        "nature_id": "2010948",
+        "wp_article": "Häljarums naturreservat"
+    },
+    {
+        "nature_id": "2000069",
+        "wp_article": "Hästholmen-Ytteröns naturreservat"
+    },
+    {
+        "nature_id": "2000095",
+        "wp_article": "Färskesjöns naturreservat"
+    },
+    {
+        "nature_id": "2031411",
+        "wp_article": "Nordanbergsbergets naturreservat"
+    },
+    {
+        "nature_id": "2031409",
+        "wp_article": "Slåtthornets naturreservat"
+    },
+    {
+        "nature_id": "2021645",
+        "wp_article": "Rödmyrmyrens naturreservat"
+    },
+    {
+        "nature_id": "2000046",
+        "wp_article": "Grindstugans naturreservat"
+    },
+    {
+        "nature_id": "2000031",
+        "wp_article": "Johannishus åsar"
+    },
+    {
+        "nature_id": "2000052",
+        "wp_article": "Järnaviks naturreservat"
+    },
+    {
+        "nature_id": "2000055",
+        "wp_article": "Kvalmsö naturreservat"
+    },
+    {
+        "nature_id": "2000042",
+        "wp_article": "Lillagärde naturreservat"
+    },
+    {
+        "nature_id": "2000066",
+        "wp_article": "Lindö uddes naturreservat"
+    },
+    {
+        "nature_id": "2001391",
+        "wp_article": "Ulriksdals naturreservat"
+    },
+    {
+        "nature_id": "2000039",
+        "wp_article": "Värmansnäs naturreservat"
+    },
+    {
+        "nature_id": "2000059",
+        "wp_article": "Yttre Steköns naturreservat"
+    },
+    {
+        "nature_id": "2001573",
+        "wp_article": "Benestads backar"
+    },
+    {
+        "nature_id": "2000048",
+        "wp_article": "Treklasens naturreservat"
+    },
+    {
+        "nature_id": "2002749",
+        "wp_article": "Tolseboda naturreservat"
+    },
+    {
+        "nature_id": "2042326",
+        "wp_article": "Tollaskogen"
+    },
+    {
+        "nature_id": "2029152",
+        "wp_article": "Moabackens naturreservat"
+    },
+    {
+        "nature_id": "2000085",
+        "wp_article": "Mölleryds naturreservat"
+    },
+    {
+        "nature_id": "2000051",
+        "wp_article": "Pagelsborgs naturreservat"
+    },
+    {
+        "nature_id": "2000043",
+        "wp_article": "Skuremåla naturreservat"
+    },
+    {
+        "nature_id": "2000056",
+        "wp_article": "Sonekulla naturreservat"
+    },
+    {
+        "nature_id": "2000036",
+        "wp_article": "Sänneshults naturreservat"
+    },
+    {
+        "nature_id": "2003002",
+        "wp_article": "Solviksskogens naturreservat"
+    },
+    {
+        "nature_id": "2040849",
+        "wp_article": "Skärgöl naturreservat"
+    },
+    {
+        "nature_id": "2002390",
+        "wp_article": "Visjöns naturreservat"
+    },
+    {
+        "nature_id": "2020086",
+        "wp_article": "Tikaskruv naturreservat"
+    },
+    {
+        "nature_id": "2014842",
+        "wp_article": "Stocksmyr-Brännan"
+    },
+    {
+        "nature_id": "2014071",
+        "wp_article": "Galtö naturreservat"
+    },
+    {
+        "nature_id": "2013024",
+        "wp_article": "Västermarkens naturreservat"
+    },
+    {
+        "nature_id": "2013023",
+        "wp_article": "Rönnbergens naturreservat"
+    },
+    {
+        "nature_id": "2024789",
+        "wp_article": "Hattens naturreservat"
+    },
+    {
+        "nature_id": "2002328",
+        "wp_article": "Brunnsekärret"
+    },
+    {
+        "nature_id": "2001381",
+        "wp_article": "Ryfors Gammelskog"
+    },
+    {
+        "nature_id": "2002836",
+        "wp_article": "Nyckelås naturreservat"
+    },
+    {
+        "nature_id": "2002186",
+        "wp_article": "Fiskebäcks naturreservat"
+    },
+    {
+        "nature_id": "2013308",
+        "wp_article": "Uppebo naturreservat"
+    },
+    {
+        "nature_id": "2024850",
+        "wp_article": "Rocksjöns naturreservat"
+    },
+    {
+        "nature_id": "2002339",
+        "wp_article": "Dravens naturreservat"
+    },
+    {
+        "nature_id": "2001380",
+        "wp_article": "Björkenäs naturreservat"
+    },
+    {
+        "nature_id": "2001385",
+        "wp_article": "Hyllingens naturreservat"
+    },
+    {
+        "nature_id": "2014380",
+        "wp_article": "Nynäs naturreservat, Aneby kommun"
+    },
+    {
+        "nature_id": "2001377",
+        "wp_article": "Vållingsöns naturreservat"
+    },
+    {
+        "nature_id": "2014724",
+        "wp_article": "Stuverydsbäckens naturreservat"
+    },
+    {
+        "nature_id": "2002315",
+        "wp_article": "Norrsånna lövskog"
+    },
+    {
+        "nature_id": "2002311",
+        "wp_article": "Kvänsås bokar"
+    },
+    {
+        "nature_id": "2002192",
+        "wp_article": "Kakelugnsmossens naturreservat"
+    },
+    {
+        "nature_id": "2001896",
+        "wp_article": "Hästholmarna naturreservat"
+    },
+    {
+        "nature_id": "2013972",
+        "wp_article": "Hässleby-Silverån"
+    },
+    {
+        "nature_id": "2002314",
+        "wp_article": "Hackarevikens naturreservat"
+    },
+    {
+        "nature_id": "2013421",
+        "wp_article": "Lövhults naturreservat"
+    },
+    {
+        "nature_id": "2005472",
+        "wp_article": "Bäckafalls naturreservat"
+    },
+    {
+        "nature_id": "2001798",
+        "wp_article": "Zimmermans backe"
+    },
+    {
+        "nature_id": "2023290",
+        "wp_article": "Barkerydssjöns naturreservat"
+    },
+    {
+        "nature_id": "2001427",
+        "wp_article": "Bottnaryds urskog"
+    },
+    {
+        "nature_id": "2002350",
+        "wp_article": "Grönviks naturreservat"
+    },
+    {
+        "nature_id": "2031089",
+        "wp_article": "Hackekvarns naturreservat"
+    },
+    {
+        "nature_id": "2041696",
+        "wp_article": "Ekefors naturreservat"
+    },
+    {
+        "nature_id": "2014542",
+        "wp_article": "Älganäs naturreservat"
+    },
+    {
+        "nature_id": "2002347",
+        "wp_article": "Ramsö naturreservat"
+    },
+    {
+        "nature_id": "2002351",
+        "wp_article": "Hensjönäsets naturreservat"
+    },
+    {
+        "nature_id": "2031310",
+        "wp_article": "Torne bokskog"
+    },
+    {
+        "nature_id": "2002581",
+        "wp_article": "Ljuva mons naturreservat"
+    },
+    {
+        "nature_id": "2000195",
+        "wp_article": "Knuthöjdsmossen"
+    },
+    {
+        "nature_id": "2002354",
+        "wp_article": "Lunnabackens naturreservat"
+    },
+    {
+        "nature_id": "2002353",
+        "wp_article": "Långö naturreservat"
+    },
+    {
+        "nature_id": "2002346",
+        "wp_article": "Midingsbråte naturreservat"
+    },
+    {
+        "nature_id": "2020087",
+        "wp_article": "Stenfors naturreservat"
+    },
+    {
+        "nature_id": "2002355",
+        "wp_article": "Toftåsa myrs naturreservat"
+    },
+    {
+        "nature_id": "2014931",
+        "wp_article": "Granhultsbergets naturreservat"
+    },
+    {
+        "nature_id": "2020706",
+        "wp_article": "Lundens naturreservat, Växjö kommun"
+    },
+    {
+        "nature_id": "2002561",
+        "wp_article": "Fiolenområdet"
+    },
+    {
+        "nature_id": "2002583",
+        "wp_article": "Fylleryds naturreservat"
+    },
+    {
+        "nature_id": "2002401",
+        "wp_article": "Skårtaryds urskog"
+    },
+    {
+        "nature_id": "2002556",
+        "wp_article": "Sjösås äng"
+    },
+    {
+        "nature_id": "2000427",
+        "wp_article": "Lörgeudd"
+    },
+    {
+        "nature_id": "2040989",
+        "wp_article": "Veberöds ljungs naturreservat"
+    },
+    {
+        "nature_id": "2024569",
+        "wp_article": "Brotorpabäcks naturreservat"
+    },
+    {
+        "nature_id": "2002394",
+        "wp_article": "Sjöatorps naturreservat"
+    },
+    {
+        "nature_id": "2002559",
+        "wp_article": "Förebergsåsens naturreservat"
+    },
+    {
+        "nature_id": "2000139",
+        "wp_article": "Molnsättra naturreservat"
+    },
+    {
+        "nature_id": "2014886",
+        "wp_article": "Ösjöbols naturreservat"
+    },
+    {
+        "nature_id": "2002549",
+        "wp_article": "Våraskruvs naturreservat"
+    },
+    {
+        "nature_id": "2022470",
+        "wp_article": "Stakamyrans naturreservat"
+    },
+    {
+        "nature_id": "2002562",
+        "wp_article": "Änghults björkhages naturreservat"
+    },
+    {
+        "nature_id": "2042246",
+        "wp_article": "Sör-Stormyrlidens naturreservat"
+    },
+    {
+        "nature_id": "2030949",
+        "wp_article": "Vithults naturreservat"
+    },
+    {
+        "nature_id": "2005584",
+        "wp_article": "Ösbyträsks naturreservat"
+    },
+    {
+        "nature_id": "2005530",
+        "wp_article": "Tjäderleksmossen"
+    },
+    {
+        "nature_id": "2030989",
+        "wp_article": "Grollegrund"
+    },
+    {
+        "nature_id": "2000937",
+        "wp_article": "Icktjärnsbergets naturreservat"
+    },
+    {
+        "nature_id": "2002698",
+        "wp_article": "Bokenäs naturreservat"
+    },
+    {
+        "nature_id": "2002690",
+        "wp_article": "Fröstorps naturreservat"
+    },
+    {
+        "nature_id": "2005483",
+        "wp_article": "Lidbergets naturreservat"
+    },
+    {
+        "nature_id": "2043166",
+        "wp_article": "Edsbodskogen"
+    },
+    {
+        "nature_id": "2001326",
+        "wp_article": "Vilsta"
+    },
+    {
+        "nature_id": "2005481",
+        "wp_article": "Godgrubberget"
+    },
+    {
+        "nature_id": "2002670",
+        "wp_article": "Horsö-Värsnäs"
+    },
+    {
+        "nature_id": "2043086",
+        "wp_article": "Nävertjärnsdalen"
+    },
+    {
+        "nature_id": "2000668",
+        "wp_article": "Sör-Lappmyran"
+    },
+    {
+        "nature_id": "2001728",
+        "wp_article": "Bokö naturreservat, Östergötland"
+    },
+    {
+        "nature_id": "2000503",
+        "wp_article": "Svartnäsudden"
+    },
+    {
+        "nature_id": "2026269",
+        "wp_article": "Kärnskogsmossen"
+    },
+    {
+        "nature_id": "2001703",
+        "wp_article": "Hackelboöns naturreservat"
+    },
+    {
+        "nature_id": "2001301",
+        "wp_article": "Sofiebergsåsen"
+    },
+    {
+        "nature_id": "2013316",
+        "wp_article": "Tolamossen"
+    },
+    {
+        "nature_id": "2001562",
+        "wp_article": "Bäckhalladalen"
+    },
+    {
+        "nature_id": "2001550",
+        "wp_article": "Esperöds naturreservat"
+    },
+    {
+        "nature_id": "2003042",
+        "wp_article": "Impan"
+    },
+    {
+        "nature_id": "2033229",
+        "wp_article": "Sandby backar"
+    },
+    {
+        "nature_id": "2003038",
+        "wp_article": "Simris strandängar"
+    },
+    {
+        "nature_id": "2001863",
+        "wp_article": "Årby naturreservat"
+    },
+    {
+        "nature_id": "2029930",
+        "wp_article": "Sträntemölla"
+    },
+    {
+        "nature_id": "2002553",
+        "wp_article": "Soldatmossens naturreservat"
+    },
+    {
+        "nature_id": "2001236",
+        "wp_article": "Sundbyholmsåsen"
+    },
+    {
+        "nature_id": "2002335",
+        "wp_article": "Vintermossen"
+    },
+    {
+        "nature_id": "2002334",
+        "wp_article": "Stora och Lilla Fly"
+    },
+    {
+        "nature_id": "2001307",
+        "wp_article": "Söderfjärdens naturreservat"
+    },
+    {
+        "nature_id": "2002398",
+        "wp_article": "Storasjöområdets naturreservat"
+    },
+    {
+        "nature_id": "2000106",
+        "wp_article": "Bergbetningen"
+    },
+    {
+        "nature_id": "2002552",
+        "wp_article": "Skäraskogs naturreservat"
+    },
+    {
+        "nature_id": "2014569",
+        "wp_article": "Berga fly naturreservat"
+    },
+    {
+        "nature_id": "2002938",
+        "wp_article": "Bockaskruvs naturreservat"
+    },
+    {
+        "nature_id": "2002137",
+        "wp_article": "Högbergsfältet"
+    },
+    {
+        "nature_id": "2041804",
+        "wp_article": "Ekhorva naturreservat"
+    },
+    {
+        "nature_id": "2002560",
+        "wp_article": "Fagraholms fly naturreservat"
+    },
+    {
+        "nature_id": "2014885",
+        "wp_article": "Getaryggarnas naturreservat"
+    },
+    {
+        "nature_id": "2002546",
+        "wp_article": "Singelstorps fly naturreservat"
+    },
+    {
+        "nature_id": "2014892",
+        "wp_article": "Tollare naturreservat"
+    },
+    {
+        "nature_id": "2002566",
+        "wp_article": "Hinkaryds naturreservat"
+    },
+    {
+        "nature_id": "2024072",
+        "wp_article": "Skärets naturreservat, Eskilstuna kommun"
+    },
+    {
+        "nature_id": "2002563",
+        "wp_article": "Libbhults ängars naturreservat"
+    },
+    {
+        "nature_id": "2002402",
+        "wp_article": "Kärngölsområdets naturreservat"
+    },
+    {
+        "nature_id": "2014776",
+        "wp_article": "Hedasjöns naturreservat"
+    },
+    {
+        "nature_id": "2001394",
+        "wp_article": "Velamsunds naturreservat"
+    },
+    {
+        "nature_id": "2002585",
+        "wp_article": "Ideboås naturreservat"
+    },
+    {
+        "nature_id": "2002360",
+        "wp_article": "Taxås naturreservat"
+    },
+    {
+        "nature_id": "2002373",
+        "wp_article": "Husebymadens naturreservat"
+    },
+    {
+        "nature_id": "2002365",
+        "wp_article": "Höö naturreservat"
+    },
+    {
+        "nature_id": "2013435",
+        "wp_article": "Brötalyckornas naturreservat"
+    },
+    {
+        "nature_id": "2021050",
+        "wp_article": "Kroxnäs naturreservat"
+    },
+    {
+        "nature_id": "2002372",
+        "wp_article": "Taglamyrens naturreservat"
+    },
+    {
+        "nature_id": "2000620",
+        "wp_article": "Älta mosse-Strålsjön"
+    },
+    {
+        "nature_id": "2000621",
+        "wp_article": "Strålsjön-Erstavik"
+    },
+    {
+        "nature_id": "2025827",
+        "wp_article": "Hökhults naturreservat"
+    },
+    {
+        "nature_id": "2024769",
+        "wp_article": "Humlamadens naturreservat"
+    },
+    {
+        "nature_id": "2000699",
+        "wp_article": "Grossjöberget"
+    },
+    {
+        "nature_id": "2002030",
+        "wp_article": "Tattby naturreservat"
+    },
+    {
+        "nature_id": "2000321",
+        "wp_article": "Skämningsöns naturreservat"
+    },
+    {
+        "nature_id": "2000702",
+        "wp_article": "Gåsholma naturreservat"
+    },
+    {
+        "nature_id": "2044042",
+        "wp_article": "Svärdsön"
+    },
+    {
+        "nature_id": "2000291",
+        "wp_article": "Tröskens rikkärr"
+    },
+    {
+        "nature_id": "2013368",
+        "wp_article": "Bodabergs naturreservat"
+    },
+    {
+        "nature_id": "2014765",
+        "wp_article": "Brunnstorps naturreservat"
+    },
+    {
+        "nature_id": "2002330",
+        "wp_article": "Gåeryds rasbranter"
+    },
+    {
+        "nature_id": "2002344",
+        "wp_article": "Högakulls naturreservat"
+    },
+    {
+        "nature_id": "2002338",
+        "wp_article": "Moens naturskog"
+    },
+    {
+        "nature_id": "2010903",
+        "wp_article": "Kroppsjöns naturreservat"
+    },
+    {
+        "nature_id": "2002340",
+        "wp_article": "Rusarebo naturreservat"
+    },
+    {
+        "nature_id": "2002185",
+        "wp_article": "Labbramsängens naturreservat"
+    },
+    {
+        "nature_id": "2002307",
+        "wp_article": "Storö, Harö"
+    },
+    {
+        "nature_id": "2014382",
+        "wp_article": "Stora Grönlids naturreservat"
+    },
+    {
+        "nature_id": "2001709",
+        "wp_article": "Ycke urskog"
+    },
+    {
+        "nature_id": "2001764",
+        "wp_article": "Vidingsjöskogen"
+    },
+    {
+        "nature_id": "2001746",
+        "wp_article": "Viggeby naturreservat"
+    },
+    {
+        "nature_id": "2001689",
+        "wp_article": "Skogssjöområdet"
+    },
+    {
+        "nature_id": "2014212",
+        "wp_article": "Västra Hargs lövskogar"
+    },
+    {
+        "nature_id": "2001450",
+        "wp_article": "Staffanstorps naturreservat"
+    },
+    {
+        "nature_id": "2001439",
+        "wp_article": "Glotternskogen"
+    },
+    {
+        "nature_id": "2001729",
+        "wp_article": "Svensksundsviken"
+    },
+    {
+        "nature_id": "2001776",
+        "wp_article": "Vrinneviskogen"
+    },
+    {
+        "nature_id": "2001714",
+        "wp_article": "Åsvikelandet"
+    },
+    {
+        "nature_id": "2004572",
+        "wp_article": "Hästenäs kyrkskog"
+    },
+    {
+        "nature_id": "2043608",
+        "wp_article": "Ågelsjöns naturreservat"
+    },
+    {
+        "nature_id": "2024489",
+        "wp_article": "Klosjöns naturreservat"
+    },
+    {
+        "nature_id": "2005583",
+        "wp_article": "Långelaggens naturreservat"
+    },
+    {
+        "nature_id": "2002325",
+        "wp_article": "Marieholmsskogens naturreservat"
+    },
+    {
+        "nature_id": "2001382",
+        "wp_article": "Stora Kärrs bokskog"
+    },
+    {
+        "nature_id": "2001805",
+        "wp_article": "Ystads sandskog"
+    },
+    {
+        "nature_id": "2001363",
+        "wp_article": "Skämningsfors naturskog"
+    },
+    {
+        "nature_id": "2043406",
+        "wp_article": "Hälleskogsbrännan"
+    },
+    {
+        "nature_id": "2005519",
+        "wp_article": "Askholmens naturreservat"
+    },
+    {
+        "nature_id": "2001372",
+        "wp_article": "Gagnåns naturreservat"
+    },
+    {
+        "nature_id": "2001379",
+        "wp_article": "Haboskogens naturreservat"
+    },
+    {
+        "nature_id": "2028510",
+        "wp_article": "Knipån nedre"
+    },
+    {
+        "nature_id": "2002766",
+        "wp_article": "Varglyans naturreservat"
+    },
+    {
+        "nature_id": "2001551",
+        "wp_article": "Vallby mosses naturreservat"
+    },
+    {
+        "nature_id": "2001628",
+        "wp_article": "Gammplatsen"
+    },
+    {
+        "nature_id": "2001378",
+        "wp_article": "Västanå naturreservat"
+    },
+    {
+        "nature_id": "2002132",
+        "wp_article": "Tibergs udde"
+    },
+    {
+        "nature_id": "2002732",
+        "wp_article": "Storängsudds naturreservat"
+    },
+    {
+        "nature_id": "2001338",
+        "wp_article": "Ängsöns naturreservat"
+    },
+    {
+        "nature_id": "2043287",
+        "wp_article": "Lissmadalens naturreservat"
+    },
+    {
+        "nature_id": "2043286",
+        "wp_article": "Gladö Kvarnsjöns naturreservat"
+    },
+    {
+        "nature_id": "2002731",
+        "wp_article": "Skeviks naturreservat"
+    },
+    {
+        "nature_id": "2013546",
+        "wp_article": "Långviksträsks naturreservat"
+    },
+    {
+        "nature_id": "2032389",
+        "wp_article": "Välens naturreservat"
+    },
+    {
+        "nature_id": "2025329",
+        "wp_article": "Yxsjöns naturreservat"
+    },
+    {
+        "nature_id": "2021667",
+        "wp_article": "Hjortmarka naturreservat"
+    },
+    {
+        "nature_id": "2042766",
+        "wp_article": "Lerådalens naturreservat"
+    },
+    {
+        "nature_id": "2014610",
+        "wp_article": "Slättängsdammarna"
+    },
+    {
+        "nature_id": "2002728",
+        "wp_article": "Björnö naturreservat, Värmdö kommun"
+    },
+    {
+        "nature_id": "2000170",
+        "wp_article": "Husby naturreservat"
+    },
+    {
+        "nature_id": "2013363",
+        "wp_article": "Bonaviks naturreservat"
+    },
+    {
+        "nature_id": "2000169",
+        "wp_article": "Huvududdens naturreservat"
+    },
+    {
+        "nature_id": "2002816",
+        "wp_article": "Adelsö-Sättra naturreservat"
+    },
+    {
+        "nature_id": "2024011",
+        "wp_article": "Notkojudden"
+    },
+    {
+        "nature_id": "2014981",
+        "wp_article": "Getapulien (naturreservat)"
+    },
+    {
+        "nature_id": "2000164",
+        "wp_article": "Häverö prästängs naturreservat"
+    },
+    {
+        "nature_id": "2002735",
+        "wp_article": "Käringboda"
+    },
+    {
+        "nature_id": "2000107",
+        "wp_article": "Brucebo (naturreservat)"
+    },
+    {
+        "nature_id": "2001106",
+        "wp_article": "Huvudholmen"
+    },
+    {
+        "nature_id": "2001485",
+        "wp_article": "Hercules naturreservat"
+    },
+    {
+        "nature_id": "2000133",
+        "wp_article": "Hällholmens naturreservat"
+    },
+    {
+        "nature_id": "2002250",
+        "wp_article": "Solidö"
+    },
+    {
+        "nature_id": "2024592",
+        "wp_article": "Bjurforsbäcken"
+    },
+    {
+        "nature_id": "2000111",
+        "wp_article": "Rone ytterholme"
+    },
+    {
+        "nature_id": "2000940",
+        "wp_article": "Bodåsen"
+    },
+    {
+        "nature_id": "2000432",
+        "wp_article": "Verkegards naturreservat"
+    },
+    {
+        "nature_id": "2002730",
+        "wp_article": "Saltarö-Skärmarö naturreservat"
+    },
+    {
+        "nature_id": "2044379",
+        "wp_article": "Brandalsunds naturreservat"
+    },
+    {
+        "nature_id": "2002624",
+        "wp_article": "Nåntuna lund"
+    }
+]

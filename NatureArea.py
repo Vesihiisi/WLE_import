@@ -15,7 +15,9 @@ class NatureArea(WikidataItem):
         languages.
         """
         swedish_name = self.raw_data["NAMN"]
-        if "reservat" in swedish_name:
+        if ("reservat" in swedish_name.lower() or
+                "nationalpark" in swedish_name.lower() or
+                "skärgård" in swedish_name.lower()):
             languages = ["sv"]
         else:
             languages = [
@@ -27,24 +29,30 @@ class NatureArea(WikidataItem):
 
     def set_descriptions(self):
         """Add descriptions in various languages."""
-        county_without_lan = self.raw_data["LAN"].split(" ")[:-1]
-        county_name = " ".join(county_without_lan)
-        if utils.get_last_char(county_name) == "s":
-            county_name = county_name[:-1]
+        if self.raw_data["SKYDDSTYP"] == "Nationalpark":
+            np_dictionary = self.glossary["np_description"]
+            for language in np_dictionary:
+                description = np_dictionary[language]
+                self.add_description(language, description)
+        elif self.raw_data["SKYDDSTYP"] == "Naturreservat":
+            county_without_lan = self.raw_data["LAN"].split(" ")[:-1]
+            county_name = " ".join(county_without_lan)
+            if utils.get_last_char(county_name) == "s":
+                county_name = county_name[:-1]
 
-        nr_dictionary = self.glossary["nr_description"]
-        fi_locations = self.glossary["location_in"]["fi"]
-        ru_locations = self.glossary["location_in"]["ru"]
-        for language in nr_dictionary:
-            if language == "fi":
-                description = nr_dictionary[language].format(
-                    fi_locations[county_name])
-            elif language == "ru":
-                description = nr_dictionary[language].format(
-                    ru_locations[county_name])
-            else:
-                description = nr_dictionary[language].format(county_name)
-            self.add_description(language, description)
+            nr_dictionary = self.glossary["nr_description"]
+            fi_locations = self.glossary["location_in"]["fi"]
+            ru_locations = self.glossary["location_in"]["ru"]
+            for language in nr_dictionary:
+                if language == "fi":
+                    description = nr_dictionary[language].format(
+                        fi_locations[county_name])
+                elif language == "ru":
+                    description = nr_dictionary[language].format(
+                        ru_locations[county_name])
+                else:
+                    description = nr_dictionary[language].format(county_name)
+                self.add_description(language, description)
 
     def set_country(self):
         """Set the country to Sweden."""
@@ -81,7 +89,7 @@ class NatureArea(WikidataItem):
                       if x["en"].lower() == municipality_long]
             self.add_statement("located_adm", m_item[0])
 
-    def set_nid(self):
+    def set_natur_id(self):
         """Set the Naturvårdsverket ID number."""
         nid = self.raw_data["NVRID"]
         self.add_statement("nature_id", nid)
@@ -91,13 +99,11 @@ class NatureArea(WikidataItem):
         #  To do: add no_value
         raw_status = self.raw_data["IUCNKAT"]
         raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
-        print(raw_status)
         status_item = [x["item"] for
                        x in self.iucn
                        if x["sv"].lower() == raw_status.lower()]
         protection_date = utils.date_to_dict(raw_timestamp, "%Y-%m-%d")
         qualifier = {"start_time": {"time_value": protection_date}}
-        print(status_item, protection_date)
         self.add_statement("iucn", status_item, qualifier)
 
     def set_forvaltare(self):
@@ -120,13 +126,22 @@ class NatureArea(WikidataItem):
         if forvaltare:
             self.add_statement("forvaltare", forvaltare)
 
+    def set_area(self):
+        area_total = self.raw_data["AREA_HA"]
+        area_water = self.raw_data["VATTEN_HA"]
+        area_land = self.raw_data["LAND_HA"]
+        area_woods = self.raw_data["SKOG_HA"]
+        print(utils.hectares_to_km(area_total))
+        print(area_woods)
+
     def __init__(self, raw_data, repository, data_files):
         WikidataItem.__init__(self, raw_data, repository, data_files)
         self.set_labels()
         self.set_descriptions()
         self.set_is()
         self.set_country()
-        # self.set_municipalities()
+        self.set_municipalities()
         self.set_forvaltare()
-        self.set_nid()
+        self.set_natur_id()
         self.set_iucn_status()
+        self.set_area()

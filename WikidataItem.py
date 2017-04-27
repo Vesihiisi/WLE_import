@@ -249,7 +249,7 @@ class WikidataItem(object):
         self.wd_item["descriptions"] = {}
         self.wd_item["wd-item"] = None
 
-    def __init__(self, db_row_dict, repository):
+    def __init__(self, db_row_dict, repository, data_files):
         """
         Initialize the data object.
 
@@ -257,16 +257,12 @@ class WikidataItem(object):
         :param repository: data repository (Wikidata site)
         """
         self.raw_data = db_row_dict
-        self.props = utils.load_json(
-            path.join(DATA_DIR, "properties.json"))
-        self.items = utils.load_json(
-            path.join(DATA_DIR, "items.json"))
-        self.municipalities = utils.load_json(
-            path.join(DATA_DIR, "municipalities.json"))
-        self.iucn = utils.load_json(
-            path.join(DATA_DIR, "iucn_categories.json"))
-        self.forvaltare = utils.load_json(
-            path.join(DATA_DIR, "forvaltare.json"))
+        self.props = data_files["properties"]
+        self.items = data_files["items"]
+        self.municipalities = data_files["municipalities"]
+        self.iucn = data_files["iucn_categories"]
+        self.forvaltare = data_files["forvaltare"]
+        self.glossary = data_files["glossary"]
         self.construct_wd_item()
         self.repo = repository
         self.problem_report = {}
