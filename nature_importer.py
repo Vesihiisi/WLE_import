@@ -5,6 +5,7 @@ import os
 import importer_utils as utils
 import wikidataStuff.wdqsLookup as lookup
 from NatureArea import NatureArea
+from PreviewTable import PreviewTable
 from Uploader import Uploader
 
 DATA_DIRECTORY = "data"
@@ -121,6 +122,11 @@ def main(arguments):
         area_data = area_data[:arguments["limit"]]
     for area in area_data:
         reserve = NatureArea(area, wikidata_site, data_files, existing_areas)
+        if arguments["table"]:
+            filename = "{}_{}.txt".format(arguments["dataset"],
+                                          utils.get_current_timestamp())
+            preview = PreviewTable(reserve)
+            utils.append_line_to_file(preview.make_table(), filename)
         if arguments["upload"]:
             live = True if arguments["upload"] == "live" else False
             uploader = Uploader(reserve,
@@ -135,6 +141,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", required=True)
     parser.add_argument("--upload", action='store')
+    parser.add_argument("--table", action='store_true')
     parser.add_argument("--offset",
                         nargs='?',
                         type=int,

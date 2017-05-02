@@ -31,7 +31,17 @@ def json_to_file(filename, json_content):
                   default=datetime_convert)
 
 
+def append_line_to_file(text, filename):
+    with open(filename, 'a') as f:
+        f.write(text + "\n")
+
+
+def get_current_timestamp():
+    return datetime.datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
+
+
 def string_is_q_item(text):
+    """Check if a string looks like a WD ID."""
     pattern = re.compile("^Q[0-9]+$", re.I)
     try:
         m = pattern.match(text)
@@ -89,14 +99,17 @@ def is_vowel(char):
 
 
 def get_last_char(text):
+    """Return the last character of string."""
     return text[-1]
 
 
 def last_char_is_vowel(text):
+    """Check if last char of string is vowel."""
     return is_vowel(get_last_char(text))
 
 
 def date_to_dict(datestring, dateformat):
+    """Convert a date to a pwb-friendly dictionary."""
     date_dict = {}
     date_obj = datetime.datetime.strptime(datestring, dateformat)
     date_dict["year"] = date_obj.year
@@ -105,14 +118,6 @@ def date_to_dict(datestring, dateformat):
     if "%d" in dateformat:
         date_dict["day"] = date_obj.day
     return date_dict
-
-
-def tuple_is_coords(sometuple):
-    result = False
-    if isinstance(sometuple, tuple) and len(sometuple) == 2:
-        if all(isinstance(x, float) for x in sometuple):
-            result = True
-    return result
 
 
 def hectares_to_km(hectares):
@@ -189,4 +194,3 @@ def remove_dic_from_list_by_value(diclist, key, value):
                   of dictionary from list.
     """
     return [x for x in diclist if not (value == x.get(key))]
-

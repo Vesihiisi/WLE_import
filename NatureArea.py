@@ -9,13 +9,22 @@ class NatureArea(WikidataItem):
     Handles both reserves and national parks.
     """
 
+    def generate_ref_url(self):
+        url = "http://nvpub.vic-metria.nu/naturvardsregistret/rest/omrade/{}/G%C3%A4llande"
+        return url.format(self.raw_data["NVRID"])
+
     def create_sources(self):
         """Create the references for all statements."""
         self.sources = {}
         item_nr = self.items["source_nr"]
         item_np = self.items["source_np"]
-        self.sources["np"] = self.make_stated_in_ref(item_np, "2015-12-18")
-        self.sources["nr"] = self.make_stated_in_ref(item_nr, "2015-12-18")
+        url = self.generate_ref_url()
+        self.sources["np"] = self.make_stated_in_ref(item_np,
+                                                     "2015-12-18",
+                                                     url)
+        self.sources["nr"] = self.make_stated_in_ref(item_nr,
+                                                     "2015-12-18",
+                                                     url)
 
     def set_labels(self):
         """
