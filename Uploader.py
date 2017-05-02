@@ -10,6 +10,7 @@ SUMMARY = "nature test"
 
 
 class Uploader(object):
+    """Upload a WikidataItem."""
 
     TEST_ITEM = "Q4115189"
 
@@ -93,17 +94,15 @@ class Uploader(object):
             self.wd_item_q = self.TEST_ITEM
 
     def __init__(self,
-                 monument_object,
+                 data_object,
                  repo,
-                 tablename=None,
                  live=False,
                  edit_summary=None):
         """
         Initialize an Upload object for a single Monument.
 
-        :param monument_object: Dictionary of Monument data
+        :param data_object: Dictionary of Monument data
         :param repo: Data repository of site to work on (Wikidata)
-        :param tablename: Name of db table, used in edit summary
         :param live: Whether to work on real WD items or in the sandbox
         """
         self.repo = repo
@@ -116,6 +115,6 @@ class Uploader(object):
         else:
             print("SANDBOX MODE: {}".format(self.TEST_ITEM))
         print("---------------")
-        self.data = monument_object.wd_item
+        self.data = data_object.wd_item
         self.wdstuff = WDS(self.repo, edit_summary=self.summary)
         self.set_wd_item()

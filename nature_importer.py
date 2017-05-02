@@ -23,8 +23,12 @@ def get_data_from_csv_file(filename):
 
 def remove_duplicate_entries(nature_dataset):
     """
-    in all cases where there's a duplicate,
-    the difference is in beslstatus gällande vs sth else
+    Remove duplicate entries from Nature Reserve file.
+
+    In cases where a reserve occurs twice, it's because
+    of different values of "BESLSTATUS". Whenever that happens,
+    one of them is always "gällande". This is the one we keep,
+    and the other one is removed.
     """
     results = []
     unique_ids = []
@@ -62,6 +66,15 @@ def load_nature_area_file(which_one):
 
 
 def get_wd_items_using_prop(prop):
+    """
+    Get WD items that already have some value of a unique ID.
+
+    Even if there are none before we start working,
+    it's still useful to have in case an upload is interrupted
+    and has to be restarted, or if we later want to enhance
+    some items. When matching, these should take predecence
+    over any hardcoded matching files.
+    """
     items = {}
     print("WILL NOW DOWNLOAD WD ITEMS THAT USE " + prop)
     query = "SELECT DISTINCT ?item ?value  WHERE {?item p:" + \
@@ -97,7 +110,7 @@ def main(arguments):
     """Process the arguments and fetch data according to them"""
     arguments = vars(arguments)
     wikidata_site = utils.create_site_instance("wikidata", "wikidata")
-    #  existing_areas = get_wd_items_using_prop("P3613")
+    existing_areas = get_wd_items_using_prop("P3613")
     area_data = load_nature_area_file(arguments["dataset"])
     data_files = load_mapping_files()
     if arguments["offset"]:
@@ -107,7 +120,7 @@ def main(arguments):
         print("Using limit: {}.".format(str(arguments["limit"])))
         area_data = area_data[:arguments["limit"]]
     for area in area_data:
-        reserve = NatureArea(area, wikidata_site, data_files)
+        reserve = NatureArea(area, wikidata_site, data_files, existing_areas)
         if arguments["upload"]:
             live = True if arguments["upload"] == "live" else False
             uploader = Uploader(reserve,

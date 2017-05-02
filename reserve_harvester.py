@@ -1,3 +1,41 @@
+# -*- coding: utf-8 -*-
+"""
+A script to gather Wikidata IDs of Swedish nature reserves.
+
+The input is a Petscan dump from svwp category "Naturreservat i Sverige",
+two levels deep (naturreservat -> nr i <län> -> nr i <kommun>):
+https://petscan.wmflabs.org/?psid=914993
+
+Then it's compared to NR_polygon.csv the following way:
+
+* The municipalities of each wp article are extracted
+* If a reserve in the csv file has exactly the same set of municipalities,
+as well as an identical or very similar name (Foo / Foo natturreservat),
+it's added to the exact matches file: svwp_to_nature_id_exact.json
+* If more than one match is found, they're added to
+svwp_to_nature_id_multiple.json, which can be reviewed manually.
+* If there's no match, the svwp article is added to
+svwp_to_nature_id_none, which can be reviewed manually.
+
+When running, if an svwp article with no WD item is encountered,
+it is created automatically. Thus, all the articles in the mapping
+files have corresponding WD items.
+
+CAVEATS
+=======
+
+Sometimes a reserve described in one article has two
+separate nature IDs, when it spans across several
+counties, eg. Sandsjöbacka naturreservat is two separate reserves
+in VG and Halland. How to handle those?
+
+In a considerable number of cases, the svwp article describes
+both a natural feature (island, lake, valley) and a reserve.
+Because of that, its WD item can have its P31 set to this
+natural feature. This script collects all WD items associated
+with articles, without checking the P31, this check should probably
+be done as part of the actual upload.
+"""
 import pywikibot
 import os
 import csv
@@ -66,11 +104,6 @@ def process_wp_reserves():
         e.g. source: "Foo", wp: "Foo naturreservat"
         * wp name starts the same way as source name,
         e.g. source: "Foo naturreservat", wp: "Foo"
-
-    Caveat: Sometimes a reserve described in one article has two
-    separate nature IDs, when it spans across several
-    counties, eg. Sandsjöbacka naturreservat is a separate entity
-    in VG and Halland. How to handle those?
 
     TODO:
     * Don't require 100% kommun match? Have a look at list

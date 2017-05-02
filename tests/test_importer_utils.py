@@ -5,6 +5,7 @@ import WLE_import.importer_utils as utils
 
 
 class TestDictionaryMethods(unittest.TestCase):
+    """Tests for dictionary manipulations."""
 
     def test_remove_dic_from_list_by_value(self):
         in_dicts = [{"foo": "mjau", "x": 12}, {"foo": "bar", "x": 44}]
@@ -14,6 +15,7 @@ class TestDictionaryMethods(unittest.TestCase):
 
 
 class TestStringMethods(unittest.TestCase):
+    """Tests for string manipulations."""
 
     def test_extract_municipality_name_simple(self):
         text = "Naturreservat i Huddinge kommun"

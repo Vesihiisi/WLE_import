@@ -171,6 +171,14 @@ class NatureArea(WikidataItem):
                          "unit": self.items["km"]},
                 quals=[qualifier])
 
+    def match_wikidata_existing(self, value):
+        """Get WD item associated with certain value of unique ID."""
+        match = [self.existing[x] for x in self.existing if x == value]
+        try:
+            return match[0]
+        except IndexError:
+            return None
+
     def match_wikidata(self, data_files):
         """
         Read the assigned WD item from mapping file.
@@ -186,11 +194,16 @@ class NatureArea(WikidataItem):
         elif self.raw_data["SKYDDSTYP"] == "Naturreservat":
             mapping = data_files["svwp_to_nature_id_exact"]
         nature_id = self.raw_data["NVRID"]
-        match = [x["item"] for x in mapping if x["nature_id"] == nature_id]
-        try:
-            self.associate_wd_item(match[0])
-        except IndexError:
-            print("{} has no WD match.".format(self.raw_data["NAMN"]))
+
+        match_via_id_on_wd = self.match_wikidata_existing(nature_id)
+        if match_via_id_on_wd:
+            self.associate_wd_item(match_via_id_on_wd)
+        else:
+            match = [x["item"] for x in mapping if x["nature_id"] == nature_id]
+            try:
+                self.associate_wd_item(match[0])
+            except IndexError:
+                print("{} has no WD match.".format(self.raw_data["NAMN"]))
 
     def add_statement(self, prop_name, value, quals=None, ref=None):
         """Overwrite plain add_statement with default sources."""
@@ -200,15 +213,16 @@ class NatureArea(WikidataItem):
             source = self.sources["nr"]
         return super().add_statement(prop_name, value, quals, source)
 
-    def __init__(self, raw_data, repository, data_files):
+    def __init__(self, raw_data, repository, data_files, existing):
         """
-        Initiate the NatureArea object.
+        Initialize the NatureArea object.
 
         :param raw_data: Row from csv file.
         :param repository: Wikidata site instance.
-        :data_files: Dict of various mapping files.
+        :param data_files: Dict of various mapping files.
+        :param existing: WD items that already have an unique id
         """
-        WikidataItem.__init__(self, raw_data, repository, data_files)
+        WikidataItem.__init__(self, raw_data, repository, data_files, existing)
         self.match_wikidata(data_files)
         self.create_sources()
         self.set_labels()

@@ -181,14 +181,17 @@ class WikidataItem(object):
         self.wd_item["descriptions"] = []
         self.wd_item["wd-item"] = None
 
-    def __init__(self, db_row_dict, repository, data_files):
+    def __init__(self, db_row_dict, repository, data_files, existing):
         """
         Initialize the data object.
 
         :param db_row_dict: raw data from the database
         :param repository: data repository (Wikidata site)
+        :param data_files: dict of various mapping files
+        :param existing: WD items that already have an unique id
         """
         self.repo = repository
+        self.existing = existing
         self.wdstuff = WDS(self.repo)
         self.raw_data = db_row_dict
         self.props = data_files["properties"]
