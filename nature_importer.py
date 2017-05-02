@@ -10,6 +10,7 @@ from Uploader import Uploader
 DATA_DIRECTORY = "data"
 reserves_file = "NR_polygon.csv"
 nationalparks_file = "NP_polygon.csv"
+edit_summary = "test"
 
 
 def get_data_from_csv_file(filename):
@@ -18,6 +19,30 @@ def get_data_from_csv_file(filename):
         reader = csv.DictReader(f_obj, delimiter=',')
         csv_data = list(reader)
     return csv_data
+
+
+def remove_duplicate_entries(nature_dataset):
+    """
+    in all cases where there's a duplicate,
+    the difference is in beslstatus gällande vs sth else
+    """
+    results = []
+    unique_ids = []
+    for row in nature_dataset:
+        n_id = row["NVRID"]
+        if n_id in unique_ids:
+            new_status = row["BESLSTATUS"]
+            status_in_results = [x["BESLSTATUS"]
+                                 for x in results if x["NVRID"] == n_id]
+            if status_in_results[0] == "Gällande":
+                pass
+            elif new_status == "Gällande":
+                utils.remove_dic_from_list_by_value(results, "NVRID", n_id)
+                results.append(row)
+        else:
+            unique_ids.append(n_id)
+            results.append(row)
+    return results
 
 
 def load_nature_area_file(which_one):
@@ -31,7 +56,9 @@ def load_nature_area_file(which_one):
     elif which_one == "np":
         filepath = os.path.join(DATA_DIRECTORY, nationalparks_file)
     print("Loading dataset: {}".format(filepath))
-    return get_data_from_csv_file(filepath)
+    dataset = get_data_from_csv_file(filepath)
+    no_duplicates = remove_duplicate_entries(dataset)
+    return no_duplicates
 
 
 def get_wd_items_using_prop(prop):
@@ -72,12 +99,20 @@ def main(arguments):
     #  existing_areas = get_wd_items_using_prop("P3613")
     area_data = load_nature_area_file(arguments["dataset"])
     data_files = load_mapping_files()
+    if arguments["offset"]:
+        print("Using offset: {}.".format(str(arguments["offset"])))
+        area_data = area_data[arguments["offset"]:]
+    if arguments["limit"]:
+        print("Using limit: {}.".format(str(arguments["limit"])))
+        area_data = area_data[:arguments["limit"]]
     for area in area_data:
         reserve = NatureArea(area, wikidata_site, data_files)
-        #  print(reserve.raw_data["NAMN"])
         if arguments["upload"]:
             live = True if arguments["upload"] == "live" else False
-            uploader = Uploader(reserve, repo=wikidata_site, live=live)
+            uploader = Uploader(reserve,
+                                repo=wikidata_site,
+                                live=live,
+                                edit_summary=edit_summary)
             uploader.upload()
 
 
@@ -86,5 +121,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", required=True)
     parser.add_argument("--upload", action='store')
+    parser.add_argument("--offset",
+                        nargs='?',
+                        type=int,
+                        action='store')
+    parser.add_argument("--limit",
+                        nargs='?',
+                        type=int,
+                        action='store')
     args = parser.parse_args()
     main(args)

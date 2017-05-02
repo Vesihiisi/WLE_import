@@ -4,6 +4,14 @@ import importer_utils as utils
 
 class NatureArea(WikidataItem):
 
+    def create_sources(self):
+        self.sources = {}
+        source_nr = self.items["source_nr"]
+        prop_stated = self.props["stated_in"]
+        self.sources["reserves_source"] = {"source": {
+            "prop": prop_stated, "value": source_nr}}
+        print(self.sources)
+
     def set_labels(self):
         """
         Add labels, optionally in multiple languages.
@@ -57,7 +65,19 @@ class NatureArea(WikidataItem):
     def set_country(self):
         """Set the country to Sweden."""
         sweden = self.items["sweden"]
-        self.add_statement("country", sweden)
+        ref = self.make_stated_in_ref("Q29580583", "2009-12-09")
+        self.add_statement("country", sweden, ref=ref)
+
+    def set_iucn_status(self):
+        """Set the IUCN category of the area."""
+        #  To do: add no_value...
+        raw_status = self.raw_data["IUCNKAT"]
+        raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
+        status_item = [x["item"] for
+                       x in self.iucn
+                       if x["sv"].lower() == raw_status.lower()]
+        qualifier = self.make_qualifier_startdate(raw_timestamp)
+        self.add_statement("iucn", status_item, quals=[qualifier])
 
     def set_is(self):
         """Set the P31 property - nature reserve or national park."""
@@ -94,21 +114,10 @@ class NatureArea(WikidataItem):
         nid = self.raw_data["NVRID"]
         self.add_statement("nature_id", nid)
 
-    def set_iucn_status(self):
-        """Set the IUCN category of the area."""
-        #  To do: add no_value
-        raw_status = self.raw_data["IUCNKAT"]
-        raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
-        status_item = [x["item"] for
-                       x in self.iucn
-                       if x["sv"].lower() == raw_status.lower()]
-        protection_date = utils.date_to_dict(raw_timestamp, "%Y-%m-%d")
-        qualifier = {"start_time": {"time_value": protection_date}}
-        self.add_statement("iucn", status_item, qualifier)
-
     def set_forvaltare(self):
-        """Set the operator (förvaltare) of the reserve."""
+        """Set the operator (förvaltare) of the area."""
         forvaltare_raw = self.raw_data["FORVALTARE"]
+        #  TODO: wtf is an enskild markägare?????????
         try:
             f = [x["item"] for
                  x in self.forvaltare
@@ -131,11 +140,14 @@ class NatureArea(WikidataItem):
         area_water = self.raw_data["VATTEN_HA"]
         area_land = self.raw_data["LAND_HA"]
         area_woods = self.raw_data["SKOG_HA"]
-        print(utils.hectares_to_km(area_total))
-        print(area_woods)
+
+    def add_statement(self, prop_name, value, quals=None, ref=None):
+        nature_ref = self.make_stated_in_ref("Q29580583", "2015-12-18")
+        return super().add_statement(prop_name, value, quals, nature_ref)
 
     def __init__(self, raw_data, repository, data_files):
         WikidataItem.__init__(self, raw_data, repository, data_files)
+        self.create_sources()
         self.set_labels()
         self.set_descriptions()
         self.set_is()

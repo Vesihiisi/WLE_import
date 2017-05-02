@@ -125,6 +125,15 @@ def extract_municipality_name(category_name):
     """
     Extract base municipality name from category name.
 
+    Since we can't guess whether an "s" ending the first
+    part of the name belongs to the town name or is
+    a genitive ending (and should be dropped), we have to
+    compare against (English) list of known municipalities:
+
+    Halmstads kommun -> Halmstad
+    Kramfors kommun -> Kramfors
+    Pajala kommun -> Pajala
+
     Known caveats:
     * Reserves in Gotland are categorized in "Gotlands län"
 
@@ -168,3 +177,16 @@ def q_from_wikipedia(language, page_title):
                 return
             item = wdstuff.make_new_item_from_page(page, summary)
         return item.getID()
+
+
+def remove_dic_from_list_by_value(diclist, key, value):
+    """
+    Remove a dictionary from a list of dictionaries by certain value.
+
+    :param diclist: List of dictionaries
+    :param key: The key whose value to check
+    :param value: The value of that key that should cause removal
+                  of dictionary from list.
+    """
+    return [x for x in diclist if not (value == x.get(key))]
+

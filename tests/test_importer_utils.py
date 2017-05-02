@@ -4,6 +4,15 @@ import unittest
 import WLE_import.importer_utils as utils
 
 
+class TestDictionaryMethods(unittest.TestCase):
+
+    def test_remove_dic_from_list_by_value(self):
+        in_dicts = [{"foo": "mjau", "x": 12}, {"foo": "bar", "x": 44}]
+        out_dicts = [{"foo": "mjau", "x": 12}]
+        self.assertEqual(utils.remove_dic_from_list_by_value(
+            in_dicts, "foo", "bar"), out_dicts)
+
+
 class TestStringMethods(unittest.TestCase):
 
     def test_extract_municipality_name_simple(self):

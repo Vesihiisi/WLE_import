@@ -9,6 +9,12 @@ reserves_source = "NR_polygon.csv"
 
 
 def read_reserve_csv():
+    """
+    Load source data about nature reserves from csv file.
+
+    Since we don't need all the data, only the name, nature ID
+    and municipalities are extracted.
+    """
     reserves = []
     filepath = os.path.join(DATA_DIRECTORY, reserves_source)
     with open(filepath, "r") as f_obj:
@@ -24,12 +30,20 @@ def read_reserve_csv():
 
 
 def read_wp_nr_list():
+    """Load the content of petscan list of nature reserves."""
     filepath = os.path.join(DATA_DIRECTORY, reserves_file)
     content = utils.load_json(filepath)
     return content["*"][0]["a"]["*"]
 
 
 def get_municipalities(title):
+    """
+    Extract the municipalities from svwp article of nature reserve.
+
+    Get the names of categories to which the article
+    belongs, and extract the names of municipalities
+    from them.
+    """
     municipalities = []
     site = pywikibot.Site("sv", "wikipedia")
     page = pywikibot.Page(site, title)
@@ -52,6 +66,11 @@ def process_wp_reserves():
         e.g. source: "Foo", wp: "Foo naturreservat"
         * wp name starts the same way as source name,
         e.g. source: "Foo naturreservat", wp: "Foo"
+
+    Caveat: Sometimes a reserve described in one article has two
+    separate nature IDs, when it spans across several
+    counties, eg. Sandsjöbacka naturreservat is a separate entity
+    in VG and Halland. How to handle those?
 
     TODO:
     * Don't require 100% kommun match? Have a look at list

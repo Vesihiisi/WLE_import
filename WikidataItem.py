@@ -1,7 +1,8 @@
 from os import path
 import json
 import importer_utils as utils
-
+from wikidataStuff.WikidataStuff import WikidataStuff as WDS
+import pywikibot
 DATA_DIR = "data"
 
 
@@ -85,75 +86,60 @@ class WikidataItem(object):
         table = table + "----------\n"
         return table
 
-    def add_statement(self, prop_name, value, quals=None, refs=None):
-        """
-        Add a statement to the data object.
+    def make_q_item(self, qnumber):
+        """Create a regular Item."""
+        return self.wdstuff.QtoItemPage(qnumber)
 
-        If the given property already exists, this will
-        append another value to the array,
-        i.e. two statements with the same prop.
-
-        Refs is None as default. This means that
-        if it's left out, the WLM reference will be inserted
-        into the statement. The same if its value is
-        set to True. In order to use a custom reference
-        or more than one reference, it is inserted here as
-        either a single reference or a list of references,
-        respectively.
-        In order to not use any reference whatsoever,
-        the value of refs is to be set to False.
-
-        :param prop_name: name of the property,
-            as stated in the props library file
-        :param value: the value of the property
-        :param quals: a dictionary of qualifiers
-        :param refs: a list of references or a single reference.
-            Set None/True for the default reference,
-            set False to not add a reference.
-        """
-        base = self.wd_item["statements"]
-        prop = self.props[prop_name]
-        qualifiers = {}
-        if prop not in base:
-            base[prop] = []
-        if quals is not None and len(quals) > 0:
-            for k in quals:
-                prop_name = self.props[k]
-                qualifiers[prop_name] = quals[k]
-        refs = []
-        if refs and not isinstance(refs, list):
-            refs = [refs]
-        statement = {"value": value, "quals": qualifiers, "refs": refs}
-        base[prop].append(statement)
-
-    def remove_statement(self, prop_name):
-        """
-        Remove all statements with a given property from the data object.
-
-        :param prop_name: name of the property,
-            as stated in the props library file
-        """
-        base = self.wd_item["statements"]
-        prop = self.props[prop_name]
-        if prop in base:
-            del base[prop]
-
-    def substitute_statement(self, prop_name, value, quals=None, refs=None):
-        """
-        Instead of adding to the array, replace the statement.
-
-        This is so that instances of child classes
-        can override default values...
-        For example p31 museum -> art museum
-        """
-        base = self.wd_item["statements"]
-        prop = self.props[prop_name]
-        if prop not in base:
-            base[prop] = []
-            self.add_statement(prop_name, value, quals, refs)
+    def make_pywikibot_item(self, value, prop=None):
+        val_item = None
+        if type(value) is list and len(value) == 1:
+            value = value[0]
+        if utils.string_is_q_item(value):
+            val_item = self.make_q_item(value)
+        elif value == "novalue":
+            #  to do - no_value
+            print("")
         else:
-            self.remove_statement(prop_name)
-            self.add_statement(prop_name, value, quals, refs)
+            val_item = value
+        return val_item
+
+    def make_statement(self, value):
+        return self.wdstuff.Statement(value)
+
+    def make_qualifier_startdate(self, value):
+        prop_item = self.props["start_time"]
+        print(value)
+        value_dic = utils.date_to_dict(value, "%Y-%m-%d")
+        value_pwb = pywikibot.WbTime(year=value_dic["year"], month=value_dic[
+                                     "month"], day=value_dic["day"])
+        return self.wdstuff.Qualifier(prop_item, value_pwb)
+
+    def add_statement(self, prop_name, value, quals=None, ref=None):
+        """
+        """
+        base = self.wd_item["statements"]
+        prop = self.props[prop_name]
+        wd_claim = self.make_pywikibot_item(value, prop)
+        statement = self.make_statement(wd_claim)
+        base.append({"prop": prop,
+                     "value": statement,
+                     "quals": quals,
+                     "ref": ref})
+
+    def make_stated_in_ref(self, value, pub_date):
+        item_prop = self.props["stated_in"]
+        published_prop = self.props["publication_date"]
+        pub_date = utils.date_to_dict(pub_date, "%Y-%m-%d")
+        timestamp = pywikibot.WbTime(year=pub_date["year"], month=pub_date[
+                                     "month"], day=pub_date["day"])
+        source_item = self.wdstuff.QtoItemPage(value)
+        source_claim = self.wdstuff.make_simple_claim(item_prop, source_item)
+        ref = self.wdstuff.Reference(
+            source_test=[source_claim],
+            source_notest=self.wdstuff.make_simple_claim(
+                published_prop, timestamp)
+        )
+        return ref
 
     def associate_wd_item(self, wd_item):
         """Associate the data object with a Wikidata item."""
@@ -169,19 +155,7 @@ class WikidataItem(object):
         :param text: content of the label
         """
         base = self.wd_item["labels"]
-        base[language] = text
-
-    def add_alias(self, language, text):
-        """
-        Add an alias in a specific language.
-
-        :param language: code of language, e.g. "fi"
-        :param text: content of the alias
-        """
-        base = self.wd_item["aliases"]
-        if language not in base:
-            base[language] = []
-        base[language].append(text)
+        base.append({"language": language, "value": text})
 
     def add_description(self, language, text):
         """
@@ -191,20 +165,7 @@ class WikidataItem(object):
         :param text: content of the description
         """
         base = self.wd_item["descriptions"]
-        base[language] = text
-
-    def create_stated_in_source(self, source_item, pub_date):
-        """
-        Create a 'stated in' reference.
-
-        :param source_item: Wikidata item or URL used as a source
-        :param pub_date: publication date in the format 2014-12-23
-        """
-        prop_stated = self.props["stated_in"]
-        prop_date = self.props["publication_date"]
-        pub_date = utils.date_to_dict(pub_date, "%Y-%m-%d")
-        return {"source": {"prop": prop_stated, "value": source_item},
-                "published": {"prop": prop_date, "value": pub_date}}
+        base.append({"language": language, "value": text})
 
     def add_to_report(self, key_name, raw_data):
         """
@@ -243,10 +204,9 @@ class WikidataItem(object):
         """Create the empty structure of the data object."""
         self.wd_item = {}
         self.wd_item["upload"] = True
-        self.wd_item["statements"] = {}
-        self.wd_item["labels"] = {}
-        self.wd_item["aliases"] = {}
-        self.wd_item["descriptions"] = {}
+        self.wd_item["statements"] = []
+        self.wd_item["labels"] = []
+        self.wd_item["descriptions"] = []
         self.wd_item["wd-item"] = None
 
     def __init__(self, db_row_dict, repository, data_files):
@@ -256,6 +216,8 @@ class WikidataItem(object):
         :param db_row_dict: raw data from the database
         :param repository: data repository (Wikidata site)
         """
+        self.repo = repository
+        self.wdstuff = WDS(self.repo)
         self.raw_data = db_row_dict
         self.props = data_files["properties"]
         self.items = data_files["items"]
@@ -264,5 +226,5 @@ class WikidataItem(object):
         self.forvaltare = data_files["forvaltare"]
         self.glossary = data_files["glossary"]
         self.construct_wd_item()
-        self.repo = repository
+
         self.problem_report = {}
