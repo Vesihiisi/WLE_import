@@ -82,6 +82,7 @@ def load_mapping_files():
                     "forvaltare.json",
                     "iucn_categories.json",
                     "mapping_nationalparks.json",
+                    "svwp_to_nature_id_exact.json",
                     "municipalities.json",
                     "items.json",
                     "properties.json"]

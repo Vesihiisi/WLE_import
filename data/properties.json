@@ -1,4 +1,6 @@
 {
+    "applies_to_part": "P518",
+    "area": "P2046",
     "commonscat": "P373",
     "coordinates": "P625",
     "country": "P17",
@@ -12,6 +14,6 @@
     "publication_date": "P577",
     "reference_url": "P854",
     "retrieved": "P813",
-    "stated_in":"P248",
-    "start_time": "P580"
+    "start_time": "P580",
+    "stated_in": "P248"
 }

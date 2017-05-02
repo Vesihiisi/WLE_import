@@ -1,22 +1,15 @@
-from os import path
+# -*- coding: utf-8 -*-
 import json
 import importer_utils as utils
 from wikidataStuff.WikidataStuff import WikidataStuff as WDS
 import pywikibot
+
+
 DATA_DIR = "data"
 
 
 class WikidataItem(object):
-
-    def print_wd(self):
-        """Print the data object dictionary on screen."""
-        print(
-            json.dumps(self.wd_item,
-                       sort_keys=True,
-                       indent=4,
-                       ensure_ascii=False,
-                       default=utils.datetime_convert)
-        )
+    """Basic data object for upload to Wikidata."""
 
     def print_wd_to_table(self):
         """Generate a wikitext preview table of the data item."""
@@ -96,6 +89,14 @@ class WikidataItem(object):
             value = value[0]
         if utils.string_is_q_item(value):
             val_item = self.make_q_item(value)
+        elif isinstance(value, dict) and 'quantity_value' in value:
+            number = value['quantity_value']
+            if 'unit' in value:
+                unit = self.make_q_item(value['unit'])
+            else:
+                unit = None
+            val_item = pywikibot.WbQuantity(
+                amount=number, unit=unit, site=self.repo)
         elif value == "novalue":
             #  to do - no_value
             print("")
@@ -106,9 +107,13 @@ class WikidataItem(object):
     def make_statement(self, value):
         return self.wdstuff.Statement(value)
 
+    def make_qualifier_applies_to(self, value):
+        prop_item = self.props["applies_to_part"]
+        target_item = self.wdstuff.QtoItemPage(value)
+        return self.wdstuff.Qualifier(prop_item, target_item)
+
     def make_qualifier_startdate(self, value):
         prop_item = self.props["start_time"]
-        print(value)
         value_dic = utils.date_to_dict(value, "%Y-%m-%d")
         value_pwb = pywikibot.WbTime(year=value_dic["year"], month=value_dic[
                                      "month"], day=value_dic["day"])
@@ -166,39 +171,6 @@ class WikidataItem(object):
         """
         base = self.wd_item["descriptions"]
         base.append({"language": language, "value": text})
-
-    def add_to_report(self, key_name, raw_data):
-        """
-        Add data to problem report json.
-
-        Check if item has an associated Q-number,
-        and if that's the case and it's missing
-        in the report,
-        add it to the report automatically.
-        Add direct URL to item in WLM API.
-        """
-        self.problem_report[key_name] = raw_data
-        if "wd-item" not in self.problem_report:
-            if self.wd_item["wd-item"] is not None:
-                self.problem_report["Q"] = self.wd_item["wd-item"]
-            else:
-                self.problem_report["Q"] = ""
-        if "url" not in self.problem_report:
-            self.problem_report["url"] = self.wlm_url
-
-    def print_report(self):
-        """Print the problem report on screen."""
-        print(
-            json.dumps(self.problem_report,
-                       sort_keys=True,
-                       indent=4,
-                       ensure_ascii=False,
-                       default=utils.datetime_convert)
-        )
-
-    def get_report(self):
-        """Retrieve the problem report."""
-        return self.problem_report
 
     def construct_wd_item(self):
         """Create the empty structure of the data object."""
