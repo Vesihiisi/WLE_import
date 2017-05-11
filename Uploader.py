@@ -1,12 +1,16 @@
+from os import path
+
 from wikidataStuff.WikidataStuff import WikidataStuff as WDS
 import pywikibot
+
 import importer_utils as utils
-from os import path
+
 
 MAPPING_DIR = "data"
 PROPS = utils.load_json(path.join(MAPPING_DIR, "properties.json"))
 
-SUMMARY = "nature test"
+SUMMARY_TEST = "nature test"
+SUMMARY_LIVE = ""
 
 
 class Uploader(object):
@@ -99,21 +103,22 @@ class Uploader(object):
                  live=False,
                  edit_summary=None):
         """
-        Initialize an Upload object for a single Monument.
+        Initialize an Upload object for a single Nature Area.
 
-        :param data_object: Dictionary of Monument data
+        :param data_object: Dictionary of object data
         :param repo: Data repository of site to work on (Wikidata)
         :param live: Whether to work on real WD items or in the sandbox
         """
         self.repo = repo
-        self.summary = edit_summary or SUMMARY
         self.live = live
         print("User: {}".format(self.get_username()))
         print("Edit summary: {}".format(self.summary))
         if self.live:
             print("LIVE MODE")
+            self.summary = edit_summary or SUMMARY_LIVE
         else:
             print("SANDBOX MODE: {}".format(self.TEST_ITEM))
+            self.summary = SUMMARY_TEST
         print("---------------")
         self.data = data_object.wd_item
         self.wdstuff = WDS(self.repo, edit_summary=self.summary)

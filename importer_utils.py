@@ -1,10 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8  -*-
 import datetime
+import csv
 import json
-import re
-import pywikibot
 import os
+import re
+
+import pywikibot
 from wikidataStuff.WikidataStuff import WikidataStuff as wds
 
 site_cache = {}
@@ -62,24 +64,6 @@ def wd_template(template_type, value):
     return "{{" + template_type + "|" + value + "}}"
 
 
-def dict_to_iso_date(date_dict):
-    """
-    Convert pywikiboty-style date dictionary
-    to ISO string ("2002-10-23").
-
-    @param date_dict: dictionary like
-    {"year" : 2002, "month" : 10, "day" : 23}
-    """
-    iso_date = ""
-    if "year" in date_dict:
-        iso_date += str(date_dict["year"])
-    if "month" in date_dict:
-        iso_date += "-" + str(date_dict["month"])
-    if "day" in date_dict:
-        iso_date += "-" + str(date_dict["day"])
-    return iso_date
-
-
 def create_site_instance(language, family):
     """Create an instance of a Wiki site (convenience function)."""
     site_key = (language, family)
@@ -109,7 +93,20 @@ def last_char_is_vowel(text):
 
 
 def date_to_dict(datestring, dateformat):
-    """Convert a date to a pwb-friendly dictionary."""
+    """
+    Convert a date to a pwb-friendly dictionary.
+
+    Can handle:
+        * day dates, "2009-09-31",
+        * month dates, "2009-09",
+        * year dates, "2009"
+
+    :param datestring: a string representing a date timestamp,
+                       for example: "2009-09-31".
+    :param datestring: a string key for interpreting the timestamp,
+                       for example "%Y-%m-%d" which is the key for
+                       the above timestamp.
+    """
     date_dict = {}
     date_obj = datetime.datetime.strptime(datestring, dateformat)
     date_dict["year"] = date_obj.year
@@ -163,6 +160,7 @@ def extract_municipality_name(category_name):
 def q_from_wikipedia(language, page_title):
     """
     Get the ID of the WD item linked to a wp page.
+
     If the page has no item and is in the article
     namespace, create an item for it.
     """
@@ -193,4 +191,12 @@ def remove_dic_from_list_by_value(diclist, key, value):
     :param value: The value of that key that should cause removal
                   of dictionary from list.
     """
-    return [x for x in diclist if not (value == x.get(key))]
+    return [x for x in diclist if value != x.get(key)]
+
+
+def get_data_from_csv_file(filename):
+    """Load data from csv file into a list."""
+    with open(filename, "r") as f_obj:
+        reader = csv.DictReader(f_obj, delimiter=',')
+        csv_data = list(reader)
+    return csv_data

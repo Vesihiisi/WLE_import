@@ -1,8 +1,22 @@
 # -*- coding: utf-8 -*-
-import importer_utils as utils
+"""
+An object that represent a Wikidata item.
+
+This is a basic object used to construct
+a Wikidata item. It contains the basic functions
+to create statements, qualifiers and sources,
+as well as labels and descriptions with specified
+languages.
+
+The purpose of it is to serve as a base for a
+data-specific object that will turn some data
+into Wikidata objects. It can then be uploaded
+to Wikidata using the uploader script.
+"""
 from wikidataStuff.WikidataStuff import WikidataStuff as WDS
 import pywikibot
 
+import importer_utils as utils
 
 DATA_DIR = "data"
 
@@ -10,8 +24,31 @@ DATA_DIR = "data"
 class WikidataItem(object):
     """Basic data object for upload to Wikidata."""
 
+    def __init__(self, db_row_dict, repository, data_files, existing):
+        """
+        Initialize the data object.
+
+        :param db_row_dict: raw data from the database
+        :param repository: data repository (Wikidata site)
+        :param data_files: dict of various mapping files
+        :param existing: WD items that already have an unique id
+        """
+        self.repo = repository
+        self.existing = existing
+        self.wdstuff = WDS(self.repo)
+        self.raw_data = db_row_dict
+        self.props = data_files["properties"]
+        self.items = data_files["items"]
+        self.municipalities = data_files["municipalities"]
+        self.iucn = data_files["iucn_categories"]
+        self.forvaltare = data_files["forvaltare"]
+        self.glossary = data_files["glossary"]
+        self.construct_wd_item()
+
+        self.problem_report = {}
+
     def make_q_item(self, qnumber):
-        """Create a regular Item."""
+        """Create a regular Wikidata ItemPage."""
         return self.wdstuff.QtoItemPage(qnumber)
 
     def make_pywikibot_item(self, value, prop=None):
@@ -120,26 +157,3 @@ class WikidataItem(object):
         self.wd_item["labels"] = []
         self.wd_item["descriptions"] = []
         self.wd_item["wd-item"] = None
-
-    def __init__(self, db_row_dict, repository, data_files, existing):
-        """
-        Initialize the data object.
-
-        :param db_row_dict: raw data from the database
-        :param repository: data repository (Wikidata site)
-        :param data_files: dict of various mapping files
-        :param existing: WD items that already have an unique id
-        """
-        self.repo = repository
-        self.existing = existing
-        self.wdstuff = WDS(self.repo)
-        self.raw_data = db_row_dict
-        self.props = data_files["properties"]
-        self.items = data_files["items"]
-        self.municipalities = data_files["municipalities"]
-        self.iucn = data_files["iucn_categories"]
-        self.forvaltare = data_files["forvaltare"]
-        self.glossary = data_files["glossary"]
-        self.construct_wd_item()
-
-        self.problem_report = {}

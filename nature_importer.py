@@ -1,25 +1,18 @@
 #!/usr/bin/env python3
 import argparse
-import csv
 import os
-import importer_utils as utils
+
 import wikidataStuff.wdqsLookup as lookup
+
 from NatureArea import NatureArea
 from PreviewTable import PreviewTable
 from Uploader import Uploader
+import importer_utils as utils
 
 DATA_DIRECTORY = "data"
 reserves_file = "NR_polygon.csv"
 nationalparks_file = "NP_polygon.csv"
 edit_summary = "test"
-
-
-def get_data_from_csv_file(filename):
-    """Load data from csv file into a list."""
-    with open(filename, "r") as f_obj:
-        reader = csv.DictReader(f_obj, delimiter=',')
-        csv_data = list(reader)
-    return csv_data
 
 
 def remove_duplicate_entries(nature_dataset):
@@ -61,7 +54,7 @@ def load_nature_area_file(which_one):
     elif which_one == "np":
         filepath = os.path.join(DATA_DIRECTORY, nationalparks_file)
     print("Loading dataset: {}".format(filepath))
-    dataset = get_data_from_csv_file(filepath)
+    dataset = utils.get_data_from_csv_file(filepath)
     no_duplicates = remove_duplicate_entries(dataset)
     return no_duplicates
 
@@ -75,6 +68,10 @@ def get_wd_items_using_prop(prop):
     and has to be restarted, or if we later want to enhance
     some items. When matching, these should take predecence
     over any hardcoded matching files.
+
+    The output is a dictionary of ID's and items
+    that looks like this:
+    {'4420': 'Q28936211', '2041': 'Q28933898'}
     """
     items = {}
     print("WILL NOW DOWNLOAD WD ITEMS THAT USE " + prop)
@@ -110,6 +107,7 @@ def load_mapping_files():
 def main(arguments):
     """Process the arguments and fetch data according to them"""
     arguments = vars(arguments)
+    current_time = utils.get_current_timestamp()
     wikidata_site = utils.create_site_instance("wikidata", "wikidata")
     existing_areas = get_wd_items_using_prop("P3613")
     area_data = load_nature_area_file(arguments["dataset"])
@@ -123,8 +121,7 @@ def main(arguments):
     for area in area_data:
         reserve = NatureArea(area, wikidata_site, data_files, existing_areas)
         if arguments["table"]:
-            filename = "{}_{}.txt".format(arguments["dataset"],
-                                          utils.get_current_timestamp())
+            filename = "{}_{}.txt".format(arguments["dataset"], current_time)
             preview = PreviewTable(reserve)
             utils.append_line_to_file(preview.make_table(), filename)
         if arguments["upload"]:

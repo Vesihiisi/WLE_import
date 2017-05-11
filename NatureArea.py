@@ -1,4 +1,5 @@
 from WikidataItem import WikidataItem
+
 import importer_utils as utils
 
 
@@ -6,15 +7,42 @@ class NatureArea(WikidataItem):
     """
     Extension of WikidataItem to create nature area objects.
 
-    Handles both reserves and national parks.
+    Handles both nature reserves and national parks.
     """
+
+    def __init__(self, raw_data, repository, data_files, existing):
+        """
+        Initialize the NatureArea object.
+
+        :param raw_data: Row from csv file.
+        :param repository: Wikidata site instance.
+        :param data_files: Dict of various mapping files.
+        :param existing: WD items that already have an unique id
+        """
+        WikidataItem.__init__(self, raw_data, repository, data_files, existing)
+        self.match_wikidata(data_files)
+        self.create_sources()
+        self.set_labels()
+        self.set_descriptions()
+        self.set_is()
+        self.set_country()
+        self.set_municipalities()
+        self.set_forvaltare()
+        self.set_natur_id()
+        self.set_iucn_status()
+        self.set_area()
 
     def generate_ref_url(self):
         url = "http://nvpub.vic-metria.nu/naturvardsregistret/rest/omrade/{}/G%C3%A4llande"
         return url.format(self.raw_data["NVRID"])
 
     def create_sources(self):
-        """Create the references for all statements."""
+        """
+        Create the references for all statements.
+
+        Information about the source datasets comes
+        from the metadata supplied by Naturvårdsverket.
+        """
         self.sources = {}
         item_nr = self.items["source_nr"]
         item_np = self.items["source_np"]
@@ -37,9 +65,8 @@ class NatureArea(WikidataItem):
         languages.
         """
         swedish_name = self.raw_data["NAMN"]
-        if ("reservat" in swedish_name.lower() or
-                "nationalpark" in swedish_name.lower() or
-                "skärgård" in swedish_name.lower()):
+        exclude_words = ["nationalpark", "reservat", "skärgård"]
+        if any(word in swedish_name.lower() for word in exclude_words):
             languages = ["sv"]
         else:
             languages = [
@@ -84,8 +111,7 @@ class NatureArea(WikidataItem):
     def set_country(self):
         """Set the country to Sweden."""
         sweden = self.items["sweden"]
-        ref = self.make_stated_in_ref("Q29580583", "2009-12-09")
-        self.add_statement("country", sweden, ref=ref)
+        self.add_statement("country", sweden)
 
     def set_iucn_status(self):
         """Set the IUCN category of the area."""
@@ -221,25 +247,3 @@ class NatureArea(WikidataItem):
         elif self.raw_data["SKYDDSTYP"] == "Naturreservat":
             source = self.sources["nr"]
         return super().add_statement(prop_name, value, quals, source)
-
-    def __init__(self, raw_data, repository, data_files, existing):
-        """
-        Initialize the NatureArea object.
-
-        :param raw_data: Row from csv file.
-        :param repository: Wikidata site instance.
-        :param data_files: Dict of various mapping files.
-        :param existing: WD items that already have an unique id
-        """
-        WikidataItem.__init__(self, raw_data, repository, data_files, existing)
-        self.match_wikidata(data_files)
-        self.create_sources()
-        self.set_labels()
-        self.set_descriptions()
-        self.set_is()
-        self.set_country()
-        self.set_municipalities()
-        self.set_forvaltare()
-        self.set_natur_id()
-        self.set_iucn_status()
-        self.set_area()

@@ -36,9 +36,10 @@ natural feature. This script collects all WD items associated
 with articles, without checking the P31, this check should probably
 be done as part of the actual upload.
 """
-import pywikibot
 import os
-import csv
+
+import pywikibot
+
 import importer_utils as utils
 
 DATA_DIRECTORY = "data"
@@ -50,19 +51,18 @@ def read_reserve_csv():
     """
     Load source data about nature reserves from csv file.
 
-    Since we don't need all the data, only the name, nature ID
-    and municipalities are extracted.
+    Since we don't need all the data, only the name, nature ID,
+    protection status and municipalities are extracted.
     """
     reserves = []
     filepath = os.path.join(DATA_DIRECTORY, reserves_source)
-    with open(filepath, "r") as f_obj:
-        reader = csv.DictReader(f_obj, delimiter=',')
-        csv_data = list(reader)
-    for area in csv_data:
+    reserves_raw = utils.get_data_from_csv_file(filepath)
+    for area in reserves_raw:
         reserve = {}
         reserve["name"] = area["NAMN"]
         reserve["municipalities"] = area["KOMMUN"].split(", ")
         reserve["nature_id"] = area["NVRID"]
+        reserve["status"] = area["BESLSTATUS"]
         reserves.append(reserve)
     return reserves
 
@@ -95,10 +95,72 @@ def get_municipalities(title):
 
 def process_wp_reserves():
     """
+    Process a Petscan-generated list of nature reserves on svwp.
+
+    Attempt to find matches in the source file
+    and save them to appropriate report depending
+    on the reliability of the match (one match, multiple matches,
+    zero matches).
+    """
+    results_file_exact = "svwp_to_nature_id_exact.json"
+    results_file_none = "svwp_to_nature_id_none.json"
+    results_file_multiple = "svwp_to_nature_id_multiple.json"
+    results = []
+    results_none = []
+    results_multiple = []
+    reserves_on_wp = read_wp_nr_list()
+    article_count = len(reserves_on_wp)
+    reserves_source = read_reserve_csv()
+    print("Processing {} svwp articles.".format(article_count))
+    counter = 0
+    for article_title in reserves_on_wp:
+        if (not article_title.startswith("Lista") and
+                "nationalpark" not in article_title.lower()):
+            counter += 1
+            if counter % 10 == 0:
+                print("Processed {}/{}...".format(counter, article_count))
+            guesses = find_wp_reserve_in_data_file(
+                article_title, reserves_source)
+            if len(guesses) == 1:
+                entry = {}
+                entry["wp_article"] = article_title
+                entry["source_name"] = guesses[0]["name"]
+                entry["nature_id"] = guesses[0]["nature_id"]
+                entry["item"] = utils.q_from_wikipedia("sv", article_title)
+                results.append(entry)
+                utils.json_to_file(results_file_exact, results)
+            elif len(guesses) > 1:
+                entry = {}
+                entry["wp_article"] = article_title
+                nature_ids = []
+                for row in guesses:
+                    nature_ids.append(row["nature_id"])
+                entry["nature_id"] = nature_ids
+                results_multiple.append(entry)
+                utils.json_to_file(results_file_multiple, results_multiple)
+            else:
+                entry = {}
+                entry["wp_article"] = article_title
+                entry["nature_id"] = ""
+                results_none.append(entry)
+                utils.json_to_file(results_file_none, results_none)
+
+
+def find_wp_reserve_in_data_file(article_title, reserves_source):
+    """
+    Taking an article title on svwp, make an attempt
+    to match it to a nature ID in the source file.
+
+    The output is a list of possible matches, containing either
+    zero, one or multiple dictionaries that consist of the name,
+    ID and municipalities of the reserve in the source file, eg.:
+
+    [{'nature_id': '2004578', 'municipalities': ['Örnsköldsvik'], 'name': 'Granliden'}]
+
     Notes on matching:
 
-    * 100% kommun match (exact the same kommuner in wp
-    article and source file), and either:
+    * 100% kommun match (the wp article and the entry in the source file
+    have exactly the same set of municipalities), and either:
         * 100% name match
         * source file name starts the same way as wp name,
         e.g. source: "Foo", wp: "Foo naturreservat"
@@ -116,54 +178,18 @@ def process_wp_reserves():
     wp articles categorized as naturreservat that are missing
     in the source file (even with similar looking name).
     """
-    results_file_exact = "svwp_to_nature_id_exact.json"
-    results_file_none = "svwp_to_nature_id_none.json"
-    results_file_multiple = "svwp_to_nature_id_multiple.json"
-    results = []
-    results_none = []
-    results_multiple = []
-    reserves_on_wp = read_wp_nr_list()
-    reserves_source = read_reserve_csv()
-    article_count = len(reserves_on_wp)
-    print("Processing {} svwp articles.".format(article_count))
-    counter = 0
-    for article_title in reserves_on_wp:
-        counter = counter + 1
-        if counter % 10 == 0:
-            print("Processed {}/{}...".format(counter, article_count))
-        article_title = article_title.replace("_", " ")
-        if (not article_title.startswith("Lista") and
-                "nationalpark" not in article_title.lower()):
-            municipalities = get_municipalities(article_title)
-            if municipalities:
-                guesses = [x for x in
-                           reserves_source if
-                           (x["name"] == article_title or x["name"].startswith(
-                               article_title) or
-                            article_title.startswith(x["name"])) and
-                           x["municipalities"] == municipalities]
-                if len(guesses) == 1:
-                    entry = {}
-                    entry["wp_article"] = article_title
-                    entry["source_name"] = guesses[0]["name"]
-                    entry["nature_id"] = guesses[0]["nature_id"]
-                    entry["item"] = utils.q_from_wikipedia("sv", article_title)
-                    results.append(entry)
-                    utils.json_to_file(results_file_exact, results)
-                elif len(guesses) > 1:
-                    entry = {}
-                    entry["wp_article"] = article_title
-                    nature_ids = []
-                    for row in guesses:
-                        nature_ids.append(row["nature_id"])
-                    entry["nature_id"] = nature_ids
-                    results_multiple.append(entry)
-                    utils.json_to_file(results_file_multiple, results_multiple)
-                else:
-                    entry = {}
-                    entry["wp_article"] = article_title
-                    results_none.append(entry)
-                    utils.json_to_file(results_file_none, results_none)
+    guesses = []
+    article_title = article_title.replace("_", " ")
+    municipalities = get_municipalities(article_title)
+    if municipalities:
+        guesses = [x for x in
+                   reserves_source if
+                   (x["name"] == article_title or x["name"].startswith(
+                       article_title) or
+                    article_title.startswith(x["name"])) and
+                   x["municipalities"] == municipalities and
+                   x["status"] == "Gällande"]
+    return guesses
 
 
 if __name__ == "__main__":

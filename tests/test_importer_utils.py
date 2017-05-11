@@ -4,17 +4,18 @@ import unittest
 import WLE_import.importer_utils as utils
 
 
-class TestDictionaryMethods(unittest.TestCase):
+class TestRemoveDictFromListByValue(unittest.TestCase):
     """Tests for dictionary manipulations."""
 
     def test_remove_dic_from_list_by_value(self):
         in_dicts = [{"foo": "mjau", "x": 12}, {"foo": "bar", "x": 44}]
         out_dicts = [{"foo": "mjau", "x": 12}]
-        self.assertEqual(utils.remove_dic_from_list_by_value(
-            in_dicts, "foo", "bar"), out_dicts)
+        self.assertEqual(
+            utils.remove_dic_from_list_by_value(in_dicts, "foo", "bar"),
+            out_dicts)
 
 
-class TestStringMethods(unittest.TestCase):
+class TestExtractMunicipalityName(unittest.TestCase):
     """Tests for string manipulations."""
 
     def test_extract_municipality_name_simple(self):
@@ -46,6 +47,10 @@ class TestStringMethods(unittest.TestCase):
         text = "Planeradfe naturreservat i Huddinge kommun"
         output = "Huddinge"
         self.assertEqual(utils.extract_municipality_name(text), output)
+
+    def test_extract_municipality_name_zero(self):
+        text = "Umeå kommun"
+        self.assertIsNone(utils.extract_municipality_name(text))
 
 
 if __name__ == '__main__':
