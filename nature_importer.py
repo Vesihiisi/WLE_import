@@ -15,6 +15,47 @@ nationalparks_file = "NP_polygon.csv"
 edit_summary = "test"
 
 
+def get_status(row):
+    return row["BESLSTATUS"]
+
+
+def get_name(row):
+    return row["NAMN"]
+
+
+def get_nature_id(row):
+    return row["NVRID"]
+
+
+def get_row_by_nature_id(nature_id, nature_dataset):
+    return [x for x in nature_dataset if get_nature_id(x) == nature_id]
+
+
+def remove_invalid_entries(nature_dataset):
+    """
+    Remove entries of absolutely invalid reserves from dataset.
+
+    Absolutely invalid reserves are those whose status
+    is not "Gällande" and there is no other entry
+    in the dataset with the particular ID (which could change
+    the status to valid)-
+    """
+    new_dataset = []
+    for row in nature_dataset:
+        n_id = get_nature_id(row)
+        status = get_status(row)
+        if status != "Gällande":
+            all_rows_with_this_id = get_row_by_nature_id(
+                n_id, nature_dataset)
+            if len(all_rows_with_this_id) == 1:
+                pass
+            else:
+                new_dataset.append(row)
+        else:
+            new_dataset.append(row)
+    return new_dataset
+
+
 def remove_duplicate_entries(nature_dataset):
     """
     Remove duplicate entries from Nature Reserve file.
@@ -27,14 +68,10 @@ def remove_duplicate_entries(nature_dataset):
     results = []
     unique_ids = []
     for row in nature_dataset:
-        n_id = row["NVRID"]
+        n_id = get_nature_id(row)
         if n_id in unique_ids:
             new_status = row["BESLSTATUS"]
-            status_in_results = [x["BESLSTATUS"]
-                                 for x in results if x["NVRID"] == n_id]
-            if status_in_results[0] == "Gällande":
-                pass
-            elif new_status == "Gällande":
+            if new_status == "Gällande":
                 utils.remove_dic_from_list_by_value(results, "NVRID", n_id)
                 results.append(row)
         else:
@@ -55,7 +92,11 @@ def load_nature_area_file(which_one):
         filepath = os.path.join(DATA_DIRECTORY, nationalparks_file)
     print("Loading dataset: {}".format(filepath))
     dataset = utils.get_data_from_csv_file(filepath)
-    no_duplicates = remove_duplicate_entries(dataset)
+    print("Source dataset: {} rows.".format(str(len(dataset))))
+    no_invalid = remove_invalid_entries(dataset)
+    no_duplicates = remove_duplicate_entries(no_invalid)
+    print("Cleaned up duplicates and invalid items: {} rows left.".format(
+        str(len(no_duplicates))))
     return no_duplicates
 
 

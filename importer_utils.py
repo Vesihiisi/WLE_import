@@ -61,6 +61,14 @@ def datetime_convert(dt_object):
 
 
 def wd_template(template_type, value):
+    """
+    Wrap up Wikidata item/prop in a linking template.
+
+    :param template_type: Q or P
+    :param value: content of the template, eg. Q15 but
+                  you can also omit the letter since the
+                  template knows it already.
+    """
     return "{{" + template_type + "|" + value + "}}"
 
 
@@ -75,6 +83,7 @@ def create_site_instance(language, family):
 
 
 def is_vowel(char):
+    """Check whether a character is a vowel."""
     vowels = "auoiyéeöåäáæø"
     if char.lower() in vowels:
         return True

@@ -15,11 +15,21 @@ class NatureArea(WikidataItem):
         Initialize the NatureArea object.
 
         :param raw_data: Row from csv file.
+        :param raw_data: Expected type: string
         :param repository: Wikidata site instance.
+        :param repository: Expected type: site instance
         :param data_files: Dict of various mapping files.
+        :param data_files: Expected type: dictionary
         :param existing: WD items that already have an unique id
+        :param existing: Expected type: dictionary
+
+        :return: nothing
         """
         WikidataItem.__init__(self, raw_data, repository, data_files, existing)
+        self.municipalities = data_files["municipalities"]
+        self.iucn = data_files["iucn_categories"]
+        self.forvaltare = data_files["forvaltare"]
+        self.glossary = data_files["glossary"]
         self.match_wikidata(data_files)
         self.create_sources()
         self.set_labels()
@@ -33,7 +43,13 @@ class NatureArea(WikidataItem):
         self.set_area()
 
     def generate_ref_url(self):
-        url = "http://nvpub.vic-metria.nu/naturvardsregistret/rest/omrade/{}/G%C3%A4llande"
+        """
+        Create url to nature authority API with specific ID.
+
+        :return: url pointing to the post of the specific nature area
+        """
+        url = ("http://nvpub.vic-metria.nu/"
+               "naturvardsregistret/rest/omrade/{}/G%C3%A4llande")
         return url.format(self.raw_data["NVRID"])
 
     def create_sources(self):
@@ -42,6 +58,8 @@ class NatureArea(WikidataItem):
 
         Information about the source datasets comes
         from the metadata supplied by Naturvårdsverket.
+
+        :return: nothing
         """
         self.sources = {}
         item_nr = self.items["source_nr"]
@@ -63,6 +81,8 @@ class NatureArea(WikidataItem):
         added only in Swedish. Otherwise, if it's a pure
         geographical name, it is added in a number of Latin script
         languages.
+
+        :return: nothing
         """
         swedish_name = self.raw_data["NAMN"]
         exclude_words = ["nationalpark", "reservat", "skärgård"]
@@ -82,6 +102,8 @@ class NatureArea(WikidataItem):
 
         National park format: "national park in Sweden".
         Reserve format: "nature reserve in <län>, Sweden".
+
+        :return: nothing
         """
         if self.raw_data["SKYDDSTYP"] == "Nationalpark":
             np_dictionary = self.glossary["np_description"]
@@ -109,13 +131,21 @@ class NatureArea(WikidataItem):
                 self.add_description(language, description)
 
     def set_country(self):
-        """Set the country to Sweden."""
+        """
+        Set the country to Sweden.
+
+        :return: nothing
+        """
         sweden = self.items["sweden"]
         self.add_statement("country", sweden)
 
     def set_iucn_status(self):
-        """Set the IUCN category of the area."""
-        #  To do: add no_value...
+        """
+        Set the IUCN category of the area.
+
+        :return: nothing
+        """
+
         raw_status = self.raw_data["IUCNKAT"]
         raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
         status_item = [x["item"] for
@@ -123,9 +153,14 @@ class NatureArea(WikidataItem):
                        if x["sv"].lower() == raw_status.lower()]
         qualifier = self.make_qualifier_startdate(raw_timestamp)
         self.add_statement("iucn", status_item, quals=[qualifier])
+        #  To do: add no_value...
 
     def set_is(self):
-        """Set the P31 property - nature reserve or national park."""
+        """
+        Set the P31 property - nature reserve or national park.
+
+        :return: nothing
+        """
         skyddstyp = self.raw_data["SKYDDSTYP"]
         if skyddstyp == "Nationalpark":
             status = self.items["national_park"]
@@ -139,6 +174,8 @@ class NatureArea(WikidataItem):
 
         Can be more than one claim if the area stretches across
         several municipalities.
+
+        :return: nothing
         """
         municipalities_raw = self.raw_data["KOMMUN"].split(",")
         for municipality in municipalities_raw:
@@ -155,14 +192,21 @@ class NatureArea(WikidataItem):
             self.add_statement("located_adm", m_item[0])
 
     def set_natur_id(self):
-        """Set the Naturvårdsverket ID number."""
+        """
+        Set the Naturvårdsverket ID number.
+
+        :return: nothing
+        """
         nid = self.raw_data["NVRID"]
         self.add_statement("nature_id", nid)
 
     def set_forvaltare(self):
-        """Set the operator (förvaltare) of the area."""
+        """
+        Set the operator of the area.
+
+        :return: nothing
+        """
         forvaltare_raw = self.raw_data["FORVALTARE"]
-        #  TODO: wtf is an enskild markägare?????????
         try:
             f = [x["item"] for
                  x in self.forvaltare
@@ -189,6 +233,8 @@ class NatureArea(WikidataItem):
         We add both: first the total area without any
         qualifiers, and then separately for every part,
         with "applies to part" qualifier.
+
+        :return: nothing
         """
         area_total = self.raw_data["AREA_HA"]
         self.add_statement(
@@ -207,7 +253,14 @@ class NatureArea(WikidataItem):
                 quals=[qualifier])
 
     def match_wikidata_existing(self, value):
-        """Get WD item associated with certain value of unique ID."""
+        """
+        Get WD item associated with certain value of unique ID.
+
+        :param value: the ID to check
+        :param value: Expected type: string
+
+        :return: a match, if found
+        """
         match = [self.existing[x] for x in self.existing if x == value]
         try:
             return match[0]
@@ -223,6 +276,11 @@ class NatureArea(WikidataItem):
         generated by nature_harvester.py, see there for
         methodology used.
         TODO: check the P31 of matched reserve item.
+
+        :param data_files: the library of files with area Wikidata mappings
+        :param data_files: Expected type: dictionary
+
+        :return: nothing
         """
         if self.raw_data["SKYDDSTYP"] == "Nationalpark":
             mapping = data_files["mapping_nationalparks"]
@@ -241,7 +299,22 @@ class NatureArea(WikidataItem):
                 print("{} has no WD match.".format(self.raw_data["NAMN"]))
 
     def add_statement(self, prop_name, value, quals=None, ref=None):
-        """Overwrite plain add_statement with default sources."""
+        """
+        Overwrite plain add_statement with default sources.
+
+        :param prop_name: P-item representing property
+        :param prop_name: Expected type: string
+        :param value: content of the statement
+        :param value: Expected type: it can be a string representing
+                      a Q-item or a dictionary of an amount
+        :param quals: possibly qualifier items
+        :param quals: Expected type: list of wikidatastuff Qualifier items
+        :param ref: reference item
+        :param ref: Expected type: a wikidatastuff Reference item
+
+        :return: an add_statement function with the correct source set
+                 as default depending on the type of the area.
+        """
         if self.raw_data["SKYDDSTYP"] == "Nationalpark":
             source = self.sources["np"]
         elif self.raw_data["SKYDDSTYP"] == "Naturreservat":
