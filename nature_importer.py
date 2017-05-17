@@ -16,18 +16,22 @@ edit_summary = "test"
 
 
 def get_status(row):
+    """Get the validity status of reserve."""
     return row["BESLSTATUS"]
 
 
 def get_name(row):
+    """Get the name of reserve."""
     return row["NAMN"]
 
 
 def get_nature_id(row):
+    """Get the nature ID of reserve."""
     return row["NVRID"]
 
 
 def get_row_by_nature_id(nature_id, nature_dataset):
+    """Get the row(s) in source file with certain ID."""
     return [x for x in nature_dataset if get_nature_id(x) == nature_id]
 
 
@@ -139,7 +143,7 @@ def load_mapping_files():
                     "items.json",
                     "properties.json"]
     for filename in files_to_get:
-        filename_base = os.path.splitext(os.path.basename(filename))[0]
+        filename_base = filename.split(".")[0]
         file_content = utils.load_json(os.path.join(DATA_DIRECTORY, filename))
         mapping_files[filename_base] = file_content
     return mapping_files
