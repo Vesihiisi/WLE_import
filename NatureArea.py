@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+"""An object that represent a Wikidata item of a Swedish nature area."""
 from WikidataItem import WikidataItem
 
 import importer_utils as utils

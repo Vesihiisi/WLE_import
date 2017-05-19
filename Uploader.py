@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+"""Upload a WikidataItem to Wikidata."""
 from os import path
 
 from wikidataStuff.WikidataStuff import WikidataStuff as WDS
@@ -111,14 +113,14 @@ class Uploader(object):
         """
         self.repo = repo
         self.live = live
-        print("User: {}".format(self.get_username()))
-        print("Edit summary: {}".format(self.summary))
         if self.live:
             print("LIVE MODE")
             self.summary = edit_summary or SUMMARY_LIVE
         else:
             print("SANDBOX MODE: {}".format(self.TEST_ITEM))
             self.summary = SUMMARY_TEST
+        print("User: {}".format(self.get_username()))
+        print("Edit summary: {}".format(self.summary))
         print("---------------")
         self.data = data_object.wd_item
         self.wdstuff = WDS(self.repo, edit_summary=self.summary)
