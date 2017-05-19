@@ -151,7 +151,7 @@ class NatureArea(WikidataItem):
                        x in self.iucn
                        if x["sv"].lower() == raw_status.lower()]
         qualifier = self.make_qualifier_startdate(raw_timestamp)
-        self.add_statement("iucn", status_item, quals=[qualifier])
+        self.add_statement("iucn", status_item, quals=qualifier)
         #  To do: add no_value...
 
     def set_is(self):
@@ -236,20 +236,23 @@ class NatureArea(WikidataItem):
         :return: nothing
         """
         area_total = self.raw_data["AREA_HA"]
+        area_total_km = utils.hectares_to_km(area_total)
         self.add_statement(
-            "area", {"quantity_value": area_total, "unit": self.items["km_2"]})
+            "area", {"quantity_value": area_total_km,
+                     "unit": self.items["km_2"]})
 
         areas_parts = {"SKOG_HA": "woods",
                        "LAND_HA": "land",
                        "VATTEN_HA": "water"}
         for part, item in areas_parts.items():
             source_field = self.raw_data[part]
+            area_km = utils.hectares_to_km(source_field)
             target_item = self.items[item]
             qualifier = self.make_qualifier_applies_to(target_item)
             self.add_statement(
-                "area", {"quantity_value": source_field,
+                "area", {"quantity_value": area_km,
                          "unit": self.items["km_2"]},
-                quals=[qualifier])
+                quals=qualifier)
 
     def match_wikidata_existing(self, value):
         """

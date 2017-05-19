@@ -14,6 +14,7 @@ into Wikidata objects. It can then be uploaded
 to Wikidata using the uploader script.
 """
 from wikidataStuff.WikidataStuff import WikidataStuff as WDS
+from wikidataStuff import helpers as helpers
 import pywikibot
 
 import importer_utils as utils
@@ -83,9 +84,10 @@ class WikidataItem(object):
         if utils.string_is_q_item(value):
             val_item = self.make_q_item(value)
         elif isinstance(value, dict) and 'quantity_value' in value:
+            print(value)
             number = value['quantity_value']
             if 'unit' in value:
-                unit = self.make_q_item(value['unit'])
+                unit = self.wdstuff.QtoItemPage(value["unit"])
             else:
                 unit = None
             val_item = pywikibot.WbQuantity(
@@ -146,7 +148,8 @@ class WikidataItem(object):
         :param value: Expected type: it can be a string representing
                       a Q-item or a dictionary of an amount
         :param quals: possibly qualifier items
-        :param quals: Expected type: list of wikidatastuff Qualifier items
+        :param quals: Expected type: a wikidatastuff Qualifier item,
+                      or a list of them
         :param ref: reference item
         :param ref: Expected type: a wikidatastuff Reference item
 
@@ -158,7 +161,7 @@ class WikidataItem(object):
         statement = self.make_statement(wd_claim)
         base.append({"prop": prop,
                      "value": statement,
-                     "quals": quals,
+                     "quals": helpers.listify(quals),
                      "ref": ref})
 
     def make_stated_in_ref(self, value, pub_date, ref_url=None):
