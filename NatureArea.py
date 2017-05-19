@@ -235,23 +235,22 @@ class NatureArea(WikidataItem):
 
         :return: nothing
         """
+        hectare = self.items["hectare"]
         area_total = self.raw_data["AREA_HA"]
-        area_total_km = utils.hectares_to_km(area_total)
         self.add_statement(
-            "area", {"quantity_value": area_total_km,
-                     "unit": self.items["km_2"]})
+            "area", {"quantity_value": area_total,
+                     "unit": hectare})
 
         areas_parts = {"SKOG_HA": "woods",
                        "LAND_HA": "land",
                        "VATTEN_HA": "water"}
         for part, item in areas_parts.items():
-            source_field = self.raw_data[part]
-            area_km = utils.hectares_to_km(source_field)
+            area_ha = self.raw_data[part]
             target_item = self.items[item]
             qualifier = self.make_qualifier_applies_to(target_item)
             self.add_statement(
-                "area", {"quantity_value": area_km,
-                         "unit": self.items["km_2"]},
+                "area", {"quantity_value": area_ha,
+                         "unit": hectare},
                 quals=qualifier)
 
     def match_wikidata_existing(self, value):

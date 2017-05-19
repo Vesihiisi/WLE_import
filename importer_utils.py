@@ -126,12 +126,6 @@ def date_to_dict(datestring, dateformat):
     return date_dict
 
 
-def hectares_to_km(hectares):
-    """Convert a value in hectares to km."""
-    one_hectare_in_km = 0.01
-    return one_hectare_in_km * float(hectares)
-
-
 def extract_municipality_name(category_name):
     """
     Extract base municipality name from category name.
