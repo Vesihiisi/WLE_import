@@ -294,10 +294,10 @@ class NatureArea(WikidataItem):
             self.associate_wd_item(match_via_id_on_wd)
         else:
             match = [x["item"] for x in mapping if x["nature_id"] == nature_id]
-            try:
-                self.associate_wd_item(match[0])
-            except IndexError:
+            if not match:
                 print("{} has no WD match.".format(self.raw_data["NAMN"]))
+            else:
+                self.associate_wd_item(match[0])
 
     def add_statement(self, prop_name, value, quals=None, ref=None):
         """
