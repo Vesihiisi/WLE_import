@@ -27,7 +27,7 @@ class WikidataItem(object):
 
     def __init__(self, db_row_dict, repository, data_files, existing):
         """
-        Initialize the data object.
+        Initiate the data object.
 
         :param db_row_dict: raw data from the data source
         :param db_row_dict: Expected type: string

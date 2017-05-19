@@ -105,7 +105,7 @@ class Uploader(object):
                  live=False,
                  edit_summary=None):
         """
-        Initialize an Upload object for a single Nature Area.
+        Initiate an Upload object for a single Nature Area.
 
         :param data_object: Dictionary of object data
         :param repo: Data repository of site to work on (Wikidata)
