@@ -61,7 +61,7 @@ class WikidataItem(object):
         """
         return self.wdstuff.QtoItemPage(qnumber)
 
-    def make_pywikibot_item(self, value, prop=None):
+    def make_pywikibot_item(self, value):
         """
         Create a statement in pywikibot-ready format.
 
@@ -91,6 +91,11 @@ class WikidataItem(object):
                 unit = None
             val_item = pywikibot.WbQuantity(
                 amount=number, unit=unit, site=self.repo)
+        elif isinstance(value, dict) and 'date_value' in value:
+            date_dict = value["date_value"]
+            val_item = pywikibot.WbTime(year=date_dict["year"],
+                                        month=date_dict["month"],
+                                        day=date_dict["day"])
         elif value == "novalue":
             raise NotImplementedError
             # implement Error
@@ -133,8 +138,7 @@ class WikidataItem(object):
         """
         prop_item = self.props["start_time"]
         value_dic = utils.date_to_dict(value, "%Y-%m-%d")
-        value_pwb = pywikibot.WbTime(year=value_dic["year"], month=value_dic[
-                                     "month"], day=value_dic["day"])
+        value_pwb = self.make_pywikibot_item({"date_value": value_dic})
         return self.wdstuff.Qualifier(prop_item, value_pwb)
 
     def add_statement(self, prop_name, value, quals=None, ref=None):
@@ -156,7 +160,7 @@ class WikidataItem(object):
         """
         base = self.wd_item["statements"]
         prop = self.props[prop_name]
-        wd_claim = self.make_pywikibot_item(value, prop)
+        wd_claim = self.make_pywikibot_item(value)
         statement = self.make_statement(wd_claim)
         base.append({"prop": prop,
                      "value": statement,
@@ -179,8 +183,7 @@ class WikidataItem(object):
         item_prop = self.props["stated_in"]
         published_prop = self.props["publication_date"]
         pub_date = utils.date_to_dict(pub_date, "%Y-%m-%d")
-        timestamp = pywikibot.WbTime(year=pub_date["year"], month=pub_date[
-                                     "month"], day=pub_date["day"])
+        timestamp = self.make_pywikibot_item({"date_value": pub_date})
         source_item = self.wdstuff.QtoItemPage(value)
         source_claim = self.wdstuff.make_simple_claim(item_prop, source_item)
         if ref_url:
