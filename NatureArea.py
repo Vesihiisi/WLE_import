@@ -145,7 +145,6 @@ class NatureArea(WikidataItem):
 
         :return: nothing
         """
-
         raw_status = self.raw_data["IUCNKAT"]
         raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
         status_item = [x["item"] for
@@ -238,18 +237,18 @@ class NatureArea(WikidataItem):
         """
         area_total = self.raw_data["AREA_HA"]
         self.add_statement(
-            "area", {"quantity_value": area_total, "unit": self.items["km"]})
+            "area", {"quantity_value": area_total, "unit": self.items["km_2"]})
 
         areas_parts = {"SKOG_HA": "woods",
                        "LAND_HA": "land",
                        "VATTEN_HA": "water"}
-        for part in areas_parts:
+        for part, item in areas_parts.items():
             source_field = self.raw_data[part]
-            target_item = self.items[areas_parts[part]]
+            target_item = self.items[item]
             qualifier = self.make_qualifier_applies_to(target_item)
             self.add_statement(
                 "area", {"quantity_value": source_field,
-                         "unit": self.items["km"]},
+                         "unit": self.items["km_2"]},
                 quals=[qualifier])
 
     def match_wikidata_existing(self, value):
