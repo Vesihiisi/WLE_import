@@ -206,6 +206,11 @@ class NatureArea(WikidataItem):
         :return: nothing
         """
         forvaltare_raw = self.raw_data["FORVALTARE"]
+        if forvaltare_raw == "Hässelholms kommun":
+            forvaltare_raw = "Hässleholms kommun"
+        elif forvaltare_raw == "Malungs kommun":
+            forvaltare_raw = "Malung-Sälens kommun"
+
         try:
             f = [x["item"] for
                  x in self.forvaltare
@@ -213,10 +218,6 @@ class NatureArea(WikidataItem):
             forvaltare = f[0]
         except IndexError:
             if "kommun" in forvaltare_raw.lower():
-                if forvaltare_raw == "Hässelholms kommun":
-                    forvaltare_raw = "Hässleholms kommun"
-                elif forvaltare_raw == "Malungs kommun":
-                    forvaltare_raw = "Malung-Sälens kommun"
                 forvaltare = [x["item"] for
                               x in self.municipalities
                               if x["sv"].lower() == forvaltare_raw.lower()]

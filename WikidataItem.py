@@ -84,7 +84,6 @@ class WikidataItem(object):
         if utils.string_is_q_item(value):
             val_item = self.make_q_item(value)
         elif isinstance(value, dict) and 'quantity_value' in value:
-            print(value)
             number = value['quantity_value']
             if 'unit' in value:
                 unit = self.wdstuff.QtoItemPage(value["unit"])
