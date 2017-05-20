@@ -157,7 +157,7 @@ class NatureArea(WikidataItem):
                        if x["sv"].lower() == raw_status.lower()]
         qualifier = self.make_qualifier_startdate(raw_timestamp)
         self.add_statement("iucn", status_item, quals=qualifier)
-        #  To do: add no_value...
+        #  To do: add no_value https://phabricator.wikimedia.org/T165845
 
     def set_is(self):
         """
