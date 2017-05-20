@@ -146,6 +146,7 @@ def extract_municipality_name(category_name):
                           like "Naturreservat i Foo kommun"
     """
     municip_cache = {}
+    municipality = None
     legit_municipalities = load_json(
         os.path.join(DATA_DIRECTORY, "municipalities.json"))
     if category_name in municip_cache:
