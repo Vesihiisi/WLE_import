@@ -58,8 +58,9 @@ class NatureArea(WikidataItem):
         """
         Create the references for all statements.
 
-        Information about the source datasets comes
-        from the metadata supplied by Naturvårdsverket.
+        Publication date = included in the metadata files
+                           supplied by Naturvårdsverket.
+        Retrieval date =   when the stuff was downloaded to the WMSE machine.
 
         :return: nothing
         """
@@ -67,12 +68,14 @@ class NatureArea(WikidataItem):
         item_nr = self.items["source_nr"]
         item_np = self.items["source_np"]
         url = self.generate_ref_url()
+        publication_date = "2015-12-18"
+        retrieval_date = "2017-01-20"
         self.sources["np"] = self.make_stated_in_ref(item_np,
-                                                     "2015-12-18",
-                                                     url)
+                                                     publication_date,
+                                                     url, retrieval_date)
         self.sources["nr"] = self.make_stated_in_ref(item_nr,
-                                                     "2015-12-18",
-                                                     url)
+                                                     publication_date,
+                                                     url, retrieval_date)
 
     def set_labels(self):
         """

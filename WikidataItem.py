@@ -167,7 +167,11 @@ class WikidataItem(object):
                      "quals": helpers.listify(quals),
                      "ref": ref})
 
-    def make_stated_in_ref(self, value, pub_date, ref_url=None):
+    def make_stated_in_ref(self,
+                           value,
+                           pub_date,
+                           ref_url=None,
+                           retrieved_date=None):
         """
         Make a reference object of type 'stated in'.
 
@@ -177,6 +181,8 @@ class WikidataItem(object):
         :param pub_date: Expected type: string
         :param ref_url: optionally a reference url
         :param ref_url: Expected type: string
+        :param retrieved_date: timestamp in format "1999-09-31"
+        :param retrieved_date: Expected type: string
 
         :return: a wikidatastuff Reference item
         """
@@ -184,21 +190,30 @@ class WikidataItem(object):
         published_prop = self.props["publication_date"]
         pub_date = utils.date_to_dict(pub_date, "%Y-%m-%d")
         timestamp = self.make_pywikibot_item({"date_value": pub_date})
+        published_claim = self.wdstuff.make_simple_claim(
+            published_prop, timestamp)
         source_item = self.wdstuff.QtoItemPage(value)
         source_claim = self.wdstuff.make_simple_claim(item_prop, source_item)
-        if ref_url:
+        if ref_url and retrieved_date:
             ref_url_prop = self.props["reference_url"]
+            retrieved_date_prop = self.props["retrieved"]
+
+            retrieved_date = utils.date_to_dict(retrieved_date, "%Y-%m-%d")
+            retrieved_date = self.make_pywikibot_item(
+                {"date_value": retrieved_date})
+
             ref_url_claim = self.wdstuff.make_simple_claim(
                 ref_url_prop, ref_url)
+            retrieved_on_claim = self.wdstuff.make_simple_claim(
+                retrieved_date_prop, retrieved_date)
+
             ref = self.wdstuff.Reference(
                 source_test=[source_claim, ref_url_claim],
-                source_notest=self.wdstuff.make_simple_claim(
-                    published_prop, timestamp))
+                source_notest=[published_claim, retrieved_on_claim])
         else:
             ref = self.wdstuff.Reference(
                 source_test=[source_claim],
-                source_notest=self.wdstuff.make_simple_claim(
-                    published_prop, timestamp)
+                source_notest=published_claim
             )
         return ref
 
