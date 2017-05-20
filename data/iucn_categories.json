@@ -1,36 +1,9 @@
-[
-  {
-    "en": "IUCN category Ia: Strict Nature Reserve",
-    "item": "Q14545608",
-    "sv": "Ia, Strikt naturreservat (Strict Nature Reserve)"
-  },
-  {
-    "en": "IUCN category Ib: Wilderness Area",
-    "item": "Q14545620",
-    "sv": "Ib, Vildmarksområde (Wilderness Area)"
-  },
-  {
-    "en": "IUCN category III: Natural Monument or Feature",
-    "item": "Q14545633",
-    "sv": "III, Naturmonument (Natural Monument)"
-  },
-  {
-    "en": "IUCN category II: National Park",
-    "item": "Q14545628",
-    "sv": "II, Nationalpark (National Park)"
-  },
-  {
-    "en": "IUCN category IV: Habitat/Species Management Area",
-    "item": "Q14545639",
-    "sv": "IV, Habitat/Artskyddsområde (Habitat/Species Management Area)"
-  },
-  {
-    "en": "IUCN category V: Protected Landscape/Seascape",
-    "item": "Q14545646",
-    "sv": "V, Skyddat landskap/havsområde (Protected Landscape/Seascape)"
-  },
-  {
-    "item": null,
-    "sv": "0, Områden som ej kan klassificeras enligt IUCN: s system."
-  }
-]
+{
+  "0": "novalue",
+  "Ia": "Q14545608",
+  "Ib": "Q14545620",
+  "II": "Q14545628",
+  "III": "Q14545633",
+  "IV": "Q14545639",
+  "V": "Q14545646"
+}

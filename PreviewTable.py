@@ -76,7 +76,8 @@ class PreviewTable(object):
             target_item = self.itis_to_string(value_content)
             value_to_print = ""
             value_to_print += target_item
-            quals = statement["quals"]
+            quals = statement["value"].quals
+            print(quals)
             qual_to_print = ""
             if quals:
                 for qual in quals:

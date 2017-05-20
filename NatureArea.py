@@ -151,10 +151,9 @@ class NatureArea(WikidataItem):
         :return: nothing
         """
         raw_status = self.raw_data["IUCNKAT"]
+        iucn_type = raw_status.split(',')[0]
         raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
-        status_item = [x["item"] for
-                       x in self.iucn
-                       if x["sv"].lower() == raw_status.lower()]
+        status_item = self.iucn.get(iucn_type)
         qualifier = self.make_qualifier_startdate(raw_timestamp)
         self.add_statement("iucn", status_item, quals=qualifier)
         #  To do: add no_value https://phabricator.wikimedia.org/T165845
@@ -210,6 +209,7 @@ class NatureArea(WikidataItem):
 
         :return: nothing
         """
+        forvaltare = None
         forvaltare_raw = self.raw_data["FORVALTARE"]
         if forvaltare_raw == "Hässelholms kommun":
             forvaltare_raw = "Hässleholms kommun"
@@ -268,11 +268,7 @@ class NatureArea(WikidataItem):
 
         :return: a match, if found
         """
-        match = [self.existing[x] for x in self.existing if x == value]
-        try:
-            return match[0]
-        except IndexError:
-            return None
+        return self.existing.get(value)
 
     def match_wikidata(self, data_files):
         """

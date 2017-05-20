@@ -97,8 +97,9 @@ class WikidataItem(object):
                                         month=date_dict["month"],
                                         day=date_dict["day"])
         elif value == "novalue":
-            raise NotImplementedError
-            # implement Error
+            #  raise NotImplementedError
+            #  implement Error
+            print("Status: novalue will be added here")
         else:
             val_item = value
         return val_item
@@ -160,11 +161,14 @@ class WikidataItem(object):
         """
         base = self.wd_item["statements"]
         prop = self.props[prop_name]
+        if quals is None:
+            quals = []
         wd_claim = self.make_pywikibot_item(value)
         statement = self.make_statement(wd_claim)
+        for qual in helpers.listify(quals):
+            statement.addQualifier(qual)
         base.append({"prop": prop,
                      "value": statement,
-                     "quals": helpers.listify(quals),
                      "ref": ref})
 
     def make_stated_in_ref(self,
@@ -262,6 +266,9 @@ class WikidataItem(object):
     def construct_wd_item(self):
         """
         Create the empty structure of the data object.
+
+        This creates self.wd_item -- a dict container
+        of all the data content of the item.
 
         :return: nothing
         """

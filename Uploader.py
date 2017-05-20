@@ -53,10 +53,6 @@ class Uploader(object):
                 prop = claim["prop"]
                 value = claim["value"]
                 ref = claim["ref"]
-                quals = claim["quals"]
-                if quals and len(quals) > 0:
-                    for qualifier in quals:
-                        value.addQualifier(qualifier)
                 self.wdstuff.addNewClaim(prop, value, wd_item, ref)
 
     def create_new_item(self):
