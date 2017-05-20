@@ -102,7 +102,7 @@ class PreviewTable(object):
 
     def __init__(self, WD_object):
         """
-        Initiate the Preview Table object.
+        Initialize the Preview Table object.
 
         :param WD_object: data object to be represented
         :param WD_object: Expected type: WikidataItem object
