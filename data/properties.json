@@ -1,0 +1,19 @@
+{
+    "applies_to_part": "P518",
+    "area": "P2046",
+    "commonscat": "P373",
+    "coordinates": "P625",
+    "country": "P17",
+    "forvaltare": "P137",
+    "image": "P18",
+    "is": "P31",
+    "iucn": "P814",
+    "located_adm": "P131",
+    "location": "P276",
+    "nature_id": "P3613",
+    "publication_date": "P577",
+    "reference_url": "P854",
+    "retrieved": "P813",
+    "start_time": "P580",
+    "stated_in": "P248"
+}
