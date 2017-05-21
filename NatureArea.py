@@ -150,13 +150,16 @@ class NatureArea(WikidataItem):
 
         :return: nothing
         """
+        print(self.raw_data["NAMN"])
         raw_status = self.raw_data["IUCNKAT"]
         iucn_type = raw_status.split(',')[0]
-        raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
-        status_item = self.iucn.get(iucn_type)
-        qualifier = self.make_qualifier_startdate(raw_timestamp)
-        self.add_statement("iucn", status_item, quals=qualifier)
-        #  To do: add no_value https://phabricator.wikimedia.org/T165845
+        if iucn_type == "0":
+            self.add_statement("iucn", "novalue")
+        else:
+            raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
+            status_item = self.iucn.get(iucn_type)
+            qualifier = self.make_qualifier_startdate(raw_timestamp)
+            self.add_statement("iucn", status_item, quals=qualifier)
 
     def set_is(self):
         """
