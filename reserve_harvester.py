@@ -101,6 +101,10 @@ def process_wp_reserves():
     and save them to appropriate report depending
     on the reliability of the match (one match, multiple matches,
     zero matches).
+    The whole updated report is dumped to file immediately
+    after every lookup rather than after the finished run,
+    so that the current result can be peeked into
+    before the processing is done.
     """
     results_file_exact = "svwp_to_nature_id_exact.json"
     results_file_none = "svwp_to_nature_id_none.json"

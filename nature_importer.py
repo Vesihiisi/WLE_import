@@ -143,7 +143,7 @@ def load_mapping_files():
                     "items.json",
                     "properties.json"]
     for filename in files_to_get:
-        filename_base = filename.split(".")[0]
+        filename_base = os.path.splitext(filename)[0]
         file_content = utils.load_json(os.path.join(DATA_DIRECTORY, filename))
         mapping_files[filename_base] = file_content
     return mapping_files
