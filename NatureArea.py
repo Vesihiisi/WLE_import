@@ -146,8 +146,8 @@ class NatureArea(WikidataItem):
         self.add_statement("country", sweden)
 
     def set_inception(self):
+        """Set the inception date of nature area."""
         raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
-        print(raw_timestamp)
         incept = utils.date_to_dict(raw_timestamp, "%Y-%m-%d")
         incept_pwb = self.make_pywikibot_item({"date_value": incept})
         self.add_statement("inception", incept_pwb)
