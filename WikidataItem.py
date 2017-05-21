@@ -83,6 +83,8 @@ class WikidataItem(object):
             value = value[0]
         if utils.string_is_q_item(value):
             val_item = self.make_q_item(value)
+        elif value == "novalue":
+            val_item = value
         elif isinstance(value, dict) and 'quantity_value' in value:
             number = value['quantity_value']
             if 'unit' in value:
@@ -108,12 +110,19 @@ class WikidataItem(object):
         """
         Create a Wikidatastuff statement.
 
+        Supports the special data types 'somevalue'
+        and 'novalue'.
+
         :prop value: the content of the statement
         :prop value: Expected type: pywikibot item
 
         :return: a wikidatastuff statement
         """
-        return self.wdstuff.Statement(value)
+        if value in ['somevalue', 'novalue']:
+            special = True
+        else:
+            special = False
+        return self.wdstuff.Statement(value, special=special)
 
     def make_qualifier_applies_to(self, value):
         """

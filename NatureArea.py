@@ -148,9 +148,11 @@ class NatureArea(WikidataItem):
         """
         Set the IUCN category of the area.
 
+        If the IUCN category is 0 (not applicable),
+        use 'novalue' as the value.
+
         :return: nothing
         """
-        print(self.raw_data["NAMN"])
         raw_status = self.raw_data["IUCNKAT"]
         iucn_type = raw_status.split(',')[0]
         if iucn_type == "0":
