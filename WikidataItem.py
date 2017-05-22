@@ -135,20 +135,6 @@ class WikidataItem(object):
         target_item = self.wdstuff.QtoItemPage(value)
         return self.wdstuff.Qualifier(prop_item, target_item)
 
-    def make_qualifier_startdate(self, value):
-        """
-        Create a qualifier to a statement with type 'start date'.
-
-        :param value: date in the format "1999-09-31"
-        :type value: string
-
-        :return: a wikidatastuff Qualifier
-        """
-        prop_item = self.props["start_time"]
-        value_dic = utils.date_to_dict(value, "%Y-%m-%d")
-        value_pwb = self.make_pywikibot_item({"date_value": value_dic})
-        return self.wdstuff.Qualifier(prop_item, value_pwb)
-
     def add_statement(self, prop_name, value, quals=None, ref=None):
         """
         Add a statement to the data object.
