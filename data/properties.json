@@ -8,6 +8,7 @@
     "image": "P18",
     "is": "P31",
     "iucn": "P814",
+    "inception" : "P571",
     "located_adm": "P131",
     "location": "P276",
     "nature_id": "P3613",

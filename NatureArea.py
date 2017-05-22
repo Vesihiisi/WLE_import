@@ -41,6 +41,7 @@ class NatureArea(WikidataItem):
         self.set_natur_id()
         self.set_iucn_status()
         self.set_area()
+        self.set_inception()
 
     def generate_ref_url(self):
         """
@@ -132,15 +133,19 @@ class NatureArea(WikidataItem):
         sweden = self.items["sweden"]
         self.add_statement("country", sweden)
 
+    def set_inception(self):
+        """Set the inception date of nature area."""
+        raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
+        incept = utils.date_to_dict(raw_timestamp, "%Y-%m-%d")
+        incept_pwb = self.make_pywikibot_item({"date_value": incept})
+        self.add_statement("inception", incept_pwb)
+
     def set_iucn_status(self):
         """Set the IUCN category of the area."""
         raw_status = self.raw_data["IUCNKAT"]
         iucn_type = raw_status.split(',')[0]
-        raw_timestamp = self.raw_data["URSBESLDAT"][1:11]
         status_item = self.iucn.get(iucn_type)
-        qualifier = self.make_qualifier_startdate(raw_timestamp)
-        self.add_statement("iucn", status_item, quals=qualifier)
-        #  To do: add no_value https://phabricator.wikimedia.org/T165845
+        self.add_statement("iucn", status_item)
 
     def set_is(self):
         """Set the P31 property - nature reserve or national park."""
