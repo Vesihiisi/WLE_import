@@ -30,15 +30,13 @@ class WikidataItem(object):
         Initialize the data object.
 
         :param db_row_dict: raw data from the data source
-        :param db_row_dict: Expected type: string
+        :type db_row_dict: string
         :param repository: data repository (Wikidata site)
-        :param repository: Expected type: site instance
+        :type repository: site instance
         :param data_files: dict of various mapping files
-        :param data_files: Expected type: dictionary
+        :type data_files: dictionary
         :param existing: WD items that already have an unique id
-        :param existing: Expected type: dictionary
-
-        :return: nothing
+        :type existing: dictionary
         """
         self.repo = repository
         self.existing = existing
@@ -55,7 +53,7 @@ class WikidataItem(object):
         Create a regular Wikidata ItemPage.
 
         :param qnumber: Q-item that we want to get an ItemPage of
-        :param qnumber: Expected type: string
+        :type qnumber: string
 
         :return: an ItemPage for pywikibot
         """
@@ -71,7 +69,7 @@ class WikidataItem(object):
         * an amount with or without unit (value is dic)
 
         :param value: the content of the item
-        :param value: Expected type: it can be a string or
+        :type value: it can be a string or
                       a dictionary, see above.
 
         :return: a pywikibot item of the type determined
@@ -114,7 +112,7 @@ class WikidataItem(object):
         and 'novalue'.
 
         :prop value: the content of the statement
-        :prop value: Expected type: pywikibot item
+        :type value: pywikibot item
 
         :return: a wikidatastuff statement
         """
@@ -129,7 +127,7 @@ class WikidataItem(object):
         Create a qualifier to a statement with type 'applies to part'.
 
         :param value: Q-item that this applies to
-        :param value: Expected type: string
+        :type value: string
 
         :return: a wikidatastuff Qualifier
         """
@@ -142,7 +140,7 @@ class WikidataItem(object):
         Create a qualifier to a statement with type 'start date'.
 
         :param value: date in the format "1999-09-31"
-        :param value: Expected type: string
+        :type value: string
 
         :return: a wikidatastuff Qualifier
         """
@@ -156,17 +154,15 @@ class WikidataItem(object):
         Add a statement to the data object.
 
         :param prop_name: P-item representing property
-        :param prop_name: Expected type: string
+        :type prop_name: string
         :param value: content of the statement
-        :param value: Expected type: it can be a string representing
+        :type value: it can be a string representing
                       a Q-item or a dictionary of an amount
         :param quals: possibly qualifier items
-        :param quals: Expected type: a wikidatastuff Qualifier item,
+        :type quals: a wikidatastuff Qualifier item,
                       or a list of them
         :param ref: reference item
-        :param ref: Expected type: a wikidatastuff Reference item
-
-        :return: nothing
+        :type ref: a wikidatastuff Reference item
         """
         base = self.wd_item["statements"]
         prop = self.props[prop_name]
@@ -189,13 +185,13 @@ class WikidataItem(object):
         Make a reference object of type 'stated in'.
 
         :param value: Q-item where sth is stated
-        :param value: Expected type: string
+        :type value: string
         :param pub_date: timestamp in format "1999-09-31"
-        :param pub_date: Expected type: string
+        :type pub_date: string
         :param ref_url: optionally a reference url
-        :param ref_url: Expected type: string
+        :type ref_url: string
         :param retrieved_date: timestamp in format "1999-09-31"
-        :param retrieved_date: Expected type: string
+        :type retrieved_date: string
 
         :return: a wikidatastuff Reference item
         """
@@ -236,9 +232,7 @@ class WikidataItem(object):
 
         :param wd_item: Q-item that shall be assigned to the
                         data object.
-        :param wd_item: Expected type: string
-
-        :return: nothing
+        :type wd_item: string
         """
         if wd_item is not None:
             self.wd_item["wd-item"] = wd_item
@@ -249,11 +243,9 @@ class WikidataItem(object):
         Add a label in a specific language.
 
         :param language: code of language, e.g. "fi"
-        :param language: Expected type: string
+        :type language: string
         :param text: content of the label
-        :param text: Expected type: string
-
-        :return: nothing
+        :type text: string
         """
         base = self.wd_item["labels"]
         base.append({"language": language, "value": text})
@@ -263,11 +255,9 @@ class WikidataItem(object):
         Add a description in a specific language.
 
         :param language: code of language, e.g. "fi"
-        :param language: Expected type: string
+        :type language: string
         :param text: content of the description
-        :param text: Expected type: string
-
-        :return: nothing
+        :type text: string
         """
         base = self.wd_item["descriptions"]
         base.append({"language": language, "value": text})
@@ -278,8 +268,6 @@ class WikidataItem(object):
 
         This creates self.wd_item -- a dict container
         of all the data content of the item.
-
-        :return: nothing
         """
         self.wd_item = {}
         self.wd_item["upload"] = True
