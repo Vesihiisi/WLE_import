@@ -17,15 +17,13 @@ class NatureArea(WikidataItem):
         Initialize the NatureArea object.
 
         :param raw_data: Row from csv file.
-        :param raw_data: Expected type: string
+        :type raw_data: string
         :param repository: Wikidata site instance.
-        :param repository: Expected type: site instance
+        :type repository: site instance
         :param data_files: Dict of various mapping files.
-        :param data_files: Expected type: dictionary
+        :type data_files: dictionary
         :param existing: WD items that already have an unique id
-        :param existing: Expected type: dictionary
-
-        :return: nothing
+        :type existing: dictionary
         """
         WikidataItem.__init__(self, raw_data, repository, data_files, existing)
         self.municipalities = data_files["municipalities"]
@@ -62,8 +60,6 @@ class NatureArea(WikidataItem):
         Publication date = included in the metadata files
                            supplied by Naturvårdsverket.
         Retrieval date =   when the stuff was downloaded to the WMSE machine.
-
-        :return: nothing
         """
         self.sources = {}
         item_nr = self.items["source_nr"]
@@ -87,8 +83,6 @@ class NatureArea(WikidataItem):
         added only in Swedish. Otherwise, if it's a pure
         geographical name, it is added in a number of Latin script
         languages.
-
-        :return: nothing
         """
         swedish_name = self.raw_data["NAMN"]
         exclude_words = ["nationalpark", "reservat", "skärgård"]
@@ -108,8 +102,6 @@ class NatureArea(WikidataItem):
 
         National park format: "national park in Sweden".
         Reserve format: "nature reserve in <län>, Sweden".
-
-        :return: nothing
         """
         if self.raw_data["SKYDDSTYP"] == "Nationalpark":
             np_dictionary = self.glossary["np_description"]
@@ -137,11 +129,7 @@ class NatureArea(WikidataItem):
                 self.add_description(language, description)
 
     def set_country(self):
-        """
-        Set the country to Sweden.
-
-        :return: nothing
-        """
+        """Set the country to Sweden."""
         sweden = self.items["sweden"]
         self.add_statement("country", sweden)
 
@@ -153,22 +141,14 @@ class NatureArea(WikidataItem):
         self.add_statement("inception", incept_pwb)
 
     def set_iucn_status(self):
-        """
-        Set the IUCN category of the area.
-
-        :return: nothing
-        """
+        """Set the IUCN category of the area."""
         raw_status = self.raw_data["IUCNKAT"]
         iucn_type = raw_status.split(',')[0]
         status_item = self.iucn.get(iucn_type)
         self.add_statement("iucn", status_item)
 
     def set_is(self):
-        """
-        Set the P31 property - nature reserve or national park.
-
-        :return: nothing
-        """
+        """Set the P31 property - nature reserve or national park."""
         skyddstyp = self.raw_data["SKYDDSTYP"]
         if skyddstyp == "Nationalpark":
             status = self.items["national_park"]
@@ -182,8 +162,6 @@ class NatureArea(WikidataItem):
 
         Can be more than one claim if the area stretches across
         several municipalities.
-
-        :return: nothing
         """
         municipalities_raw = self.raw_data["KOMMUN"].split(",")
         for municipality in municipalities_raw:
@@ -200,20 +178,12 @@ class NatureArea(WikidataItem):
             self.add_statement("located_adm", m_item[0])
 
     def set_natur_id(self):
-        """
-        Set the Naturvårdsverket ID number.
-
-        :return: nothing
-        """
+        """Set the Naturvårdsverket ID number."""
         nid = self.raw_data["NVRID"]
         self.add_statement("nature_id", nid)
 
     def set_forvaltare(self):
-        """
-        Set the operator of the area.
-
-        :return: nothing
-        """
+        """Set the operator of the area."""
         forvaltare = None
         forvaltare_raw = self.raw_data["FORVALTARE"]
         if forvaltare_raw == "Hässelholms kommun":
@@ -243,8 +213,6 @@ class NatureArea(WikidataItem):
         We add both: first the total area without any
         qualifiers, and then separately for every part,
         with "applies to part" qualifier.
-
-        :return: nothing
         """
         hectare = self.items["hectare"]
         area_total = self.raw_data["AREA_HA"]
@@ -269,7 +237,7 @@ class NatureArea(WikidataItem):
         Get WD item associated with certain value of unique ID.
 
         :param value: the ID to check
-        :param value: Expected type: string
+        :type value: string
 
         :return: a match, if found
         """
@@ -286,9 +254,7 @@ class NatureArea(WikidataItem):
         TODO: check the P31 of matched reserve item.
 
         :param data_files: the library of files with area Wikidata mappings
-        :param data_files: Expected type: dictionary
-
-        :return: nothing
+        :type data_files: dictionary
         """
         if self.raw_data["SKYDDSTYP"] == "Nationalpark":
             mapping = data_files["mapping_nationalparks"]
@@ -311,14 +277,14 @@ class NatureArea(WikidataItem):
         Overwrite plain add_statement with default sources.
 
         :param prop_name: P-item representing property
-        :param prop_name: Expected type: string
+        :type prop_name: string
         :param value: content of the statement
-        :param value: Expected type: it can be a string representing
+        :type value: it can be a string representing
                       a Q-item or a dictionary of an amount
         :param quals: possibly qualifier items
-        :param quals: Expected type: list of wikidatastuff Qualifier items
+        :type quals: list of wikidatastuff Qualifier items
         :param ref: reference item
-        :param ref: Expected type: a wikidatastuff Reference item
+        :type ref: a wikidatastuff Reference item
 
         :return: an add_statement function with the correct source set
                  as default depending on the type of the area.
