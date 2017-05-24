@@ -147,8 +147,10 @@ def extract_municipality_name(category_name):
     """
     municip_cache = {}
     municipality = None
+    absolute = os.path.dirname(os.path.abspath(__file__))
+    absolute_data = (os.path.join(absolute, "data"))
     legit_municipalities = load_json(
-        os.path.join(DATA_DIRECTORY, "municipalities.json"))
+        os.path.join(absolute_data, "municipalities.json"))
     if category_name in municip_cache:
         municipality = municip_cache[category_name]
     else:
