@@ -11,7 +11,21 @@ from wikidataStuff.WikidataStuff import WikidataStuff as wds
 
 site_cache = {}
 
-DATA_DIRECTORY = "data"
+
+def get_absolute_path(dir_name):
+    """
+    Get the absolute path of a subdirectory inside current one.
+
+    This works in relation to where this file is actually
+    located, not the current working directory, to make sure
+    the tests don't try to resolve the path in relation
+    to their own working directory.
+    """
+    absolute_current = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(absolute_current, dir_name)
+
+
+DATA_DIRECTORY = get_absolute_path("data")
 
 
 def load_json(filename):
@@ -147,10 +161,8 @@ def extract_municipality_name(category_name):
     """
     municip_cache = {}
     municipality = None
-    absolute = os.path.dirname(os.path.abspath(__file__))
-    absolute_data = (os.path.join(absolute, "data"))
     legit_municipalities = load_json(
-        os.path.join(absolute_data, "municipalities.json"))
+        os.path.join(DATA_DIRECTORY, "municipalities.json"))
     if category_name in municip_cache:
         municipality = municip_cache[category_name]
     else:
