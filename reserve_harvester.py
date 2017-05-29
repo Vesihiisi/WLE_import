@@ -89,14 +89,11 @@ def get_municipalities(title):
     page = pywikibot.Page(site, title)
     for cat in page.categories():
         cat_title = cat.titleWithoutNamespace()
-        if cat_title in municip_cache_global:
-            if municip_cache_global[cat_title] is not None:
-                municipalities.append(municip_cache_global[cat_title])
-        else:
+        if cat_title not in municip_cache_global:
             possible_m = utils.extract_municipality_name(cat_title)
             municip_cache_global[cat_title] = possible_m
-            if possible_m is not None:
-                municipalities.append(possible_m)
+        if municip_cache_global[cat_title] is not None:
+                municipalities.append(municip_cache_global[cat_title])
     return municipalities
 
 
