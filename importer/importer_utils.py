@@ -161,24 +161,19 @@ def extract_municipality_name(category_name):
     :param category_name: Category of Swedish nature reserves,
                           like "Naturreservat i Foo kommun"
     """
-    municip_cache = {}
     municipality = None
     legit_municipalities = load_json(
-        get_file_from_subdir("data", "municipalities.json"))
-    if category_name in municip_cache:
-        municipality = municip_cache[category_name]
-    else:
-        m = re.search('(\w?)[N|n]aturreservat i (.+?) [kommun|län]', category_name)
-        if m:
-            municipality = m.group(2)
-            municipality_clean = [x["en"].split(" ")[0] for
-                                  x in legit_municipalities if
-                                  x["sv"] == municipality + " kommun"]
-            if municipality_clean:
-                municipality = municipality_clean[0]
-                if municipality == "Gothenburg":
-                    municipality = "Göteborg"
-                municip_cache[category_name] = municipality
+        os.path.join(DATA_DIRECTORY, "municipalities.json"))
+    m = re.search('(\w?)[N|n]aturreservat i (.+?) [kommun|län]', category_name)
+    if m:
+        municipality = m.group(2)
+        municipality_clean = [x["en"].split(" ")[0] for
+                              x in legit_municipalities if
+                              x["sv"] == municipality + " kommun"]
+        if municipality_clean:
+            municipality = municipality_clean[0]
+            if municipality == "Gothenburg":
+                municipality = "Göteborg"
     return municipality
 
 
