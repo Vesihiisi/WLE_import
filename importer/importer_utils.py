@@ -163,7 +163,7 @@ def extract_municipality_name(category_name):
     """
     municipality = None
     legit_municipalities = load_json(
-        os.path.join(DATA_DIRECTORY, "municipalities.json"))
+        get_file_from_subdir("data", "municipalities.json"))
     m = re.search('(\w?)[N|n]aturreservat i (.+?) [kommun|län]', category_name)
     if m:
         municipality = m.group(2)
