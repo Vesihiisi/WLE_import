@@ -46,6 +46,8 @@ DATA_DIRECTORY = "data"
 reserves_file = "petscan_naturreservat.json"
 reserves_source = "NR_polygon.csv"
 
+municip_cache_global = {}
+
 
 def read_reserve_csv():
     """
@@ -87,9 +89,11 @@ def get_municipalities(title):
     page = pywikibot.Page(site, title)
     for cat in page.categories():
         cat_title = cat.titleWithoutNamespace()
-        possible_m = utils.extract_municipality_name(cat_title)
-        if possible_m:
-            municipalities.append(possible_m)
+        if cat_title not in municip_cache_global:
+            possible_m = utils.extract_municipality_name(cat_title)
+            municip_cache_global[cat_title] = possible_m
+        if municip_cache_global[cat_title] is not None:
+                municipalities.append(municip_cache_global[cat_title])
     return municipalities
 
 
