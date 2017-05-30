@@ -21,7 +21,8 @@ def get_file_from_subdir(dir_name, file_name):
     the tests don't try to resolve the path in relation
     to their own working directory.
 
-    :param dir_name: name of subdirectory
+    :param dir_name: name or relative path
+                     (from directory containing this file) of subdirectory
     :param file_name: name of file
     """
     absolute_current = os.path.dirname(os.path.abspath(__file__))
