@@ -11,7 +11,23 @@ from wikidataStuff.WikidataStuff import WikidataStuff as wds
 
 site_cache = {}
 
-DATA_DIRECTORY = "data"
+
+def get_file_from_subdir(dir_name, file_name):
+    """
+    Get the absolute path of a file in a subdir inside current dir.
+
+    This works in relation to where this file is actually
+    located, not the current working directory, to make sure
+    the tests don't try to resolve the path in relation
+    to their own working directory.
+
+    :param dir_name: name or relative path
+                     (from directory containing this file) of subdirectory
+    :param file_name: name of file
+    """
+    absolute_current = os.path.dirname(os.path.abspath(__file__))
+    path_subdir = os.path.join(absolute_current, dir_name)
+    return os.path.join(path_subdir, file_name)
 
 
 def load_json(filename):
@@ -147,7 +163,7 @@ def extract_municipality_name(category_name):
     """
     municipality = None
     legit_municipalities = load_json(
-        os.path.join(DATA_DIRECTORY, "municipalities.json"))
+        get_file_from_subdir("data", "municipalities.json"))
     m = re.search('(\w?)[N|n]aturreservat i (.+?) [kommun|län]', category_name)
     if m:
         municipality = m.group(2)

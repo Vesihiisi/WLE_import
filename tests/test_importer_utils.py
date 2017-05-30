@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8  -*-
 import unittest
-import WLE_import.importer_utils as utils
+import importer.importer_utils as utils
 
 
 class TestRemoveDictFromListByValue(unittest.TestCase):

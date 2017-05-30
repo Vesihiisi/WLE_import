@@ -36,13 +36,10 @@ natural feature. This script collects all WD items associated
 with articles, without checking the P31, this check should probably
 be done as part of the actual upload.
 """
-import os
-
 import pywikibot
 
 import importer_utils as utils
 
-DATA_DIRECTORY = "data"
 reserves_file = "petscan_naturreservat.json"
 reserves_source = "NR_polygon.csv"
 
@@ -57,7 +54,7 @@ def read_reserve_csv():
     protection status and municipalities are extracted.
     """
     reserves = []
-    filepath = os.path.join(DATA_DIRECTORY, reserves_source)
+    filepath = utils.get_file_from_subdir("data", reserves_source)
     reserves_raw = utils.get_data_from_csv_file(filepath)
     for area in reserves_raw:
         reserve = {}
@@ -71,7 +68,7 @@ def read_reserve_csv():
 
 def read_wp_nr_list():
     """Load the content of petscan list of nature reserves."""
-    filepath = os.path.join(DATA_DIRECTORY, reserves_file)
+    filepath = utils.get_file_from_subdir("data", reserves_file)
     content = utils.load_json(filepath)
     return content["*"][0]["a"]["*"]
 

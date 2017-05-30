@@ -9,7 +9,6 @@ from PreviewTable import PreviewTable
 from Uploader import Uploader
 import importer_utils as utils
 
-DATA_DIRECTORY = "data"
 reserves_file = "NR_polygon.csv"
 nationalparks_file = "NP_polygon.csv"
 edit_summary = "test"
@@ -91,9 +90,9 @@ def load_nature_area_file(which_one):
     :param which_one: nr for reserves or np for parks.
     """
     if which_one == "nr":
-        filepath = os.path.join(DATA_DIRECTORY, reserves_file)
+        filepath = utils.get_file_from_subdir("data", reserves_file)
     elif which_one == "np":
-        filepath = os.path.join(DATA_DIRECTORY, nationalparks_file)
+        filepath = utils.get_file_from_subdir("data", nationalparks_file)
     print("Loading dataset: {}".format(filepath))
     dataset = utils.get_data_from_csv_file(filepath)
     print("Source dataset: {} rows.".format(str(len(dataset))))
@@ -144,7 +143,8 @@ def load_mapping_files():
                     "properties.json"]
     for filename in files_to_get:
         filename_base = os.path.splitext(filename)[0]
-        file_content = utils.load_json(os.path.join(DATA_DIRECTORY, filename))
+        file_content = utils.load_json(
+            utils.get_file_from_subdir("data", filename))
         mapping_files[filename_base] = file_content
     return mapping_files
 
