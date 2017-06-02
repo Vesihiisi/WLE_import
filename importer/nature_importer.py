@@ -11,7 +11,8 @@ import importer_utils as utils
 
 reserves_file = "NR_polygon.csv"
 nationalparks_file = "NP_polygon.csv"
-edit_summary = "test"
+edit_summary_reserves = "#WLESE #naturreservat"
+edit_summary_nationalparks = "#WLESE #nationalpark"
 
 
 def get_status(row):
@@ -171,6 +172,10 @@ def main(arguments):
             utils.append_line_to_file(preview.make_table(), filename)
         if arguments["upload"]:
             live = True if arguments["upload"] == "live" else False
+            if arguments["dataset"] == "nr":
+                edit_summary = edit_summary_reserves
+            elif arguments["dataset"] == "np":
+                edit_summary = edit_summary_nationalparks
             uploader = Uploader(reserve,
                                 repo=wikidata_site,
                                 live=live,

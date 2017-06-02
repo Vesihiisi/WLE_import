@@ -12,7 +12,6 @@ MAPPING_DIR = "data"
 PROPS = utils.load_json(path.join(MAPPING_DIR, "properties.json"))
 
 SUMMARY_TEST = "nature test"
-SUMMARY_LIVE = ""
 
 
 class Uploader(object):
@@ -111,7 +110,7 @@ class Uploader(object):
         self.live = live
         if self.live:
             print("LIVE MODE")
-            self.summary = edit_summary or SUMMARY_LIVE
+            self.summary = edit_summary
         else:
             print("SANDBOX MODE: {}".format(self.TEST_ITEM))
             self.summary = SUMMARY_TEST
