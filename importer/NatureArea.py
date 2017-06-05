@@ -91,7 +91,8 @@ class NatureArea(WikidataItem):
         else:
             languages = [
                 "sv", "en", "da", "fi", "fr", "pt",
-                "pl", "nb", "nn", "nl", "de", "es"
+                "pl", "nb", "nn", "nl", "de", "es",
+                "ro"
             ]
         for language in languages:
             self.add_label(language, swedish_name)
