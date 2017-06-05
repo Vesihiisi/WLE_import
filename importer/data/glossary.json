@@ -60,7 +60,8 @@
     "pl": "park narodowy w Szwecji",
     "pt": "parque nacional na Suécia",
     "ru": "национальный парк в Швеции",
-    "sv": "nationalpark i Sverige"
+    "sv": "nationalpark i Sverige",
+    "ro": "parc național din Suedia"
   },
   "nr_description": {
     "da": "naturreservat i {}, Sverige",
@@ -74,6 +75,7 @@
     "nn": "naturreservat i {}, Sverige",
     "pl": "rezerwat przyrody w regionie {}, Szwecja",
     "pt": "reserva natural na {}, Suécia",
+    "ro": "rezervație naturală în {}, Suedia",
     "ru": "заповедник в лене {} в Швеции",
     "sv": "naturreservat i {}"
   }
