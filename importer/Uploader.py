@@ -28,21 +28,23 @@ class Uploader(object):
         will be automatically added as an alias. Otherwise
         (no existing label), it will be added as a label.
         """
+        labels_for_upload = {}
         for label in labels:
-            target_item.get()
             label_content = label['value']
             language = label['language']
-            self.wdstuff.addLabelOrAlias(
-                language, label_content, target_item)
+            labels_for_upload[language] = label_content
+        self.wdstuff.add_multiple_label_or_alias(
+            labels_for_upload, target_item)
 
     def add_descriptions(self, target_item, descriptions):
         """Add descriptions to the item."""
+        descriptions_for_upload = {}
         for description in descriptions:
-            target_item.get()
             desc_content = description['value']
             lang = description['language']
-            self.wdstuff.add_description(
-                lang, desc_content, target_item)
+            descriptions_for_upload[lang] = desc_content
+        self.wdstuff.add_multiple_descriptions(
+            descriptions_for_upload, target_item)
 
     def add_claims(self, wd_item, claims):
         """Add claims to the item."""
